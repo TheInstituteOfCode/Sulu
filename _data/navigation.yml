@@ -1,0 +1,13 @@
+header:
+  - name: work
+    link: /work
+    featured: false
+  - name: work
+    link: /work
+    featured: false
+  - name: work
+    link: /work
+    featured: false
+  - name: SPECIAL RATES
+    link: /work
+    featured: true

@@ -1,0 +1,5 @@
+collections:
+  posts:
+    output: true
+  shoots:
+    output: false
