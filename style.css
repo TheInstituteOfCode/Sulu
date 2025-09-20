@@ -6,7 +6,16 @@
 /* Tailwind */
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
+
+/* CSS variable colors */
+
+:root {
+    --dark: rgb(60,60,60);
+    --cream-400: #F9F7F4;
+    --cream-300: #FAFAF7;
+    --cream-200: #FFFFFF;
+}
 
 /* Custom CSS */
 
@@ -14,24 +23,55 @@
     --side-gap: max(2rem, 50vw - 640px)
 }
 
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: rgb(120,120,120);
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+}
+
+.h-block {
+      font-family: "DM Sans", sans-serif;
+      letter-spacing: -0.01em;
+      font-weight: 800;
+}
+
+.h-mono {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+}
+
+
 header {
     border-top: 2px solid #000;
     border-left: 2px solid #000;
     border-right: 2px solid #000;
-    margin-right: var(--side-gap);
-    margin-left: var(--side-gap);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* margin-right: var(--side-gap);
+    margin-left: var(--side-gap); */
     margin-top: 2rem;
-    max-width: 1280px;
-    padding: 2rem;
-
+    /* max-width: 1280px; */
+    padding: 5%;
 }
 
 
  footer, section {
-    margin-right: var(--side-gap);
+    /* margin-right: var(--side-gap);
     margin-left: var(--side-gap);
-    max-width: 1280px;
-    padding: 2rem;
+    max-width: 1280px; */
+    padding: 5%;
     position: relative;
 }
 
@@ -102,3 +142,8 @@ rotate: 180deg;
 .question.active .faq-x  {
     transform: rotate(45deg);
 }
+
+
+
+/* KEEP THIS AT THE END TO OVERULE DEFAULT STYLES */
+@tailwind utilities;
