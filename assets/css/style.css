@@ -451,8 +451,18 @@ video {
 /* Custom CSS */
 
 :root {
-    --side-gap: max(2rem, 50vw - 640px)
+
+    /* with max width */
+    /* --side-gap: max(2rem, 50vw - 640px) */
+
+    --side-gap: 5vw
 }
+
+html.lockScroll,html.lockScroll body {
+    overflow: hidden;
+    height: 100vh;
+}
+
 
 body {
     font-family: 'DM Sans', sans-serif;
@@ -543,7 +553,6 @@ img,svg {
 .vertical-text {
     writing-mode: vertical-rl;
 text-orientation: mixed;
-rotate: 180deg;
 }
 
 
@@ -651,8 +660,8 @@ rotate: 180deg;
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
-.h-\[60vh\] {
-  height: 60vh;
+.h-\[80vh\] {
+  height: 80vh;
 }
 .h-full {
   height: 100%;
@@ -663,8 +672,8 @@ rotate: 180deg;
 .w-4\/5 {
   width: 80%;
 }
-.w-\[60vw\] {
-  width: 60vw;
+.w-\[80vw\] {
+  width: 80vw;
 }
 .w-full {
   width: 100%;
@@ -678,8 +687,8 @@ rotate: 180deg;
 .shrink-0 {
   flex-shrink: 0;
 }
-.rotate-90 {
-  --tw-rotate: 90deg;
+.rotate-180 {
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
@@ -712,17 +721,20 @@ rotate: 180deg;
 .justify-between {
   justify-content: space-between;
 }
-.gap-0 {
-  gap: 0px;
-}
 .gap-4 {
   gap: 1rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .gap-8 {
   gap: 2rem;
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
 }
 .overflow-x-scroll {
   overflow-x: scroll;
@@ -781,9 +793,6 @@ rotate: 180deg;
 .p-2 {
   padding: 0.5rem;
 }
-.p-3 {
-  padding: 0.75rem;
-}
 .p-4 {
   padding: 1rem;
 }
@@ -794,9 +803,9 @@ rotate: 180deg;
   padding-left: 0px;
   padding-right: 0px;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .px-\[var\(--side-gap\)\] {
   padding-left: var(--side-gap);
@@ -810,15 +819,15 @@ rotate: 180deg;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .pb-0 {
   padding-bottom: 0px;
 }
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -837,9 +846,6 @@ rotate: 180deg;
 }
 .pt-4 {
   padding-top: 1rem;
-}
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 .text-right {
   text-align: right;
@@ -872,12 +878,12 @@ rotate: 180deg;
 .text-cream {
   color: var(--cream-400);
 }
+.text-dark {
+  color: var(--dark);
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-dark {
-  color: var(--dark);
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;

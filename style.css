@@ -20,8 +20,18 @@
 /* Custom CSS */
 
 :root {
-    --side-gap: max(2rem, 50vw - 640px)
+
+    /* with max width */
+    /* --side-gap: max(2rem, 50vw - 640px) */
+
+    --side-gap: 5vw
 }
+
+html.lockScroll,html.lockScroll body {
+    overflow: hidden;
+    height: 100vh;
+}
+
 
 body {
     font-family: 'DM Sans', sans-serif;
@@ -112,7 +122,6 @@ img,svg {
 .vertical-text {
     writing-mode: vertical-rl;
 text-orientation: mixed;
-rotate: 180deg;
 }
 
 
