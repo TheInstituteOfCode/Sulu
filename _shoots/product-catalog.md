@@ -8,9 +8,7 @@ long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 short-pricing: from $35 per image
 featured-images: 
     - image: /assets/images/product-catalog.jpg
-      alt: 1 
-    - image: /assets/images/Rectangle-65.png
-      alt: 3
+      alt: 1
 faq:
     -   q: What we do
         a:  <p>From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand.</p><p>Showcase your beauty products in use with our  model photography services.</p><p>First we’ll have a call to run you through the process and make sure you understand exactly that to expect, we’ll learn your preferences.</p><p> At this stage you’ll have lots of options to do cool shit and get really excited about your product.</p>

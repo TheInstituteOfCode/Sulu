@@ -94,16 +94,83 @@ title: Homepage
 
         <div>
             <h2 class="text-xl h-block mb-12">Transparent pricing. </h2>
-            <h3>FLAT-RATE PRODUCT PHOTOGRAPHY</h3>
-            <p> Simple, affordable, per-image pricing - fill in our simple shoot planner, send us your products and we’ll handle everything else.</p>
+
         </div>
 
 </section>
-<section class="px-0 pt-0"> 
+<section class="px-0 pt-0">
+    
+    <div class="px-[5vw]">
+            <h3>FLAT-RATE PRODUCT PHOTOGRAPHY</h3>
+            <p> Simple, affordable, per-image pricing - fill in our simple shoot planner, send us your products and we’ll handle everything else.</p>
+    </div>
 
         <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
         
             {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'product'" %}
+            {% for shoot in flat-rate-photo %}
+            <div class="dialog-grid-button shrink-0 w-1/3">
+                <div class="relative rounded mb-2" style="aspect-ratio: 45/55;">
+                    <span class="text-xs bg-white rounded-lg absolute top-4 right-4 p-2">{{shoot.short-pricing}} </span>
+                    <img class="rounded-2xl" src="{{shoot.featured-images[0].image}}" alt="{{shoot.featured-images[0].alt}}">
+                </div>
+                <h2>{{shoot.name}}</h2>
+                <p>{{shoot.short-description}}</p>
+            </div>
+            <dialog>
+                <div class="grid w-[80vw] h-[80vh]" style="grid-template-columns: 400px 1fr;">
+                    <div class="p-4 h-[80vh] overflow-scroll">
+
+                        {% for q in shoot.faq %}
+                        <div class="question">
+                            <div class="max-height-true">
+                                <div class="faq-header flex justify-between max-height-question  p-2">
+                                    <p class="h-mono mb-0 text-sm uppercase text-dark">{{q.q}}</p>
+                                    <div class="faq-x">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="answer overflow-hidden transition-all" style="height: 0px;">
+                                    <div class="true-height px-2 pb-2">
+                                        {{q.a}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="relative pop-img-holder">
+                        {% for image in shoot.featured-images %}
+                            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
+                        {% endfor %}
+                        <div class="absolute right-4 flex items-center z-20 h-full">
+                            <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.name}}</h3>
+                        </div>
+
+                        <div class="absolute bottom-4 right-4 flex">
+                            <div class="next p-4 border rounded"> < </div>
+                            <div class="prev p-4 border rounded"> > </div>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="px-0 pt-0"> 
+
+    <div class="px-[5vw]">
+            <h3>FLAT-RATE MODEL PHOTOGRAPHY</h3>
+            <p> Simple, affordable, flat-rate that covers everything - the studio rental, the photographer, a professional model, hair & makeup artist, and image editing & re-touching. </p>
+    </div>
+
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
+        
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'model'" %}
             {% for shoot in flat-rate-photo %}
             <div class="dialog-grid-button shrink-0 w-1/3">
                 <div class="relative rounded mb-2" style="aspect-ratio: 45/55;">
@@ -168,116 +235,40 @@ title: Homepage
 </style>
 
 <script>
-    const gridButtons = document.querySelectorAll('.dialog-grid-button')
-    const dialogs = document.querySelectorAll('dialog');
-    const body = document.querySelector('html')
-    console.log()
-
-    gridButtons.forEach(button => {
-        console.log(button,button.nextElementSibling)
-        button.addEventListener('click', ()=> {
-        console.log(button,button.nextElementSibling)
-            body.classList.add('lockScroll')
-            button.nextElementSibling.showModal()
-
-        })
-    })
-
-    dialogs.forEach( dialog => {
-        dialog.addEventListener('click', (event) => {
-         if (event.target === dialog) {
-             // This code will execute when the backdrop is clicked
-             console.log('Backdrop clicked!');
-             // Example: Close the dialog
-             dialog.close();
-            body.classList.remove('lockScroll')
-         }
-     });
-
-     let questions = dialog.querySelectorAll('.question')
-
-     questions.forEach(question => {
-        let answer =  question.querySelector('.answer')
-
-        question.addEventListener('click', ()=>{
-            question.classList.toggle('active')
-            console.log(answer.scrollHeight)
-            if (question.classList.contains('active')) {
-                answer.style.height = `${answer.scrollHeight}px`
-            } else {
-                answer.style.height = `0px`
-                
-            }
-        })
-     })
-
-     let images = dialog.querySelectorAll('img')
-     let activeImage = 0
-     let next = dialog.querySelector('.next')
-     let prev = dialog.querySelector('.prev')
-
-     console.log(next,prev,images.length - 1)
-
-     function changeImage(n) {
-        console.log(n)
-        activeImage = (activeImage + n) % images.length
-        images.forEach(img => {
-            if (images[activeImage] == img) {
-            img.classList.add('active')
-            } else {
-                img.classList.remove('active')
-            }
-        })
-     }
-
-     console.log(changeImage)
-
-     next.addEventListener('click', () => {
-         changeImage(1)
-        })
-
-     prev.addEventListener('click', () => { changeImage(images.length - 1) })
-
-     console.log(changeImage)
-
-
-  console.log(next,prev)
-
-    })
-
-
-
-
-        
+    {% include dialog.js %}
 </script>
 
+
 <section class="bg-black text-white mx-0 py-0 px-0">
-    <div class="grid" style="grid-template-columns: 17vh 25rem 2fr;">
-        <div class="vertical-text border-r-2 border-white py-4 pl-[5vw]">
-            <h2 class="m-0 rotate-180" style="font-size: 13rem;">STUDIO</h2>
+    <div class="grid pl-[5vw]" style="grid-template-columns: 17vh 25rem 2fr;">
+        <div class="vertical-text border-r-2 border-white py-4">
+            <h2 class="m-0 rotate-180 leading-none" style="font-size: 13rem;">STUDIO</h2>
         </div>
 
-        <div class="px-8 py-[5vw]">
-            <h3>Take a look around our studio.</h3>
-            <p>We built a state of the art studio in tropical Bali, covering both indoor and outdoor needs. With a range of sets, from our Mediterranean terrace to 144m2 rooftop, to our mid-century pool with diving board and 850m2 of gardens we have you covered.</p>
-            <div class="border-y-2 border-white grid grid-cols-2 mb-8">
-                <div class="border-r-2 border-white">
-                    <a href="#" class="py-4 pr-4 block">
-                        <span class="pr-2">Indoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
-                    </a>
+        <div class="px-8 py-[5vw] flex items-end">
+            <div>
+                
+                <h3>Take a look around our studio.</h3>
+                <p class="text-white">We built a state of the art studio in tropical Bali, covering both indoor and outdoor needs. With a range of sets, from our Mediterranean terrace to 144m2 rooftop, to our mid-century pool with diving board and 850m2 of gardens we have you covered.</p>
+                <div class="border-y-2 border-white grid grid-cols-2 mb-8">
+                    <div class="border-r-2 border-white">
+                        <a href="#" class="py-4 pr-4 block">
+                            <span class="pr-2">Indoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                        </a>
+                    </div>
+                    <div class="text-right">
+                        <a href="#" class="py-4 pl-4 block">
+                            <span class="pr-2">Outdoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                        </a>
+                    </div>
                 </div>
-                <div class="text-right">
-                    <a href="#" class="py-4 pl-4 block">
-                        <span class="pr-2">Outdoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
-                    </a>
+                <div>
+                    <img src="/assets/images/outside.jpg" alt="outside picnic">
                 </div>
             </div>
-            <div class="rounded-3xl overflow-hidden">
-                <img src="/assets/images/outside.jpg" alt="outside picnic">
-            </div>
-
+            
         </div>
-        <div class="relative">
+        <div class="relative rounded-3xl overflow-hidden"">
             <img class="inset-0 absolute h-full w-full object-cover" src="assets/images/two-hands-in-water.jpg" alt="two hands in water">
         </div>
 

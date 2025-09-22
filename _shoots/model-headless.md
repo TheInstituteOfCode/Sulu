@@ -1,13 +1,13 @@
 ---
 categories: 
-    - product 
-name: Furniture Photography
+    - model 
+name: Headless Model Photography
 vertical-font-vh: 5vh
-short-description: Rugs, furniture, and other big bulky products we’ve got plenty of space to capture your collection. 
+short-description: Timeless unrecognizable photography to keep the focus on your product. 
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
 short-pricing: from $45 per image 
 featured-images: 
-    - image: /assets/images/furniture.jpg
+    - image: /assets/images/headless-model.jpg
       alt: A
 faq:
     -   q: What we do

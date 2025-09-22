@@ -718,6 +718,9 @@ text-orientation: mixed;
 .flex-nowrap {
   flex-wrap: nowrap;
 }
+.items-end {
+  align-items: flex-end;
+}
 .items-center {
   align-items: center;
 }
@@ -844,6 +847,10 @@ text-orientation: mixed;
   padding-top: 5vw;
   padding-bottom: 5vw;
 }
+.px-\[5vw\] {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -904,6 +911,9 @@ text-orientation: mixed;
 }
 .uppercase {
   text-transform: uppercase;
+}
+.leading-none {
+  line-height: 1;
 }
 .text-cream {
   color: var(--cream-400);
