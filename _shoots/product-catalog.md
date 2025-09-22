@@ -9,8 +9,6 @@ short-pricing: from $35 per image
 featured-images: 
     - image: /assets/images/product-catalog.jpg
       alt: 1 
-    - image: /assets/images/Rectangle-66.png
-      alt: 2
     - image: /assets/images/Rectangle-65.png
       alt: 3
 faq:

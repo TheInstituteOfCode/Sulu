@@ -595,6 +595,9 @@ text-orientation: mixed;
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -615,6 +618,9 @@ text-orientation: mixed;
 }
 .row-span-3 {
   grid-row: span 3 / span 3;
+}
+.m-0 {
+  margin: 0px;
 }
 .mx-0 {
   margin-left: 0px;
@@ -641,6 +647,9 @@ text-orientation: mixed;
 }
 .mr-4 {
   margin-right: 1rem;
+}
+.block {
+  display: block;
 }
 .inline-block {
   display: inline-block;
@@ -807,6 +816,10 @@ text-orientation: mixed;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .px-\[var\(--side-gap\)\] {
   padding-left: var(--side-gap);
   padding-right: var(--side-gap);
@@ -823,6 +836,14 @@ text-orientation: mixed;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-\[5vw\] {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -832,8 +853,17 @@ text-orientation: mixed;
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pl-4 {
+  padding-left: 1rem;
+}
+.pl-\[5vw\] {
+  padding-left: 5vw;
+}
 .pr-16 {
   padding-right: 4rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
 }
 .pr-4 {
   padding-right: 1rem;

@@ -84,8 +84,8 @@ title: Homepage
     </div>
     <div class="col-span-2 border-b-2 border-black"></div>
     <div class="grid grid-cols-2 gap-4 col-span-2">
-        <img class="shrink" src="/assets/images/featured-2.png" alt="">
-        <img class="shrink" src="/assets//images/jewellery-2.png" alt="">
+        <img class="shrink w-full" src="/assets/images/featured-2.png" alt="">
+        <img class="shrink w-full" src="/assets//images/jewellery-2.png" alt="">
     </div>
 
 </section>
@@ -251,19 +251,41 @@ title: Homepage
         
 </script>
 
-<section class="bg-black text-white max-w-screen mx-0">
-    <div class="grid py-0" style="grid-template-columns: 17vh 1fr 2fr;">
-        <div class="vertical-text border-right-2 border-white">
-            <h2 style="font-size: 5vh;">STUDIO</h2>
+<section class="bg-black text-white mx-0 py-0 px-0">
+    <div class="grid" style="grid-template-columns: 17vh 25rem 2fr;">
+        <div class="vertical-text border-r-2 border-white py-4 pl-[5vw]">
+            <h2 class="m-0 rotate-180" style="font-size: 13rem;">STUDIO</h2>
         </div>
 
-            
-    </div>
+        <div class="px-8 py-[5vw]">
+            <h3>Take a look around our studio.</h3>
+            <p>We built a state of the art studio in tropical Bali, covering both indoor and outdoor needs. With a range of sets, from our Mediterranean terrace to 144m2 rooftop, to our mid-century pool with diving board and 850m2 of gardens we have you covered.</p>
+            <div class="border-y-2 border-white grid grid-cols-2 mb-8">
+                <div class="border-r-2 border-white">
+                    <a href="#" class="py-4 pr-4 block">
+                        <span class="pr-2">Indoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                    </a>
+                </div>
+                <div class="text-right">
+                    <a href="#" class="py-4 pl-4 block">
+                        <span class="pr-2">Outdoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden">
+                <img src="/assets/images/outside.jpg" alt="outside picnic">
+            </div>
 
+        </div>
+        <div class="relative">
+            <img class="inset-0 absolute h-full w-full object-cover" src="assets/images/two-hands-in-water.jpg" alt="two hands in water">
+        </div>
+
+    </div>
 </section>
 
 
-
+<!-- 
 <section class="bg-blue text-cream px-0">
     <div class="max-w-screen-xl mx-auto p-[5%]">
         <div class="flex justify-between items-center">
@@ -291,4 +313,4 @@ title: Homepage
             {% endfor %}
         </div>
     </div>  
-</section>  
+</section>   -->
