@@ -42,10 +42,20 @@
         })
      })
 
-     let images = dialog.querySelectorAll('img')
-     let activeImage = 0
-     let next = dialog.querySelector('.next')
-     let prev = dialog.querySelector('.prev')
+
+    
+
+    })
+
+
+    let galleries = document.querySelectorAll('.gallery-image-holder')
+    console.log(galleries)
+
+    galleries.forEach(gal => {
+    let images = gal.querySelectorAll('img')
+    let activeImage = 0
+    let next = gal.querySelector('.next')
+    let prev = gal.querySelector('.prev')
 
      console.log(next,prev,images.length - 1)
 
@@ -73,8 +83,5 @@
 
 
   console.log(next,prev)
-
     })
-
-
 

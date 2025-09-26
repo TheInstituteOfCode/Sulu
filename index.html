@@ -1,6 +1,39 @@
 ---
 layout: default
 title: Homepage
+reasons:
+    -   title: HIGH-END RESULTS
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
+    -   title: TAILORED TO YOU
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
+    -   title: HIGH-END RESULTS
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
+    -   title: TAILORED TO YOU
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
 ---
 
 
@@ -141,7 +174,7 @@ title: Homepage
                         </div>
                         {% endfor %}
                     </div>
-                    <div class="relative pop-img-holder">
+                    <div class="relative gallery-image-holder">
                         {% for image in shoot.featured-images %}
                             <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
                         {% endfor %}
@@ -151,7 +184,7 @@ title: Homepage
 
                         <div class="absolute bottom-4 right-4 flex">
                             <div class="next p-4 border rounded"> < </div>
-                            <div class="prev p-4 border rounded"> > </div>
+                            <div class="prev p-4 border rounded bg-black"> {% include icon/galler-arrow-right.html width= "1rem" color="#fff" %} </div>
                         </div>
                     </div>
                 </div>
@@ -204,7 +237,7 @@ title: Homepage
                         </div>
                         {% endfor %}
                     </div>
-                    <div class="relative pop-img-holder">
+                    <div class="relative gallery-image-holder">
                         {% for image in shoot.featured-images %}
                             <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
                         {% endfor %}
@@ -224,19 +257,53 @@ title: Homepage
     </div>
 </section>
 
-<style>
-    .pop-img-holder img {
-        opacity: 0;
-        transition: .5s;
-    }
-    .pop-img-holder img.active {
-        opacity: 1;
-    }
-</style>
 
-<script>
-    {% include dialog.js %}
-</script>
+
+
+<section class="px-0">
+    <div class="px-[var(--side-gap)]">
+        <h2>Why choose Suluh for your product photography</h2>
+    </div>
+    <div class="flex gap-6 flex-nowrap overflow-scroll px-[var(--side-gap)] mb-8">
+        {% for reason in page.reasons %}
+        <div class="flex-shrink-0 flex-grow-0 p-4 bg-white rounded-3xl cursor-pointer reasonButtons  {% if forloop.first %} active {% endif %} " style="width:250px" data-scroll-number="{{forloop.index0}}" >
+            <h3>{{forloop.index}}</h3>
+            <h2>{{reason.title}}</h2>
+            <p>{{reason.short-description}}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="flex flex-nowrap overflow-scroll reasonGrid snap-x snap-mandatory">
+        {% for reason in page.reasons %}
+        <div class="px-[var(--side-gap)] w-screen shrink-0  snap-center">
+            <div class="bg-white rounded-3xl flex overflow-hidden">
+                <div class="relative gallery-image-holder max-h-full flex-1 basis-[40%]" style="aspect-ratio: 44/54;">
+                    {% for image in reason.images %}
+                        <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
+                    {% endfor %}
+
+                    <div class="absolute bottom-4 right-4 flex">
+                        <div class="prev p-4 border rounded"> < </div>
+                        <div class="next p-4 border rounded"> > </div>
+                    </div>
+                </div>
+                <div class="p-8 basis-[60%] flex items-center">
+                    <div>
+                        <p class="text-right">{{forloop.index}}</p>
+                        <h3>
+                            {{reason.title}}
+                        </h3>
+                        <div>
+                            {{reason.long-description}}
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
 
 
 <section class="bg-black text-white mx-0 py-0 px-0">
@@ -305,3 +372,69 @@ title: Homepage
         </div>
     </div>  
 </section>   -->
+
+<style>
+    .gallery-image-holder img {
+        opacity: 0;
+        transition: .5s;
+    }
+    .gallery-image-holder img.active {
+        opacity: 1;
+    }
+
+    
+    .reasonButtons{
+        border: 2px solid white;
+    }
+
+    .reasonButtons.active{
+        border: 2px solid black;
+    }
+</style>
+
+<script>
+    {% include dialog.js %}
+
+    let reasonButtons = document.querySelectorAll('.reasonButtons')
+    let reasonGrid = document.querySelector('.reasonGrid')
+
+    function reasonScroll(n) {
+        console.log(n * reasonGrid.width)
+        reasonGrid.scrollTo({
+            left: `${n * reasonGrid.clientWidth}`,
+            behavior: "smooth",
+        })
+    }
+
+reasonButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        let target = button.dataset.scrollNumber
+        console.log(target)
+        reasonButtons.forEach(b => {
+            if (b == reasonButtons[target]) {
+                b.classList.add("active")
+            } else {
+                b.classList.remove('active')
+            }
+            reasonScroll(target)
+        })
+    })
+})
+
+reasonScroll(0)
+
+setInterval(() => {
+    let newTarget = Math.floor((reasonGrid.scrollLeft)/(reasonGrid.clientWidth - 100))
+   console.log(newTarget,reasonGrid.clientWidth)
+   reasonButtons.forEach(b => {
+            if (b == reasonButtons[newTarget]) {
+                b.classList.add("active")
+            } else {
+                b.classList.remove('active')
+            }
+        })
+}, 1000);
+
+
+
+</script>

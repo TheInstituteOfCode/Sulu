@@ -467,6 +467,7 @@ html.lockScroll,html.lockScroll body {
 body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 300;
+    background-color: #F9F7F4;
 }
 
 p {
@@ -675,6 +676,9 @@ text-orientation: mixed;
 .h-full {
   height: 100%;
 }
+.max-h-full {
+  max-height: 100%;
+}
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -687,8 +691,17 @@ text-orientation: mixed;
 .w-full {
   width: 100%;
 }
+.w-screen {
+  width: 100vw;
+}
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 .shrink {
   flex-shrink: 1;
@@ -696,12 +709,33 @@ text-orientation: mixed;
 .shrink-0 {
   flex-shrink: 0;
 }
+.flex-grow-0 {
+  flex-grow: 0;
+}
+.basis-\[40\%\] {
+  flex-basis: 40%;
+}
+.basis-\[60\%\] {
+  flex-basis: 60%;
+}
 .rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.snap-x {
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+.snap-center {
+  scroll-snap-align: center;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -808,6 +842,9 @@ text-orientation: mixed;
 .p-4 {
   padding: 1rem;
 }
+.p-8 {
+  padding: 2rem;
+}
 .p-\[5\%\] {
   padding: 5%;
 }
@@ -822,6 +859,10 @@ text-orientation: mixed;
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.px-\[5vw\] {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .px-\[var\(--side-gap\)\] {
   padding-left: var(--side-gap);
@@ -846,10 +887,6 @@ text-orientation: mixed;
 .py-\[5vw\] {
   padding-top: 5vw;
   padding-bottom: 5vw;
-}
-.px-\[5vw\] {
-  padding-left: 5vw;
-  padding-right: 5vw;
 }
 .pb-0 {
   padding-bottom: 0px;
