@@ -182,9 +182,9 @@ reasons:
                             <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.name}}</h3>
                         </div>
 
-                        <div class="absolute bottom-4 right-4 flex">
-                            <div class="next p-4 border rounded"> < </div>
-                            <div class="prev p-4 border rounded bg-black"> {% include icon/galler-arrow-right.html width= "1rem" color="#fff" %} </div>
+                        <div class="absolute bottom-4 right-4 flex gap-1">
+                            <div class="next py-4 px-5 border border-black rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                            <div class="prev py-4 px-5 border border-black rounded-full bg-black"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
                         </div>
                     </div>
                 </div>
@@ -245,9 +245,73 @@ reasons:
                             <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.name}}</h3>
                         </div>
 
-                        <div class="absolute bottom-4 right-4 flex">
-                            <div class="next p-4 border rounded"> < </div>
-                            <div class="prev p-4 border rounded"> > </div>
+                        <div class="absolute bottom-4 right-4 flex gap-1">
+                            <div class="next py-4 px-5 border border-black rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                            <div class="prev py-4 px-5 border border-black rounded-full bg-black"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<section class="px-0 pt-0"> 
+
+    <div class="px-[5vw]">
+            <h3>CREATIVE CAMPAIGNS</h3>
+            <p> More flexibility, more creativity designed just for your brand. Choose from a mini-shoot, a half-day or a full day and design your dream shoot. </p>
+    </div>
+
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
+        
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'creative'" %}
+            {% for shoot in flat-rate-photo %}
+            <div class="dialog-grid-button shrink-0 w-1/3">
+                <div class="relative rounded mb-2" style="aspect-ratio: 45/55;">
+                    <span class="text-xs bg-white rounded-lg absolute top-4 right-4 p-2">{{shoot.short-pricing}} </span>
+                    <img class="rounded-2xl" src="{{shoot.featured-images[0].image}}" alt="{{shoot.featured-images[0].alt}}">
+                </div>
+                <h2>{{shoot.name}}</h2>
+                <p>{{shoot.short-description}}</p>
+            </div>
+            <dialog>
+                <div class="grid w-[80vw] h-[80vh]" style="grid-template-columns: 400px 1fr;">
+                    <div class="p-4 h-[80vh] overflow-scroll">
+
+                        {% for q in shoot.faq %}
+                        <div class="question">
+                            <div class="max-height-true">
+                                <div class="faq-header flex justify-between max-height-question  p-2">
+                                    <p class="h-mono mb-0 text-sm uppercase text-dark">{{q.q}}</p>
+                                    <div class="faq-x">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="answer overflow-hidden transition-all" style="height: 0px;">
+                                    <div class="true-height px-2 pb-2">
+                                        {{q.a}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="relative gallery-image-holder">
+                        {% for image in shoot.featured-images %}
+                            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
+                        {% endfor %}
+                        <div class="absolute right-4 flex items-center z-20 h-full">
+                            <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.name}}</h3>
+                        </div>
+
+                        <div class="absolute bottom-4 right-4 flex gap-1">
+                            <div class="next py-4 px-5 border border-black rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                            <div class="prev py-4 px-5 border border-black rounded-full bg-black"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
                         </div>
                     </div>
                 </div>
@@ -259,16 +323,15 @@ reasons:
 
 
 
-
 <section class="px-0">
     <div class="px-[var(--side-gap)]">
-        <h2>Why choose Suluh for your product photography</h2>
+        <h2 class="text-xl h-block">Why choose Suluh for your product photography</h2>
     </div>
     <div class="flex gap-6 flex-nowrap overflow-scroll px-[var(--side-gap)] mb-8">
         {% for reason in page.reasons %}
         <div class="flex-shrink-0 flex-grow-0 p-4 bg-white rounded-3xl cursor-pointer reasonButtons  {% if forloop.first %} active {% endif %} " style="width:250px" data-scroll-number="{{forloop.index0}}" >
-            <h3>{{forloop.index}}</h3>
-            <h2>{{reason.title}}</h2>
+            <h4>{{forloop.index}}</h4>
+            <h3>{{reason.title}}</h2>
             <p>{{reason.short-description}}</p>
         </div>
         {% endfor %}
@@ -282,15 +345,15 @@ reasons:
                         <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
                     {% endfor %}
 
-                    <div class="absolute bottom-4 right-4 flex">
-                        <div class="prev p-4 border rounded"> < </div>
-                        <div class="next p-4 border rounded"> > </div>
+                    <div class="absolute bottom-4 right-4 flex gap-1">
+                        <div class="next py-4 px-5 border border-black rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                        <div class="prev py-4 px-5 border border-black rounded-full bg-black"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
                     </div>
                 </div>
                 <div class="p-8 basis-[60%] flex items-center">
                     <div>
                         <p class="text-right">{{forloop.index}}</p>
-                        <h3>
+                        <h3 class="text-lg">
                             {{reason.title}}
                         </h3>
                         <div>
@@ -433,7 +496,7 @@ setInterval(() => {
                 b.classList.remove('active')
             }
         })
-}, 1000);
+}, 500);
 
 
 
