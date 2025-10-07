@@ -154,6 +154,25 @@ text-orientation: mixed;
 }
 
 
+/* burger styles */
+
+body.burgers-open, body.burgers-open html {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.burger-button::after {
+    content: '☰';
+    font-size: 2rem;
+}
+
+.burgers-open .burger-button::after {
+    content: 'X'
+}
+
+.burgers-open .burger-menu {
+    left: 0;
+}
 
 /* KEEP THIS AT THE END TO OVERULE DEFAULT STYLES */
 @tailwind utilities;
