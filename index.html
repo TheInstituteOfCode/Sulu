@@ -34,6 +34,65 @@ reasons:
                 alt: A
             -   image: /assets/images/ghost.jpg
                 alt: b
+reasons-2:
+    -   title: HIGH-END RESULTS
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
+    -   title: TAILORED TO YOU
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
+    -   title: HIGH-END RESULTS
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
+    -   title: TAILORED TO YOU
+        short-description: Photography that feels expensive builds trust and elevates your brand. 
+        long-description: <p>When you look at a luxury brand, you can immediately feel the difference - it’s in the way the light hits the model or the product, the tone and texture of the background, the crisp clarity of the details even when you zoom in 5x.</p><p>As a brand, you often have to choose between affordable photography and elevated photography but with Suluh you get high-end results at a fraction of the price of most high-end creative studios.</p><p>Our team obsesses over details and has the experience (over a decade in the industry) and the space (a state-of-the-art studio with modern photography & lighting equipment) to deliver you consistently high end results.</p>
+        images:
+            -   image: /assets/images/classic-model.jpg
+                alt: A
+            -   image: /assets/images/ghost.jpg
+                alt: b
+featured-work-block:
+    rows-1:
+        images: 
+            -   image: /assets/images/featured-2.png
+                alt: featured 1
+                text: We are a digital agency from Bali and we love xyz.
+                alt: featured 2
+            -   image: assets/images/featured-1.png
+                text: We are a digital agency from Bali and we love xyz.
+            -   image: /assets/images/featured-3.png
+                alt: featured 3
+                text: We are a digital agency from Bali and we love xyz.
+    rows-2:
+        images: 
+            - image: /assets/images/featured-3.png
+              alt: featured 3
+              text: We are a digital agency from Bali and we love xyz.
+            - image: assets/images/featured-1.png
+              alt: featured 1
+              text: We are a digital agency from Bali and we love xyz.
+            - image: /assets/images/featured-2.png
+              alt: featured 2
+              text: We are a digital agency from Bali and we love xyz.
+
+
+
 ---
 
 
@@ -234,6 +293,47 @@ reasons:
 
 
 
+<section class="">
+    <div class="">
+        <h2 class="text-xl h-block">Seamless from start to finish. </h2>
+        <h3 class="text-lg">HIGH END + A FAST TURN AROUND</h3>
+        <p>We try to make the process of creating gorgeous images for your brand as seamless as possible, so you can spend more time marketing, designing or curating your brand and less time worrying about your content. </p>
+    </div>
+    <div class="grid grid-cols-4 gap-6 overflow-scroll mb-8">
+        {% for reason in page.reasons-2 %}
+        <div class="flex-shrink-0 flex-grow-0 p-4 bg-black text-white rounded-3xl flex flex-col {% if forloop.first %} active {% endif %} min-h-[35vh]" data-scroll-number="{{forloop.index0}}" >
+            <h4 class="uppercase text-white/50 text-sm text-right "> step {% if forloop.index < 10 %}0{% endif %}{{forloop.index}}</h4>
+            <h3 class="mt-auto">{{reason.title}}</h2>
+            <p class="text-white">{{reason.short-description}}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="text-right mb-[5vw]">
+            <a class="px-4 py-3 rounded-full text-white bg-black inline-block">send it <img class="inline-block ml-8" style="width:2.8rem" src="/assets/images/quick-arrow.svg" alt=""> </a>
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+        <div>
+            <div class="flex-shrink-0 flex-grow-0 p-8 bg-black text-white rounded-3xl flex flex-col {% if forloop.first %} active {% endif %} min-h-[35vh]" data-scroll-number="{{forloop.index0}}" >
+                <h4 class="uppercase text-white/50 text-sm text-right "> OPTION 1</h4>
+                <h3 class="mt-auto">DELIVER YOUR PRODUCTS DIRECT TO THE STUDIO</h2>
+                <p class="text-white">With options to drop off your products* up to 20 days in advance to our secure dry storage facility via in-person or with your own shipping methods, it’s easy and convenient. </p>
+                <a href="">GET IN TOUCH</a>
+            </div>
+        </div>
+        <div>
+            <div class="flex-shrink-0 flex-grow-0 p-8 bg-black text-white rounded-3xl flex flex-col {% if forloop.first %} active {% endif %} min-h-[35vh]" data-scroll-number="{{forloop.index0}}" >
+                <h4 class="uppercase text-white/50 text-sm text-right "> OPTION 2</h4>
+                <h3 class="mt-auto">USE ONE OF OUR TRUSTED INTERNATIONAL PARTNERS  </h2>
+                <p class="text-white">We have built a network of trusted global shipping partners that makes the process of sending your products fast, secure and most importantly, as stress free as possible.  </p>
+                <a href="">GET IN TOUCH</a>
+            </div>
+        </div>
+                
+    </div>
+</section>
+
+
+
 <section class="bg-black text-white mx-0 py-0 px-0">
     <div class="lg:grid lg:pl-[5vw]" style="grid-template-columns: 17vh 25rem 2fr;">
         <div class="vertical-text border-r-2 border-white py-4 hidden lg:block">
@@ -271,19 +371,126 @@ reasons:
 </section>
 
 <section>
+    <div>
+        <h2 class="text-lg">
+            FEATURED WORK
+        </h2>
+        <p>
+            From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand .
+        </p>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="rounded-3xl relative overflow-hidden min-h-[45vh] flex items-end col-span-2 featured-work-gallery">
+        {% for item in page.featured-work-block.rows-1.images limit: '1' %}
+            <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}">
+            <div class="p-4 relative flex items-center gap-3 ">
+                <div class="next py-4 px-5 border border-black rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                <div class="prev py-4 px-5 border border-black rounded-full bg-black"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+                <p class="text-black featured-target-text mb-0"> {{item.text}} </p>                       
+            </div>
+        {% endfor %}
+            <div class="absolute left-[100vw] gallery-image-holder">
+            {% for item in page.featured-work-block.rows-1.images  %}
+                    <img src="{{item.image}}" alt="{{item.alt}}" data-text="{{item.text}}">
+            {% endfor %}
+            </div>
+        </div>
+        <div class="rounded-3xl bg-black p-6 text-white min-h-[45vh] flex items-end">
+            <div>
+                <h3 class="text-lg">READY TO MAKE SOME MAGIC?</h3>
+                <p class="text-white">Get in touch today and kick start the content you’ve been looking for. </p>
+                <a href="#" class="text-black button button-rounded bg-white">I’M READY</a>
+            </div>
 
+        </div>
+        
+        <div class="rounded-3xl bg-black p-6 text-white min-h-[45vh] flex items-end">
+            <div>
+                <h3 class="text-lg">READY TO MAKE SOME MAGIC?</h3>
+                <p class="text-white">Get in touch today and kick start the content you’ve been looking for. </p>
+                <a href="#" class="text-black button button-rounded bg-white">I’M READY</a>
+            </div>
+
+        </div>
+        <div class="rounded-3xl relative overflow-hidden min-h-[45vh] flex items-end col-span-2 featured-work-gallery">
+        {% for item in page.featured-work-block.rows-2.images limit: '1' %}
+            <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}">
+            <div class="p-4 relative flex items-center gap-3 ">
+                <div class="next py-4 px-5 border border-black rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                <div class="prev py-4 px-5 border border-black rounded-full bg-black"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+                <p class="text-black featured-target-text mb-0"> {{item.text}} </p>                       
+            </div>
+        {% endfor %}
+            <div class="absolute left-[100vw] gallery-image-holder">
+            {% for item in page.featured-work-block.rows-1.images  %}
+                    <img src="{{item.image}}" alt="{{item.alt}}" data-text="{{item.text}}">
+            {% endfor %}
+            </div>
+        </div>
+    
+    </div>
+        
 </section>
+
+<script>
+
+
+    let featuredGalleries = document.querySelectorAll('.featured-work-gallery')
+    console.log(featuredGalleries, 'look here')
+
+    featuredGalleries.forEach(gal => {
+    let targetImages = gal.querySelector('.featured-target-img')
+    let targetText = gal.querySelector('.featured-target-text')
+    let images = gal.querySelectorAll('.gallery-image-holder img')
+    let activeImage = 0
+    let next = gal.querySelector('.next')
+    let prev = gal.querySelector('.prev')
+
+     console.log(next,prev,images.length - 1)
+
+     function changeImage(n) {
+        // console.log(n)
+        activeImage = (activeImage + n) % images.length
+        images.forEach(img => {
+            if (images[activeImage] == img) {
+                    targetImages.src = img.src
+                    targetImages.alt = img.alt
+                    targetText.innerHTML = img.dataset.text
+            }
+        })
+     }
+
+    //  console.log(changeImage)
+
+     if (next) {
+         next.addEventListener('click', () => {
+             changeImage(1)
+            })
+    
+         prev.addEventListener('click', () => { changeImage(images.length - 1) })
+
+     } else {
+        // console.log(gal, 'no gallery')
+     }
+
+
+    //  console.log(changeImage)
+
+
+//   console.log(next,prev)
+    })
+</script>
 
 
 
 <section class="bg-black text-white mx-0 py-0 px-0">
     <div class="lg:grid lg:pl-[5vw]" style="grid-template-columns: 17vh 1fr;">
-        <div class="vertical-text border-r-2 border-white py-4 hidden lg:block">
+        <div class="vertical-text border-r-2 border-white py-4 hidden lg:block mt-8">
             <h2 class="m-0 rotate-180 leading-none" style="font-size: 13rem;">CONTACT</h2>
         </div>
 
-        <form class="px-8 py-[5vw] flex items-center">
-            <div>
+        <form class="px-8 py-[5vw] grid grid-cols-2">
+            <div class="mt-16">
                 <h3 class="text-lg">Get in touch with one of our team.</h3>
                 <p class="text-white">We pride ourselves on the best possible service, from enquiry to delivered results, every message is important to us - even the ones you might think sound silly. 
                 </p>
@@ -335,13 +542,24 @@ reasons:
                     <h3 class="text-lg">
                         Contact Form
                     </h3>
-                    <input type="text" name="Name" placeholder="Name"  class="border-b-2 border-white bg-black text-white placeholder:text-white w-full">
-                    <input type="text" name="Contact" placeholder="Email or Phone #"  class="border-b-2 border-white bg-black text-white placeholder:text-white w-full">
-                    <input type="text" name="service type" placeholder="Type of service you are looking for" class="border-b-2 border-white bg-black text-white placeholder:text-white w-full">
-                    <input type="text" name="message" placeholder="Type your message here... We will reply within 48 hours" class="border-b-2 border-white bg-black text-white placeholder:text-white w-full">
-            </div>
+                    <input type="text" name="Name" placeholder="Name"  class="border-b-2 border-white bg-black text-white placeholder:text-white w-full py-4 mb-4">
+                    <input type="text" name="Contact" placeholder="Email or Phone #"  class="border-b-2 border-white bg-black text-white placeholder:text-white w-full py-4 mb-4">
+                    <input type="text" name="service type" placeholder="Type of service you are looking for" class="border-b-2 border-white bg-black text-white placeholder:text-white w-full py-4 mb-4">
+                </div>
+                <div class="mb-16 pl-16">
+                    <div class="relative rounded-3xl overflow-hidden h-full">
+                        <img class="absolute inset-0 object-cover w-full h-full" src="/assets/images/furniture.jpg" alt="">
+                    </div>
+                </div>  
+                <div class="col-span-full">
+                    
+                    <input type="text" name="message" placeholder="Type your message here... We will reply within 48 hours" class="border-b-2 border-white bg-black text-white placeholder:text-white w-full py-4 mb-4">
 
-            
+                    <div class="text-right">
+                        <label class="px-4 py-3 rounded-full bg-slate-700 inline-block " for="submit">send it <img class="inline-block ml-8" style="width:2.8rem" src="/assets/images/quick-arrow.svg" alt=""> </label>
+                        <input id="submit" type="submit" value="" class="opacity-0 fixed -bottom-8">
+                    </div>
+            </div>
         </form>
 
     </div>
@@ -404,7 +622,7 @@ reasons:
     let reasonGrid = document.querySelector('.reasonGrid')
 
     function reasonScroll(n) {
-        console.log(n * reasonGrid.width)
+        // console.log(n * reasonGrid.width)
         reasonGrid.scrollTo({
             left: `${n * reasonGrid.clientWidth}`,
             behavior: "smooth",
@@ -414,7 +632,7 @@ reasons:
 reasonButtons.forEach(button => {
     button.addEventListener('click', () => {
         let target = button.dataset.scrollNumber
-        console.log(target)
+        // console.log(target)
         reasonButtons.forEach(b => {
             if (b == reasonButtons[target]) {
                 b.classList.add("active")
@@ -430,7 +648,7 @@ reasonScroll(0)
 
 setInterval(() => {
     let newTarget = Math.floor((reasonGrid.scrollLeft)/(reasonGrid.clientWidth - 100))
-   console.log(newTarget,reasonGrid.clientWidth)
+//    console.log(newTarget,reasonGrid.clientWidth)
    reasonButtons.forEach(b => {
             if (b == reasonButtons[newTarget]) {
                 b.classList.add("active")
@@ -439,6 +657,8 @@ setInterval(() => {
             }
         })
 }, 500);
+
+
 
 
 
