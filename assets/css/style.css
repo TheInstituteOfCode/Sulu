@@ -795,9 +795,6 @@ body.burgers-open, body.burgers-open html {
 .flex-nowrap {
   flex-wrap: nowrap;
 }
-.items-start {
-  align-items: flex-start;
-}
 .items-end {
   align-items: flex-end;
 }
@@ -955,6 +952,9 @@ body.burgers-open, body.burgers-open html {
 }
 .pl-4 {
   padding-left: 1rem;
+}
+.pl-\[5vw\] {
+  padding-left: 5vw;
 }
 .pr-16 {
   padding-right: 4rem;
