@@ -795,9 +795,6 @@ body.burgers-open, body.burgers-open html {
 .flex-nowrap {
   flex-wrap: nowrap;
 }
-.items-start {
-  align-items: flex-start;
-}
 .items-end {
   align-items: flex-end;
 }
@@ -856,11 +853,24 @@ body.burgers-open, body.burgers-open html {
   border-top-width: 2px;
   border-bottom-width: 2px;
 }
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
 .border-b-2 {
   border-bottom-width: 2px;
 }
 .border-r-2 {
   border-right-width: 2px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-black {
   --tw-border-opacity: 1;
@@ -1038,6 +1048,14 @@ body.burgers-open, body.burgers-open html {
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.placeholder\:text-white::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.placeholder\:text-white::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 @media (min-width: 640px) {
   .sm\:w-2\/5 {
