@@ -73,11 +73,17 @@
 
      console.log(changeImage)
 
-     next.addEventListener('click', () => {
-         changeImage(1)
-        })
+     if (next) {
+         next.addEventListener('click', () => {
+             changeImage(1)
+            })
+    
+         prev.addEventListener('click', () => { changeImage(images.length - 1) })
 
-     prev.addEventListener('click', () => { changeImage(images.length - 1) })
+     } else {
+        console.log(gal, 'no gallery')
+     }
+
 
      console.log(changeImage)
 
