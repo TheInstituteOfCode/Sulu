@@ -1,6 +1,19 @@
 ---
 layout: default
 title: Homepage
+features:
+    -   title:  FAST TURNAROUND
+        icon: clock-rotate-right
+        description: We offer guaranteed turnaround on all images, or your money back.
+    - title:  High end results
+      icon: fire-flame
+      description: Elevated photography that boosts conversion and stops the scroll.  
+    - title:  TAILORED TO YOU
+      icon: color-filter
+      description: From the lighting setup, to the models poses, to the final edit every step is customised to suit your brand.  
+    - title:  REMOTE PHOTOSHOOT
+      icon: camera
+      description: Send us your product and let us handle the rest, or join the shoot remotely or in-person in Bali. 
 reasons:
     -   title: HIGH-END RESULTS
         short-description: Photography that feels expensive builds trust and elevates your brand. 
@@ -94,9 +107,24 @@ featured-work-block:
 
 
 ---
+<section class="pb-0">
+    <div class="grid grid-cols-2 gap-8 border-b-2 border-black pb-[5%]">
+        <div class="">
+            <h1 class="text-2xl h-block editable">
+                Elevated studio photography
+            </h1>
+            <p class="text-sm editable">
+                Full-service creative agency in Bali that delivers high-end e-commerce & lifestyle photography with affordable, transparent pricing and a streamlined process. 
+            </p>
+            
+        </div>
+        <div class="aspect-auto: 7/5.6 rounded">
+            <img src="/assets/images/featured-3.png" alt="">
+        </div>
+    </div>
+</section>
 
-
-<section class="border-y-2 border-black">
+<!-- <section class="border-y-2 border-black">
     <div class="grid grid-cols-5">
         <div class="flex flex-col justify-center border-r-2 border-black">
             <h2 class="h-mono text-sm uppercase">OUR CLIENTS</h2>
@@ -108,64 +136,52 @@ featured-work-block:
         <span class="flex items-center justify-center">{% include icon/ing-full.html width = '96%' %}</span>
 
     </div>
+</section> -->
+
+<section class="grid grid-cols-3 gap-0 ">
+    <div class="row-span-3 border-black border-r-2">
+        <h2 class="h-mono text-md uppercase">what we do</h2>
+    </div>
+
+    {% for item in page.features limit:2 %}
+
+    <div class="p-8 border-r-2">
+        <div class="flex pt-0 py-8 border-b-2 "> 
+        <div class=""> <i class="iconoir-{{item.icon}} text-sm pr-4"></i></div>
+        <div>
+            <h3 class="text-sm uppercase">
+                {{item.title}}
+            </h3>
+            <p>
+                {{item.description}}
+            </p>
+        </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+    {% for item in page.features offset:2 %}
+
+    <div class="flex p-8 border-r-2">
+        <div class=""> <i class="iconoir-{{item.icon}} text-sm pr-4"></i></div>
+        <div>
+            <h3 class="text-sm uppercase">
+                {{item.title}}
+            </h3>
+            <p>
+                {{item.description}}
+            </p>
+        </div>
+    </div>
+
+    {% endfor %}
+
 </section>
+
+<div class="mx-[5%] border-b-2"></div>
 
 <section class="grid grid-cols-3 gap-8">
-    <div class="row-span-3 border-r-2 border-black">
-        <h2 class="h-mono text-sm uppercase">what we do</h2>
-    </div>
-    <div class="flex gap-8">
-        <div class="pt-4">{% include icon/watch.html width='3rem'%}</div>
-        <div>
-            <h3 class="text-sm">
-                E-COMM
-            </h3>
-            <p>
-                We are a digital agency from Bali and we love xyz.
-            </p>
-        </div>
-    </div>
-    <div class="flex gap-8">
-        <div class="pt-4">{% include icon/watch.html width='3rem'%}</div>
-
-        <div>
-            <h3 class="text-sm">
-                E-COMM
-            </h3>
-            <p>
-                We are a digital agency from Bali and we love xyz.
-            </p>
-        </div>
-    </div>
-    <div class="col-span-2 border-b-2 border-black"></div>
-    <div class="flex gap-8">
-        <div class="pt-4">{% include icon/watch.html width='3rem'%}</div>
-        <div>
-            <h3 class="text-sm">
-                E-COMM
-            </h3>
-            <p>
-                We are a digital agency from Bali and we love xyz.
-            </p>
-        </div>
-    </div>
-    <div class="flex gap-8">
-        <div class="pt-4">{% include icon/watch.html width='3rem'%}</div>
-
-        <div>
-            <h3 class="text-sm">
-                E-COMM
-            </h3>
-            <p>
-                We are a digital agency from Bali and we love xyz.
-            </p>
-        </div>
-    </div>
-
-</section>
-
-
-<section class="grid grid-cols-3 gap-8 border-top-2 border-black">
     <div class="row-span-3 border-r-2 border-black pr-8">
         <h2 class="text-md">FEATURED WORK</h2>
         <p>We are a digital agency from Bali and we love xyz.</p>

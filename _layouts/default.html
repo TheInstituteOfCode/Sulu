@@ -15,58 +15,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:opsz,wght@14..32,100..900&family=Questrial&display=swap" rel="stylesheet">
 
+<!-- Iconnoir fonts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
+
 <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
 </head>
 
 <body>
-    <header class="mb-8 relative">
-        <div class="">
+    <header class="p-[5%] pb-0">
             <nav class="flex justify-end items-center border-b-2 border-black pb-8 mb-8">
                 <span class="burger-button md:hidden z-50"></span>
-                <span class="border-r-2 border-black py-2 pr-4 mr-4 hidden md:inline-block">
+                <span class="border-r-2 border-black py-2 pr-8 mr-8 hidden md:inline-block">
                 {% for link in site.data.navigation.header %}
                 <a href="{{link.link}}" class="ml-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
                 {% endfor %}
             </span>
-            <a href="" class="p-2 border border-black rounded-full mr-4 hidden md:inline-flex">
+            <a href="" class="p-2 border-2 border-black rounded-full mr-4 hidden md:inline-flex">
                     {% include icon/facebook.html width = '1.3rem' %}
             </a>
-            <a href="" class="p-2 border border-black rounded-full hidden md:inline-flex mr-4">
+            <a href="" class="p-2 border-2 border-black rounded-full hidden md:inline-flex mr-4">
                 {% include icon/instagram.html width = '1.3rem' %}
             </a>
-            <a href="" class="p-2 border border-black rounded-full hidden md:inline-flex">
+            <a href="" class="p-2 border-2 border-black rounded-full hidden md:inline-flex">
                 {% include icon/whatsApp.html width = '1.3rem' %}
             </a>
             
-            </nav>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="pr-16">
-                    <h1 class="text-2xl h-block">
-                        We are a digital agency from Bali.
-                    </h1>
-                    <p class="text-sm">
-                        We are a digital agency from Bali and we love xyz.
-                    </p>
-                </div>
-                <div class="aspect-auto: 7/5.6 rounded">
-                    <img src="/assets/images/featured-3.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="burger-menu md:hidden fixed top-0 left-[100vw] bg-white/50 w-full h-screen p-8 transition-all duration-300 ease-in-out z-30 text-center pt-40">
+        </nav>
+        <div class="burger-menu md:hidden fixed top-0 left-[100vw] bg-white/95 w-full h-screen p-8 transition-all duration-300 ease-in-out z-30 text-center pt-40">
             <div class="flex flex-col justify-center items-center gap-8">
                 {% for link in site.data.navigation.header %}
                 <a href="{{link.link}}" class="mb-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
                 {% endfor %}
-            <a href="" class="p-2 border border-black rounded-full inline-flex">
+            <a href="" class="p-2 border-2 border-black rounded-full inline-flex">
                     {% include icon/facebook.html width = '1.3rem' %}
             </a>
-            <a href="" class="p-2 border border-black rounded-full inline-flex">
+            <a href="" class="p-2 border-2 border-black rounded-full inline-flex">
                 {% include icon/instagram.html width = '1.3rem' %}
             </a>
-            <a href="" class="p-2 border border-black rounded-full inline-flex">
+            <a href="" class="p-2 border-2 border-black rounded-full inline-flex">
                 {% include icon/whatsApp.html width = '1.3rem' %}
             </a>
             </div>
