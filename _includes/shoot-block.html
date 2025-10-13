@@ -1,15 +1,15 @@
 <div class="dialog-grid-button shrink-0 w-5/6 md:w-2/7">
-                <div class="relative rounded mb-2" style="aspect-ratio: 45/55;">
+                <div class="relative rounded mb-4" style="aspect-ratio: 45/55;">
                     <span class="text-xs bg-white rounded-lg absolute top-4 right-4 p-2">{{shoot.short-pricing}} </span>
-                    <img class="rounded-2xl" src="{{shoot.featured-images[0].image}}" alt="{{shoot.featured-images[0].alt}}">
+                    <img class="rounded-2xl aspect-4/5 w-full object-cover" src="{{shoot.featured-images[0].image}}" alt="{{shoot.featured-images[0].alt}}">
                 </div>
                 <h2 class="text-[1.2rem]">{{shoot.name}}</h2>
                 <p class="text-xs">{{shoot.short-description}}</p>
             </div>
 
             <dialog class="m-auto">
-                <div class="md:grid w-[80vw] md:h-[80vh] overflow-scroll" style="grid-template-columns: 400px 1fr;">
-                <div class="relative gallery-image-holder h-[80vh] md:order-2">
+                <div class="md:grid w-[80vw] md:h-[90vh] overflow-scroll" style="grid-template-columns: 400px 1fr;">
+                <div class="relative gallery-image-holder h-[90vh] md:order-2">
                         {% for image in shoot.featured-images %}
                             <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
                         {% endfor %}
