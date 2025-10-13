@@ -2,6 +2,7 @@
 categories: 
     - model 
 name: Headless Model Photography
+vertical-text: Headless Model Photography
 vertical-font-vh: 5vh
 short-description: Timeless unrecognizable photography to keep the focus on your product. 
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>

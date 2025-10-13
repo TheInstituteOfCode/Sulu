@@ -2,7 +2,8 @@
 categories: 
     - product 
 name: Watch & Jewellery Photography
-vertical-font-vh: 5vh
+vertical-text: Watch & Jewellery Photography
+vertical-font-vh: 4.5vh
 short-description: High-end photography for shiny objects, with a reflection or none at all - it’s up to you.
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
 short-pricing: from $45 per image 

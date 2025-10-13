@@ -2,6 +2,7 @@
 categories: 
     - product 
 name: Ghost Manequin Photography
+vertical-text: Ghost Manequin Photography
 vertical-font-vh: 5vh
 short-description: Your clothing fitted on an invisible manequin, perfectly fitted and lit.
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>

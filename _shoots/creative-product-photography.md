@@ -2,6 +2,7 @@
 categories: 
     - creative 
 name: Creative Product Photography
+vertical-text: Creative Product Photography
 vertical-font-vh: 5vh
 short-description: Taking product photography to the next level with more visual variety, styled scenes, interesting props and backdrops.
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>

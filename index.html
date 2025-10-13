@@ -21,8 +21,6 @@ reasons:
         images:
             -   image: /assets/images/classic-model.jpg
                 alt: A
-            -   image: /assets/images/ghost.jpg
-                alt: b
     -   title: TAILORED TO YOU
         short-description: Photography that feels expensive builds trust and elevates your brand. 
         long-description: >
@@ -437,10 +435,12 @@ featured-work-block:
                         <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
                     {% endfor %}
 
+                    {% if reason.images.size > 1 %}
                     <div class="absolute bottom-4 right-4 flex gap-1">
                         <div class="next py-4 px-5 border border-dark rounded-full"> <i class="iconoir-arrow-left align-middle" aria-hidden="true"></i> </div>
                         <div class="prev py-4 px-5 border border-dark rounded-full bg-dark text-white"> <i class="iconoir-arrow-right align-middle" aria-hidden="true"></i> </div>
                     </div>
+                    {% endif %} 
                 </div>
                 <div class="p-8 md:basis-[60%] flex-shrink-0 basis-full">
                     <div class="flex flex-col justify-between h-full">
@@ -472,9 +472,11 @@ featured-work-block:
     console.log(featuredGalleries, 'look here')
 
     featuredGalleries.forEach(gal => {
+    let images = gal.querySelectorAll('.gallery-image-holder img')
+    if (images.length < 2 ) {
+        
     let targetImages = gal.querySelector('.featured-target-img')
     let targetText = gal.querySelector('.featured-target-text')
-    let images = gal.querySelectorAll('.gallery-image-holder img')
     let activeImage = 0
     let next = gal.querySelector('.next')
     let prev = gal.querySelector('.prev')
@@ -509,7 +511,7 @@ featured-work-block:
 
     //  console.log(changeImage)
 
-
+    }
 //   console.log(next,prev)
     })
 </script>
