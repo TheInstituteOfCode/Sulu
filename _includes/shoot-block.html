@@ -1,13 +1,13 @@
-<div class="dialog-grid-button shrink-0 w-1/3">
+<div class="dialog-grid-button shrink-0 w-5/6 md:w-2/7">
                 <div class="relative rounded mb-2" style="aspect-ratio: 45/55;">
                     <span class="text-xs bg-white rounded-lg absolute top-4 right-4 p-2">{{shoot.short-pricing}} </span>
                     <img class="rounded-2xl" src="{{shoot.featured-images[0].image}}" alt="{{shoot.featured-images[0].alt}}">
                 </div>
-                <h2>{{shoot.name}}</h2>
-                <p>{{shoot.short-description}}</p>
+                <h2 class="text-[1.2rem]">{{shoot.name}}</h2>
+                <p class="text-xs">{{shoot.short-description}}</p>
             </div>
 
-            <dialog>
+            <dialog class="m-auto">
                 <div class="md:grid w-[80vw] md:h-[80vh] overflow-scroll" style="grid-template-columns: 400px 1fr;">
                 <div class="relative gallery-image-holder h-[80vh] md:order-2">
                         {% for image in shoot.featured-images %}
@@ -19,8 +19,8 @@
 
                         {% if shoot.featured-images.size > 1 %}
                         <div class="absolute bottom-4 right-4 flex gap-1">
-                            <div class="next py-4 px-5 border border-black rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
-                            <div class="prev py-4 px-5 border border-black rounded-full bg-black"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+                            <div class="next py-4 px-5 border border-dark rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                            <div class="prev py-4 px-5 border border-dark rounded-full bg-dark"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
                         </div>
                         {% endif %}
                     </div>

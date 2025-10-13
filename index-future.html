@@ -115,57 +115,6 @@ featured-work-block:
 
 
 ---
-
-
-    <header class="p-[5%] pb-0 ">
-      <div class="flex justify-between border-b-2 border-dark">
-            <h2 class="mb-0 pt-4"> Suluh Studios</h2>
-            <nav class="flex justify-end items-center pb-8">
-                <span class="burger-button lg:hidden z-50"></span>
-                <span class="border-r-2 border-dark py-2 pr-8 mr-8 hidden lg:inline-block">
-                
-
-                {% for link in site.data.navigation.header %}
-                {% if link.featured %}
-                <a href="{{link.link}}" class="ml-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
-                {% endif %}
-                {% endfor %}
-            </span> 
-            <a href="" class="p-2 border-2 border-dark rounded-full mr-4 hidden lg:inline-flex">
-                    {% include icon/facebook.html width = '1.3rem' %}
-            </a>
-            <a href="" class="p-2 border-2 border-dark rounded-full hidden lg:inline-flex mr-4">
-                {% include icon/instagram.html width = '1.3rem' %}
-            </a>
-            <a href="" class="p-2 border-2 border-dark rounded-full hidden lg:inline-flex">
-                {% include icon/whatsApp.html width = '1.3rem' %}
-            </a>
-            
-        </nav>
-
-
-        <!-- Burger Menu -->
-        <div class="burger-menu sm:hidden fixed top-0 left-[100vw] bg-white/95 w-full h-screen p-8 transition-all duration-300 ease-in-out z-30 text-center pt-40">
-            <div class="flex flex-col justify-center items-center gap-8">
-                {% for link in site.data.navigation.header %}
-                <a href="{{link.link}}" class="mb-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
-                {% endfor %}
-            <a href="" class="p-2 border-2 border-dark rounded-full inline-flex">
-                    {% include icon/facebook.html width = '1.3rem' %}
-            </a>
-            <a href="" class="p-2 border-2 border-dark rounded-full inline-flex">
-                {% include icon/instagram.html width = '1.3rem' %}
-            </a>
-            <a href="" class="p-2 border-2 border-dark rounded-full inline-flex">
-                {% include icon/whatsApp.html width = '1.3rem' %}
-            </a>
-            </div>
-
-        </div>
-        </div>
-    </header>
-
-
 <section class="pb-0">
     <div class="grid lg:grid-cols-2 gap-8 border-b-2 border-dark pb-[5%] items-end">
         <div class="">
@@ -204,8 +153,8 @@ featured-work-block:
 
     {% for item in page.features limit:2 %}
 
-    <div class="flex lg:p-8 lg:border-r-2">
-        
+    <div class="lg:p-8 lg:border-r-2">
+        <div class="lg:pt-0 lg:py-8 lg:border-b-2 "> 
         <div class="hidden lg:block"> <i class="iconoir-{{item.icon}} text-sm pr-4"></i></div>
         <div>
             <h3 class="text-sm uppercase">

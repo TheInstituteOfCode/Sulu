@@ -1,13 +1,13 @@
 header:
-  - name: work
+  - name: work with us
     link: /work
     featured: false
-  - name: work
+  - name: portfolio
     link: /work
     featured: false
-  - name: work
-    link: /work
+  - name: studios
+    link: /studios
     featured: false
-  - name: SPECIAL RATES
-    link: /work
+  - name: Plan your shoot
+    link: /contact
     featured: true

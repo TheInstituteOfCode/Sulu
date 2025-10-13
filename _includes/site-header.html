@@ -1,0 +1,59 @@
+    <header class="p-[5%] pb-0 ">
+      <div class="flex justify-between border-b-2 border-dark">
+            <h2 class="mb-0 pt-4"> Suluh Studios</h2>
+            <nav class="flex justify-end items-center pb-8">
+                <span class="burger-button lg:hidden z-50"></span>
+                <span class="border-r-2 border-dark py-2 pr-8 mr-8 hidden lg:inline-block">
+                
+                <span class="ml-4"> shoot types </span>
+                <div class="hidden "> 
+                    {% for type in site.shoots %}
+                    <a href="{{type.url}}">{{type.shoot-type}}</a>
+                    {% endfor %}
+                </div>
+
+                {% for link in site.data.navigation.header %}
+                {% unless link.featured %}
+                <a href="{{link.link}}" class="ml-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
+                {% endunless %}
+                {% endfor %}
+
+                {% for link in site.data.navigation.header %}
+                {% if link.featured %}
+                <a href="{{link.link}}" class="ml-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
+                {% endif %}
+                {% endfor %}
+            </span> 
+            <a href="" class="p-2 border-2 border-dark rounded-full mr-4 hidden lg:inline-flex">
+                    {% include icon/facebook.html width = '1.3rem' %}
+            </a>
+            <a href="" class="p-2 border-2 border-dark rounded-full hidden lg:inline-flex mr-4">
+                {% include icon/instagram.html width = '1.3rem' %}
+            </a>
+            <a href="" class="p-2 border-2 border-dark rounded-full hidden lg:inline-flex">
+                {% include icon/whatsApp.html width = '1.3rem' %}
+            </a>
+            
+        </nav>
+
+
+        <!-- Burger Menu -->
+        <div class="burger-menu sm:hidden fixed top-0 left-[100vw] bg-white/95 w-full h-screen p-8 transition-all duration-300 ease-in-out z-30 text-center pt-40">
+            <div class="flex flex-col justify-center items-center gap-8">
+                {% for link in site.data.navigation.header %}
+                <a href="{{link.link}}" class="mb-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
+                {% endfor %}
+            <a href="" class="p-2 border-2 border-dark rounded-full inline-flex">
+                    {% include icon/facebook.html width = '1.3rem' %}
+            </a>
+            <a href="" class="p-2 border-2 border-dark rounded-full inline-flex">
+                {% include icon/instagram.html width = '1.3rem' %}
+            </a>
+            <a href="" class="p-2 border-2 border-dark rounded-full inline-flex">
+                {% include icon/whatsApp.html width = '1.3rem' %}
+            </a>
+            </div>
+
+        </div>
+        </div>
+    </header>

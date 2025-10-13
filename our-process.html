@@ -1,0 +1,49 @@
+---
+layout: default
+title: Our Process
+---
+
+
+
+<section class="">
+    <div class="">
+        <h2 class="text-xl h-block">Seamless from start to finish. </h2>
+        <h3 class="md:text-md">Our process & turnaround times</h3>
+        <p>We try to make the process of creating gorgeous images for your brand as seamless as possible, so you can spend more time marketing, designing or curating your brand and less time worrying about your content. </p>
+    </div>
+    <div class="grid md:grid-cols-4 gap-6 overflow-scroll mb-8">
+        {% for reason in page.reasons-2 %}
+        <div class="flex-shrink-0 flex-grow-0 p-4 bg-dark text-white rounded-3xl flex flex-col {% if forloop.first %} active {% endif %} min-h-[35vh]" data-scroll-number="{{forloop.index0}}" >
+            <h4 class="uppercase text-white/50 text-base text-right h-mono"> step {% if forloop.index < 10 %}0{% endif %}{{forloop.index}}</h4>
+            <h3 class="mt-auto">{{reason.title}}</h2>
+            <p class="text-white">{{reason.short-description}}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="text-right mb-[5vw]">
+            <a class="px-2 py-2 pl-6 rounded-full text-white bg-dark inline-block">plan your shoot <img class="inline-block ml-6" style="width:2.8rem" src="/assets/images/quick-arrow.svg" alt=""> </a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 pt-[5%]">
+        <div class="col-span-full"> 
+            <h2 class="text-xl h-block mb-8 mt-12">Shipping options. </h2>
+            <p> We know that the idea of sending your products to Bali might sound complicated or stressful but after living and running an agency here for 10 years, we have the know-how to make that process as seamless as possible. </p>
+        </div>
+        <div>
+            <div class="flex-shrink-0 flex-grow-0 p-8 bg-dark text-white rounded-3xl md:flex flex-col {% if forloop.first %} active {% endif %} min-h-[35vh]" data-scroll-number="{{forloop.index0}}" >
+                <h4 class="uppercase text-white/50 text-base text-right mb-8 h-mono"> OPTION 1</h4>
+                <h3 class="mt-auto">DELIVER YOUR PRODUCTS DIRECT TO THE STUDIO</h2>
+                <p class="text-white">With options to drop off your products* up to 20 days in advance to our secure dry storage facility via in-person or with your own shipping methods, it’s easy and convenient. </p>
+                <a href="" class="button-rounded button-light mt-8">GET IN TOUCH</a>
+            </div>
+        </div>
+        <div>
+            <div class="flex-shrink-0 flex-grow-0 p-8 bg-dark text-white rounded-3xl md:flex flex-col {% if forloop.first %} active {% endif %} min-h-[35vh]" data-scroll-number="{{forloop.index0}}" >
+                <h4 class="uppercase text-white/50 text-base text-right mb-8 h-mono"> OPTION 2</h4>
+                <h3 class="mt-auto">USE ONE OF OUR TRUSTED INTERNATIONAL PARTNERS  </h2>
+                <p class="text-white">We have built a network of trusted global shipping partners that makes the process of sending your products fast, secure and most importantly, as stress free as possible.  </p>
+                <a href="" class="button-rounded button-light mt-8">GET IN TOUCH</a>
+            </div>
+        </div>
+                
+    </div>
+</section>
