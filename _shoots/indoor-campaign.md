@@ -2,6 +2,7 @@
 categories:
     - creative
 name: 'Indoor campaign at the studio '
+order: 3
 vertical-font-vh: 5vh
 short-description: >-
     Bedroom scene? Sure. Modern living room? We’ve got you. Want to turn our

@@ -2,6 +2,7 @@
 categories:
     - product
 name: Furniture Photography
+order: 4
 vertical-font-vh: 5vh
 short-description: >-
     Rugs, furniture, and other big bulky products we’ve got plenty of space to

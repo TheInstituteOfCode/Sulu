@@ -2,6 +2,7 @@
 categories:
     - creative
 name: Food & Cookbook Photography
+order: 4
 vertical-font-vh: 5vh
 short-description: >-
     Show off your food related products in action shots or lifestyle scenes, or

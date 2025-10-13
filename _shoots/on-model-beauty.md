@@ -2,6 +2,7 @@
 categories:
     - model
 name: On Model Beauty & Jewellery Shots
+order: 3
 vertical-font-vh: 5vh
 short-description: >-
     Add a little personality to your brand with close up shots of your product

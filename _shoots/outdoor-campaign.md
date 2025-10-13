@@ -2,6 +2,7 @@
 categories:
     - creative
 name: Outdoor campaign at the studio
+order: 3
 vertical-font-vh: 5vh
 short-description: >-
     Step outside and you’ll find textured limestone walls, lush gardens, a

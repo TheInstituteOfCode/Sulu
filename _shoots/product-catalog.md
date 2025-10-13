@@ -2,6 +2,7 @@
 categories:
     - product
 name: Product Catalog Photography
+order: 1
 vertical-text: Product Catalog Photography
 vertical-font-vh: 5vh
 short-description: lorem consectetur accusantium aliquid

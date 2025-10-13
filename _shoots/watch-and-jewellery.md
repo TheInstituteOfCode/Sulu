@@ -2,6 +2,7 @@
 categories:
     - product
 name: Watch & Jewellery Photography
+order: 3
 vertical-font-vh: 5vh
 short-description: >-
     High-end photography for shiny objects, with a reflection or none at all -

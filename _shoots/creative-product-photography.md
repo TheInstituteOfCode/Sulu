@@ -2,6 +2,7 @@
 categories:
     - creative
 name: Creative Product Photography
+order: 1
 vertical-font-vh: 5vh
 short-description: >-
     Taking product photography to the next level with more visual variety,

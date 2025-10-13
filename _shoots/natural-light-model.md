@@ -2,6 +2,7 @@
 categories:
     - model
 name: 'Natural light model photography '
+order: 4
 vertical-font-vh: 5vh
 short-description: >-
     Shoot your catalog outside, head up to our rooftop or to our textured

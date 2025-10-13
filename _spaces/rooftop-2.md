@@ -2,12 +2,13 @@
 categories: 
     - outdoor
 name: Rooftop No.2
+order: 6
 vertical-font-vh: 5vh
-short-description: It’s the classic e-commerce style, but elevated with perfect lighting and seamless editing. 
+short-description: Our hand made terracotta tile rooftop will have you glowing like a day in the south of Italy.
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
 short-pricing: coming soon
 featured-images: 
-    - image: /assets/images/classic-model.jpg
+    - image: /assets/images/sulu-studio-space-10.jpg
       alt: A
 faq:
     -   q: What we do

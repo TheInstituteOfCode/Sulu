@@ -2,12 +2,13 @@
 categories: 
     - indoor
 name: 'Set #05'
+order: 5
 vertical-font-vh: 5vh
-short-description: It’s the classic e-commerce style, but elevated with perfect lighting and seamless editing. 
+short-description: Choose from our extensive array of fabrics from soft linens to sheer chiffon, for the perfect soft backdrop
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
-short-pricing: from $55 per image 
+short-pricing: 
 featured-images: 
-    - image: /assets/images/classic-model.jpg
+    - image: /assets/images/sulu-studio-space-9.jpg
       alt: A
 faq:
     -   q: What we do
