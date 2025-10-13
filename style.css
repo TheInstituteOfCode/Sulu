@@ -67,7 +67,7 @@ html.lockScroll,html.lockScroll body {
         background-color: #F9F7F4;
     }
 
-    p {
+    p , .p{
         line-height: 1.4;
         margin-bottom: 1rem;
         color: rgb(120,120,120);
@@ -79,6 +79,10 @@ html.lockScroll,html.lockScroll body {
         line-height: 1.1;
         margin-bottom: 0.5em;
         text-wrap: balance;
+    }
+
+    ul,li {
+        color: inherit
     }
 
     .h-block {
