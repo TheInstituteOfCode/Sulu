@@ -14,7 +14,7 @@
                             <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
                         {% endfor %}
                         <div class="absolute right-4 flex items-center z-20 h-full">
-                            <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.name}}</h3>
+                            <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.vertical-text | default: shoot.name}}</h3>
                         </div>
 
                         {% if shoot.featured-images.size > 1 %}
