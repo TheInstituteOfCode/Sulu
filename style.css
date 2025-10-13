@@ -14,7 +14,8 @@
   --color-lightestcream: var(--cream-200);
 
   /* Font sizes */
-  --text-tiny: 0.85rem;
+  --text-tiny: 0.8rem;
+  --text-xs: 0.9rem;
   --text-base: 1rem;
   --text-sm: 1.5rem;
   --text-sm--line-height: 1.1;
