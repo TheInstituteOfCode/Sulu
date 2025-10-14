@@ -47,45 +47,88 @@ featured-images:
         text-color-light: false
 faq:
     -
-        q: What we do
+        q: Indoor Lifestyle Campaign
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><p>Showcase your beauty products in use with our 
-            model photography services.</p><p>First we’ll have a call to run you
-            through the process and make sure you understand exactly that to
-            expect, we’ll learn your preferences.</p><p> At this stage you’ll
-            have lots of options to do cool shit and get really excited about
-            your product.</p>
+            <p>Bring your brand to life through a fully styled, editorial shoot designed to feel immersive, authentic, and distinctly you.</p>
+            <p>Our indoor lifestyle campaigns transform Suluh’s studio spaces into creative sets that tell your brand story — from bright, minimalist interiors to rich, cinematic scenes. Whether you want a cozy home aesthetic, a modern living space, or a styled environment that feels straight out of a magazine, our team will plan and produce every detail to perfection.</p>
+            <p>It’s the perfect choice for brands that want to go beyond simple product shots and create a cohesive visual campaign that connects.</p>
     -
-        q: How we do it
+        q: Perfect For
         a: >-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>This style of shoot is ideal for:</p>
+            <ul>
+                <li>Fashion and lifestyle brands</li>
+                <li>Beauty and skincare brands</li>
+                <li>Homeware and interior brands</li>
+                <li>Food and beverage brands</li>
+                <li>Sustainable or wellness-focused products</li>
+            </ul>
+            <p>Commonly used for:</p>
+            <ul>
+                <li>Brand and campaign launches</li>
+                <li>Website hero imagery and lookbooks</li>
+                <li>Social media and ad campaigns</li>
+                <li>Press kits and editorial storytelling</li>
+            </ul>
+    -
+        q: How It Works
+        a: >-
+            <p>Our lifestyle campaigns are designed for full creative flexibility — so you can bring your concept to life exactly the way you imagine it.</p>
+            <ol>
+                <li><strong>Plan your shoot:</strong> We’ll start with a creative briefing call to understand your brand vision, target audience, and campaign goals. From there, our creative team develops the concept and visual direction.</li>
+                <li><strong>Pre-production:</strong> We’ll create a detailed moodboard and shoot plan covering set design, lighting, shotlist, and styling notes. You can choose from our existing studio spaces and props or have us build a custom set just for your campaign.</li>
+                <li><strong>Shoot day:</strong> Your shoot will include a full creative team — lead photographer, creative director, production manager, and 2x shoot assistants — all working to deliver a cohesive, high-impact result. You’ll have complete flexibility throughout the day to experiment with poses, angles, and lighting setups.</li>
+                <li><strong>Review & delivery:</strong> Once your final images are edited and retouched, we’ll upload them to a private gallery for your review and approval before delivery.</li>
+            </ol>
     -
         q: Pricing
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><ul><li>Aliquam tincidunt mauris eu
-            risus.</li><li>Vestibulum auctor dapibus neque.</li> <li>Nunc
-            dignissim risus id metus.</li><li>Cras ornare tristique
-            elit.</li></ul><p> At this stage you’ll have lots of options to do
-            cool shit and get really excited about your product.</p>
+            <p>Lifestyle campaigns are priced per hour of <strong>shoot time</strong>, giving you creative freedom to build your dream shoot while we handle every detail behind the scenes. Each session includes your full creative team, studio rental, and all pre- and post-production.</p>
+            <p><strong>Mini Shoot</strong><br>1 hour setup + 2 hours shoot time = $1,650 ($550/hour)</p>
+            <p><strong>Half Day Shoot</strong><br>1 hour setup + 4 hours shoot time = $2,500 ($500/hour)</p>
+            <p><strong>Full Day Shoot</strong><br>1 hour setup + 8 hours shoot time = $4,050 ($450/hour)</p>
+            <p>Model sourcing is included in all packages — our team will help you find the perfect talent to suit your brand aesthetic. Professional model and HMUA fees are quoted separately.</p>
+            <p><a href="#">See full pricing details below.</a></p>
     -
-        q: Props & Backdrops
+        q: Inclusions
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><p>Showcase your beauty products in use with our 
-            model photography services.</p><p>First we’ll have a call to run you
-            through the process and make sure you understand exactly that to
-            expect, we’ll learn your preferences.</p><p> At this stage you’ll
-            have lots of options to do cool shit and get really excited about
-            your product.</p>
+            <p>Every lifestyle campaign includes:</p>
+            <ul>
+                <li>Creative briefing call & moodboard creation</li>
+                <li>Full creative team (photographer, creative director, production manager, 2x assistants)</li>
+                <li>Exclusive access to all Suluh indoor studio spaces and complimentary props</li>
+                <li>Lighting equipment and setup</li>
+                <li>Professional editing and retouching</li>
+                <li>5-year image license</li>
+            </ul>
+            <p>Everything is handled in-house to keep the creative process seamless and the final result cohesive and on-brand.</p>
+            <p><a href="#">See full pricing details below.</a></p>
+    -
+        q: Customise Your Shoot
+        a: >-
+            <p>Your campaign should look and feel like your brand — not anyone else’s.</p>
+            <p>You can customise every detail, including:</p>
+            <ul>
+                <li>Set design and prop selection</li>
+                <li>Lighting and mood</li>
+                <li>Backdrops and textures</li>
+                <li>Model posing and direction</li>
+                <li>Styling and wardrobe</li>
+            </ul>
+            <p>Optional add-ons include:</p>
+            <ul>
+                <li>Custom-built sets</li>
+                <li>Prop and wardrobe styling</li>
+                <li>Additional creative direction or campaign strategy support</li>
+            </ul>
+    -
+        q: Let Us Plan Your Shoot
+        a: >-
+            <p>Not sure where to start? Our creative team can help you design the perfect lifestyle campaign from concept to final delivery.</p>
+            <p>With over a decade of experience producing editorial campaigns and branded content, we’ll guide you through everything — from creative direction to execution.</p>
+            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
+    -
+        q: Got More Questions?
+        a: >-
+            <p>Ask us anything — we’re happy to help clarify pricing, timelines, workflow, or review your moodboard and let you know what’s possible for your shoot.</p>
 ---

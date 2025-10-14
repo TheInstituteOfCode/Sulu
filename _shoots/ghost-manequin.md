@@ -34,45 +34,80 @@ featured-images:
         text-color-light: false
 faq:
     -
-        q: What we do
+        q: Ghost Mannequin Photography
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><p>Showcase your beauty products in use with our 
-            model photography services.</p><p>First we’ll have a call to run you
-            through the process and make sure you understand exactly that to
-            expect, we’ll learn your preferences.</p><p> At this stage you’ll
-            have lots of options to do cool shit and get really excited about
-            your product.</p>
+            <p>Your clothing, perfectly fitted on an invisible mannequin, styled and lit to bring out its shape and texture.</p>
+            <p>We capture seamless, professional images that show how your garments fit and flow — ideal for fashion brands who want a clean, elevated look across their collections.</p>
     -
-        q: How we do it
+        q: Perfect For
         a: >-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>This style of imagery is ideal for:</p>
+            <ul>
+                <li>E-commerce websites and online stores</li>
+                <li>Fashion lookbooks and digital catalogues</li>
+                <li>Marketplace listings (Shopify, Zalora, Amazon, etc.)</li>
+                <li>Press kits and line sheets</li>
+                <li>Social media marketing</li>
+            </ul>
+            <p>Commonly used for:</p>
+            <ul>
+                <li>Fashion brands</li>
+                <li>Activewear brands</li>
+                <li>Swimwear & lingerie</li>
+            </ul>
+    -
+        q: How It Works
+        a: >-
+            <p>Our process is designed to be seamless from start to finish:</p>
+            <ol>
+                <li><strong>Plan your shoot:</strong> We’ll start with a call with one of our experienced shoot producers to get to know your brand, collection, and goals for the shoot, and walk you through exactly what to expect.</li>
+                <li><strong>Moodboard & shotlist:</strong> Next, we’ll create a detailed shoot plan that covers everything from mannequin styling and garment preparation to backdrop colours, lighting style, and angles. You’ll see exactly what’s being captured before we start, so there are no surprises.</li>
+                <li><strong>Send your garments:</strong> Drop them off to our Bali studio or ship them through our trusted local and international partners. Each piece will be steamed, styled, and ready to shoot.</li>
+                <li><strong>We shoot:</strong> Our team handles everything from lighting and styling to capturing every angle according to your shotlist, ensuring each garment is perfectly fitted and evenly lit.</li>
+                <li><strong>Review & delivery:</strong> Once edited, your images are uploaded to a private gallery for your review and final approval before delivery.</li>
+            </ol>
+            <p>Throughout the process, we keep you updated every step of the way, so you can relax knowing your shoot is in expert hands.</p>
+            <p><a href="#">See the detailed process here.</a></p>
     -
         q: Pricing
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><ul><li>Aliquam tincidunt mauris eu
-            risus.</li><li>Vestibulum auctor dapibus neque.</li> <li>Nunc
-            dignissim risus id metus.</li><li>Cras ornare tristique
-            elit.</li></ul><p> At this stage you’ll have lots of options to do
-            cool shit and get really excited about your product.</p>
+            <p>We offer affordable, flat rate per-image pricing for ghost mannequin photography, with a rate that already includes the studio rental, professional lighting, mannequin styling and steaming, photographer, and professional editing & retouching. It’s an end-to-end service for one simple price.</p>
+            <p>The pricing is simple — just <strong>$45 per image.</strong></p>
+            <p>You can choose how many angles and images you would like us to capture for each garment, with the average being 2–3 images (front, back, and detail) and add additional images as needed for variations or social content.</p>
+            <p>Complex garments that are time-consuming to fit and style (such as layered outfits, delicate fabrics, or asymmetrical designs) may incur a small additional styling fee, which we’ll confirm in advance.</p>
+            <p><a href="#">See full pricing details below.</a></p>
     -
-        q: Props & Backdrops
+        q: Inclusions
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><p>Showcase your beauty products in use with our 
-            model photography services.</p><p>First we’ll have a call to run you
-            through the process and make sure you understand exactly that to
-            expect, we’ll learn your preferences.</p><p> At this stage you’ll
-            have lots of options to do cool shit and get really excited about
-            your product.</p>
+            <p>Every ghost mannequin shoot includes:</p>
+            <ul>
+                <li>Steaming and professional mannequin styling</li>
+                <li>Shoot planning, moodboard & shotlist creation</li>
+                <li>Experienced photographer & photography assistant</li>
+                <li>Studio rental with professional lighting</li>
+                <li>Product preparation and fitting</li>
+                <li>Image editing and accurate colour matching</li>
+                <li>Image retouching and background consistency</li>
+                <li>Lifetime commercial license for all images</li>
+            </ul>
+            <p>Everything is handled in-house, so your final images are cohesive, polished, and ready to use across your website, social media, and print.</p>
+            <p><a href="#">See full pricing details below.</a></p>
+    -
+        q: Customise Your Shoot
+        a: >-
+            <p>Every brand has its own aesthetic, and even with ghost mannequin photography, there’s room to make it your own.</p>
+            <p>You can choose your preferred <strong>lighting style</strong>, decide how each garment is <strong>styled and positioned</strong>, and select either a <strong>transparent background</strong> or any <strong>HEX colour</strong> that suits your brand.</p>
+            <p>Our team will take care of the rest, ensuring every image is cohesive, polished, and perfectly on-brand.</p>
+    -
+        q: Let Us Plan Your Shoot
+        a: >-
+            <p>Not sure where to start? Our team can recommend the best package based on your goals and help you plan the perfect ghost mannequin shoot for your brand.</p>
+            <p>With over a decade of experience across fashion photography, marketing, and creative direction, we’ll guide you through everything — from styling and mannequin fitting to lighting and delivery timelines.</p>
+            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your collection to life.</p>
+    -
+        q: Got More Questions?
+        a: >-
+            <p>Ask us anything — we’re happy to help clarify pricing, timelines, workflow or review your moodboard and let you know what’s possible for your shoot.</p>
+
+
 ---

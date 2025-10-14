@@ -35,45 +35,80 @@ featured-images:
         text-color-light: false
 faq:
     -
-        q: What we do
+        q: Watch & Jewellery Photography
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><p>Showcase your beauty products in use with our 
-            model photography services.</p><p>First we’ll have a call to run you
-            through the process and make sure you understand exactly that to
-            expect, we’ll learn your preferences.</p><p> At this stage you’ll
-            have lots of options to do cool shit and get really excited about
-            your product.</p>
+            <p>We capture the fine details that define your craftsmanship, from the sparkle of gemstones to the precision of watch dials.</p>
+            <p>Every piece is styled, lit, and photographed with expert precision to highlight materials, texture, and shine without distraction.</p>
+            <p>Our goal is simple: to deliver elevated, on-brand imagery that feels timeless, refined, and perfectly suited for luxury products.</p>
     -
-        q: How we do it
+        q: Perfect For
         a: >-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>This style of imagery is ideal for:</p>
+            <ul>
+                <li>E-commerce websites and online stores</li>
+                <li>Brand catalogues and lookbooks</li>
+                <li>Marketplace listings (Shopify, Etsy, Amazon, etc.)</li>
+                <li>Press kits and brand decks</li>
+                <li>Social media and advertising content</li>
+            </ul>
+            <p>Commonly used for:</p>
+            <ul>
+                <li>Fine jewellery brands</li>
+                <li>Watchmakers and luxury accessories</li>
+                <li>Handmade or artisan jewellery labels</li>
+            </ul>
+    -
+        q: How It Works
+        a: >-
+            <p>Our process is designed to be seamless from start to finish:</p>
+            <ol>
+                <li><strong>Plan your shoot:</strong> We’ll start with a call with one of our experienced shoot producers to get to know your brand, collection, and goals for the shoot, and walk you through exactly what to expect.</li>
+                <li><strong>Moodboard & shotlist:</strong> Next, we’ll create a detailed shoot plan that covers everything from lighting and reflection control to background colours, angles, and styling. You’ll see exactly what’s being captured before we start so there are no surprises.</li>
+                <li><strong>Send your products:</strong> Drop them off to our Bali studio or ship them through our trusted local and international partners. Each piece will be carefully handled, cleaned, and prepared before the shoot.</li>
+                <li><strong>We shoot:</strong> Our team uses specialised lighting setups, reflectors, and macro lenses to capture every fine detail with perfect clarity, ensuring your pieces look polished and luxurious.</li>
+                <li><strong>Review & delivery:</strong> Once edited, your images are uploaded to a private gallery for your review and final approval before delivery.</li>
+            </ol>
+            <p>Throughout the process, we keep you updated every step of the way so you can relax knowing your products are in expert hands.</p>
+            <p><a href="#">See the detailed process here.</a></p>
     -
         q: Pricing
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><ul><li>Aliquam tincidunt mauris eu
-            risus.</li><li>Vestibulum auctor dapibus neque.</li> <li>Nunc
-            dignissim risus id metus.</li><li>Cras ornare tristique
-            elit.</li></ul><p> At this stage you’ll have lots of options to do
-            cool shit and get really excited about your product.</p>
+            <p>We offer affordable, flat rate per-image pricing for watch and jewellery photography, with a rate that already includes the studio rental, professional lighting, reflection control, photographer, and professional editing and retouching. It’s an end-to-end service for one simple price.</p>
+            <p>The pricing is simple: just <strong>$55 per image.</strong></p>
+            <p>You can choose how many angles and images you would like us to capture for each piece, with the average being 3 to 4 images (front, angled, close-up detail, and lifestyle variation).</p>
+            <p>Highly reflective or gemstone-intensive pieces that require advanced lighting or retouching may incur a small additional fee, which we’ll confirm with you in advance.</p>
+            <p><a href="#">See full pricing details below.</a></p>
     -
-        q: Props & Backdrops
+        q: Inclusions
         a: >-
-            <p>From skincare to makeup, showcase your beauty products in use
-            with our  model photography services. Customize the shoot to meet
-            your brand.</p><p>Showcase your beauty products in use with our 
-            model photography services.</p><p>First we’ll have a call to run you
-            through the process and make sure you understand exactly that to
-            expect, we’ll learn your preferences.</p><p> At this stage you’ll
-            have lots of options to do cool shit and get really excited about
-            your product.</p>
+            <p>Every watch and jewellery shoot includes:</p>
+            <ul>
+                <li>Shoot planning, moodboard and shotlist creation</li>
+                <li>Reflection control and macro lighting setup</li>
+                <li>Experienced photographer and photography assistant</li>
+                <li>Studio rental with professional lighting</li>
+                <li>Cleaning and product preparation</li>
+                <li>Image editing, retouching and accurate colour correction</li>
+                <li>Background consistency across all images</li>
+                <li>Lifetime commercial license for all images</li>
+            </ul>
+            <p>Everything is handled in-house, so your final images are cohesive, polished, and ready to use across your website, social media, and marketing channels.</p>
+            <p><a href="#">See full pricing details below.</a></p>
+    -
+        q: Customise Your Shoot
+        a: >-
+            <p>Every brand has its own visual identity, and your jewellery and watch photography should reflect that.</p>
+            <p>You can choose your preferred lighting style, select your background colour (transparent or any HEX code), and guide the styling of each piece, whether you prefer simple flat positioning, angled shadows, or a stylised hero layout.</p>
+            <p>Our team will take care of the rest, ensuring every image feels cohesive, premium, and true to your brand.</p>
+    -
+        q: Let Us Plan Your Shoot
+        a: >-
+            <p>Not sure where to start? Our team can recommend the best package based on your goals and help you plan the perfect shoot for your jewellery or watch brand.</p>
+            <p>With over a decade of experience in product and luxury photography, we’ll guide you through everything from lighting and reflection control to styling and delivery timelines.</p>
+            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your collection to life.</p>
+    -
+        q: Got More Questions?
+        a: >-
+            <p>Ask us anything — we’re happy to help clarify pricing, timelines, workflow or review your moodboard and let you know what’s possible for your shoot.</p>
+
 ---

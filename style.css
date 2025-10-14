@@ -12,6 +12,8 @@
   --color-cream: var(--cream-400);
   --color-lightcream: var(--cream-300);
   --color-lightestcream: var(--cream-200);
+  --color-grey: var(--grey-400);
+  --color-grey-dark: var(--grey-600);
 
   /* Font sizes */
   --text-tiny: 0.8rem;
@@ -37,6 +39,8 @@
     --cream-400: #F9F7F4;
     --cream-300: #FAFAF7;
     --cream-200: #FFFFFF;
+    --grey-400: rgb(120,120,120);
+    --grey-600: rgb(90,90,90);
 }
  
 /* Custom CSS */
@@ -83,7 +87,8 @@ html.lockScroll,html.lockScroll body {
     }
 
     ul,li {
-        color: inherit
+        color: rgb(120,120,120);
+        @apply list-disc ml-4 mb-2;
     }
 
     .h-block {
@@ -223,6 +228,11 @@ body.burgers-open, body.burgers-open html {
     left: 0;
 }
 
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  backdrop-filter: blur(2px); /* Example: blur the content behind the dialog */
+}
 
 dialog:focus-visible {
     outline: none;  

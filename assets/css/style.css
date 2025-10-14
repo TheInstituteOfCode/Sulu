@@ -36,6 +36,8 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-dark: var(--dark);
+    --color-cream: var(--cream-400);
+    --color-grey-dark: var(--grey-600);
     --text-md: 2rem;
     --text-md--line-height: 1.1;
   }
@@ -543,6 +545,10 @@
     border-right-style: var(--tw-border-style);
     border-right-width: 2px;
   }
+  .border-b-1 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
@@ -550,11 +556,17 @@
   .border-dark {
     border-color: var(--color-dark);
   }
+  .border-grey-dark {
+    border-color: var(--color-grey-dark);
+  }
   .border-white {
     border-color: var(--color-white);
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-cream {
+    background-color: var(--color-cream);
   }
   .bg-dark {
     background-color: var(--color-dark);
@@ -622,6 +634,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-\[5vw\] {
     padding-block: 5vw;
@@ -756,12 +771,8 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -832,11 +843,6 @@
       display: grid;
     }
   }
-  .md\:h-\[80vh\] {
-    @media (width >= 48rem) {
-      height: 80vh;
-    }
-  }
   .md\:h-\[90vh\] {
     @media (width >= 48rem) {
       height: 90vh;
@@ -882,9 +888,9 @@
       flex-direction: row;
     }
   }
-  .md\:overflow-scroll {
+  .md\:overflow-y-scroll {
     @media (width >= 48rem) {
-      overflow: scroll;
+      overflow-y: scroll;
     }
   }
   .md\:p-0 {
@@ -1025,6 +1031,8 @@
   --cream-400: #F9F7F4;
   --cream-300: #FAFAF7;
   --cream-200: #FFFFFF;
+  --grey-400: rgb(120,120,120);
+  --grey-600: rgb(90,90,90);
 }
 :root {
   --side-gap: 5vw
@@ -1055,7 +1063,10 @@ html.lockScroll,html.lockScroll body {
     text-wrap: balance;
   }
   ul,li {
-    color: inherit;
+    color: rgb(120,120,120);
+    margin-bottom: calc(var(--spacing) * 2);
+    margin-left: calc(var(--spacing) * 4);
+    list-style-type: disc;
   }
   .h-block {
     font-family: "DM Sans", sans-serif;
@@ -1159,6 +1170,11 @@ html.lockScroll,html.lockScroll body {
   }
   .burgers-open .burger-menu {
     left: 0;
+  }
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
   }
   dialog:focus-visible {
     outline: none;
@@ -1267,11 +1283,6 @@ html.lockScroll,html.lockScroll body {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1306,7 +1317,6 @@ html.lockScroll,html.lockScroll body {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
     }
