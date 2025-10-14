@@ -19,15 +19,20 @@ featured-images:
     -
         image: /uploads/sulu-black-sand-photography-01.jpg
         alt: A
+        text-color-light: false
+        
     -
         image: /uploads/sulu-black-sand-photography-02.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-black-sand-photography-03.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-black-sand-photography-04.jpg
         alt: ''
+        text-color-light: false
 faq:
     -
         q: What we do

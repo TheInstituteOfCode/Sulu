@@ -20,21 +20,27 @@ featured-images:
     -
         image: /uploads/sulu-model-beauty-photography-01.jpg
         alt: A
+        text-color-light: true
     -
         image: /uploads/sulu-model-beauty-photography-02.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-model-beauty-photography-03.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-model-beauty-photography-04.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-model-beauty-photography-05.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-model-beauty-photography-06.jpg
         alt: ''
+        text-color-light: false
 faq:
     -
         q: What we do

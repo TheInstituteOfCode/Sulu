@@ -19,15 +19,19 @@ featured-images:
     -
         image: /assets/images/ghost.jpg
         alt: A
+        text-color-light: false
     -
         image: /uploads/sulu-ghost-manequin-photography-02.jpg
         alt: B
+        text-color-light: false
     -
         image: /uploads/sulu-ghost-manequin-photography-03.jpg
         alt: C
+        text-color-light: false
     -
         image: /uploads/sulu-ghost-manequin-photography-04.jpg
         alt: ''
+        text-color-light: false
 faq:
     -
         q: What we do

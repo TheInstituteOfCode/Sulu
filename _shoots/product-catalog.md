@@ -19,21 +19,28 @@ featured-images:
     -
         image: /assets/images/product-catalog.jpg
         alt: 1
+        text-color-light: false
     -
         image: /uploads/sulu-product-photography-01.jpg
         alt: 0
+        text-color-light: false
     -
         image: /uploads/sulu-product-photography-02.jpg
         alt: 0
+        text-color-light: false
     -
         image: /uploads/sulu-product-photography-03.jpg
         alt: 0
+        text-color-light: false
     -
         image: /uploads/sulu-product-photography-05.jpg
         alt: 0
+        text-color-light: false
+        text-color-light: true
     -
         image: /uploads/sulu-product-photography-06.jpg
         alt: 0
+        text-color-light: false
 faq:
     -
         q: What we do

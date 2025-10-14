@@ -20,15 +20,19 @@ featured-images:
     -
         image: /assets//images/jewellery.jpg
         alt: A
+        text-color-light: false
     -
         image: /uploads/sulu-watch-jewellery-photography-02.jpg
         alt: B
+        text-color-light: false
     -
         image: /uploads/sulu-watch-jewellery-photography-03.jpg
         alt: C
+        text-color-light: false
     -
         image: /uploads/sulu-watch-jewellery-photography-04.jpg
         alt: ''
+        text-color-light: false
 faq:
     -
         q: What we do

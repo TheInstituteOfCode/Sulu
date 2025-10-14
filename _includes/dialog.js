@@ -55,6 +55,7 @@
     let activeImage = 0
     let next = gal.querySelector('.next')
     let prev = gal.querySelector('.prev')
+    let verticalText = gal.querySelector('.vertical-text')
 
 
      function changeImage(n) {
@@ -63,6 +64,11 @@
         images.forEach(img => {
             if (images[activeImage] == img) {
             img.classList.add('active')
+            if (img.dataset.textColor == 'light') {
+                verticalText.style.color = '#fff'
+            } else {
+                verticalText.style.color = '#000'
+            }
             } else {
                 img.classList.remove('active')
             }

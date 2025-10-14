@@ -20,27 +20,35 @@ featured-images:
     -
         image: /assets/images/classic-model.jpg
         alt: A
+        text-color-light: false
     -
         image: /uploads/sulu-classic-catalog-photography-02.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-classic-catalog-photography-03.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-classic-catalog-photography-04.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-classic-catalog-photography-05.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-classic-catalog-photography-06.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-classic-catalog-photography-07.jpg
         alt: ''
+        text-color-light: true
     -
         image: /uploads/sulu-classic-catalog-photography-08.jpg
         alt: ''
+        text-color-light: false
 faq:
     -
         q: What we do

@@ -19,15 +19,19 @@ featured-images:
     -
         image: /assets/images/headless-model.jpg
         alt: A
+        text-color-light: false
     -
         image: /uploads/sulu-headless-model-photography-02.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-headless-model-photography-03.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-headless-model-photography-04.jpg
         alt: ''
+        text-color-light: false
 faq:
     -
         q: What we do

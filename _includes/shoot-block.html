@@ -11,7 +11,7 @@
                 <div class="md:grid w-[80vw] md:h-[90vh] overflow-scroll" style="grid-template-columns: 400px 1fr;">
                 <div class="relative gallery-image-holder h-[90vh] md:order-2">
                         {% for image in shoot.featured-images %}
-                            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt">
+                            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}">
                         {% endfor %}
                         <div class="absolute right-4 flex items-center z-20 h-full">
                             <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.vertical-text | default: shoot.name}}</h3>
@@ -45,6 +45,16 @@
                             </div>
                         </div>
                         {% endfor %}
+                        <div class="p-2">
+                            <a href="/contact" class="flex items-center p-2 justify-between uppercase bg-black rounded-full">
+                                <span class="text-white text-sm px-4">
+                                    Start project
+                                </span>
+                                <span class="px-2">
+                                    {% include icon/dialog-start-project-svg.html  %}
+                                </span>
+                            </a>
+                        </div>
                     </div>
                     
                 </div>

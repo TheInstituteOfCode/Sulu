@@ -20,18 +20,23 @@ featured-images:
     -
         image: /assets/images/furniture.jpg
         alt: A
+        text-color-light: false
     -
         image: /uploads/sulu-furniture-photography-02.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-furniture-photography-03.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-furniture-photography-04.jpg
         alt: ''
+        text-color-light: false
     -
         image: /uploads/sulu-furniture-photography-05.jpg
         alt: ''
+        text-color-light: false
 faq:
     -
         q: What we do
