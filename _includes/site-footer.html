@@ -1,0 +1,55 @@
+<footer>
+    <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div class="col-span-full lg:col-span-2">
+            <h2 class="text-lg">Suluh Studios.</h2>
+            <p>Suluh Studios is a state-of-the-art indoor & outdoor photography studio in Bali, available both as independent studio rental for your own photoshoots & as a full-service production studio for elevated e-commerce and lifestyle photoshoots. </p>
+    
+            <p>Located in Cemagi, Bali. Studio access by appointment.</p>
+            
+            <p>Project by Kelapa Creative</p>
+        </div>
+        <div class="hidden lg:block"></div>
+        <div>
+            <h3 class="text-md">SHOOTS</h3>
+            {% for shoot in site.shoots %}
+                <a class="block uppercase h-mono text-base" href="{{shoot.url}}">{{shoot.title}}</a>
+            {% endfor %}
+        </div>
+        <div>
+            <h3 class="text-md">SPACES</h3>
+            <a class="block uppercase h-mono text-base" href="/studio">
+                NATURAL LIGHT
+            </a>
+            <a class="block uppercase h-mono text-base" href="/studio">CYLORAMA</a>
+            <a class="block uppercase h-mono text-base" href="/studio">MED GARDEN</a>
+            <a class="block uppercase h-mono text-base" href="/studio">SWIMMING POOL </a>
+            <a class="block uppercase h-mono text-base" href="/studio">ETC</a>
+            <a class="block uppercase h-mono text-base" href="/studio">NATURAL LIGHT</a>
+            <a class="block uppercase h-mono text-base" href="/studio">CYLORAMA</a>
+            <a class="block uppercase h-mono text-base" href="/studio">MED GARDEN</a>
+            <a class="block uppercase h-mono text-base" href="/studio">SWIMMING POOL </a>
+            <a class="block uppercase h-mono text-base" href="/studio">ETC</a>
+
+        </div>
+        <div>
+            <h3 class="text-md">EXPLORE</h3>
+            <a class="block uppercase h-mono text-base" href="/">
+                HOME
+            </a>
+            <a class="block uppercase h-mono text-base" href="/studio">
+                PORTFOLIO
+            </a>
+            <a class="block uppercase h-mono text-base" href="/contact">
+                CONTACT
+            </a>
+            <a class="block uppercase h-mono text-base" href="https://www.instagram.com/suluhstudio">
+                INSTAGRAM
+            </a>
+            <a class="block uppercase h-mono text-base" href="https://www.facebook.com/suluhstudio">
+                FACEBOOK
+            </a>
+
+
+        </div>
+    </div>
+</footer>

@@ -128,7 +128,7 @@ faq:
         a: >-
             <p>Not sure where to start? Our creative team can help you design the perfect shoot concept from start to finish.</p>
             <p>With over a decade of experience producing high-end visual campaigns, we’ll guide you through the creative process — from concept and styling through to shoot day and delivery.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s start planning your dream shoot.</p>
+            <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s start planning your dream shoot.</p>
     -
         q: Got More Questions?
         a: >-

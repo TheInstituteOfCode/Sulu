@@ -111,7 +111,7 @@ faq:
         a: >-
             <p>Not sure where to start? Our team can recommend the best package based on your goals and help you plan the perfect furniture shoot for your brand.</p>
             <p>With over a decade of experience in product and lifestyle photography, we’ll guide you through everything from lighting and setup to styling and delivery timelines.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your collection to life.</p>
+            <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s bring your collection to life.</p>
     -
         q: Got More Questions?
         a: >-

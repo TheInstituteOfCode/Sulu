@@ -127,7 +127,7 @@ faq:
         a: >-
             <p>Not sure where to start? Our creative team can help you design the perfect lifestyle campaign from concept to final delivery.</p>
             <p>With over a decade of experience producing editorial campaigns and branded content, we’ll guide you through everything — from creative direction to execution.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
+            <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
     -
         q: Got More Questions?
         a: >-
