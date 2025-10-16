@@ -2,6 +2,6 @@ collections:
   posts:
     output: true
   shoots:
-    output: false
+    output: true
   spaces:
     output: false

@@ -1,8 +1,9 @@
 ---
+layout: shoot
 categories:
     - model
 name: Classic Model Catalog
-order: 1
+order: 2k
 vertical-font-vh: 5vh
 short-description: >-
     It’s the classic e-commerce style, but elevated with perfect lighting and

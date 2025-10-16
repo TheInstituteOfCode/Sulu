@@ -1,4 +1,5 @@
 ---
+layout: shoot
 categories:
     - model
 name: On Model Beauty & Jewellery Shots

@@ -1,4 +1,5 @@
 ---
+layout: shoot
 categories:
     - creative
 name: Creative Product Photography

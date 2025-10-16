@@ -25,8 +25,18 @@
          }
      });
 
-     let questions = dialog.querySelectorAll('.question')
 
+
+
+    
+
+    })
+
+    // outside of the gal so that it works for all faq and not just those in a dialog
+    // for mutual exclusivity, need to move back in the dialog code before tweekes or will effect all faqs on the page
+
+    let questions = document.querySelectorAll('.question')
+    console.log(questions, 'questions')
      questions.forEach(question => {
         let answer =  question.querySelector('.answer')
 
@@ -41,11 +51,6 @@
             }
         })
      })
-
-
-    
-
-    })
 
 
     let galleries = document.querySelectorAll('.gallery-image-holder')
@@ -64,10 +69,13 @@
         images.forEach(img => {
             if (images[activeImage] == img) {
             img.classList.add('active')
-            if (img.dataset.textColor == 'light') {
-                verticalText.style.color = '#fff'
-            } else {
-                verticalText.style.color = '#000'
+            if(verticalText && img.dataset.textColor) {
+
+                if (img.dataset.textColor == 'light') {
+                    verticalText.style.color = '#fff'
+                } else {
+                    verticalText.style.color = '#000'
+                }
             }
             } else {
                 img.classList.remove('active')

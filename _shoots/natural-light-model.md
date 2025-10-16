@@ -1,4 +1,5 @@
 ---
+layout: shoot
 categories:
     - model
 name: 'Natural light model photography '

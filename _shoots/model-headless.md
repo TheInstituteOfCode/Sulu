@@ -1,8 +1,9 @@
 ---
+layout: shoot
 categories:
     - model
 name: Headless Model Photography
-order: 2
+order: 1
 vertical-text: Headless Model Photography
 vertical-font-vh: 5vh
 short-description: Timeless unrecognizable photography to keep the focus on your product.

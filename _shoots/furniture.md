@@ -1,4 +1,5 @@
 ---
+layout: shoot
 categories:
     - product
 name: Furniture Photography

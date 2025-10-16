@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<section class="bg-dark">
+    <div class="max-w-screen-xl mx-auto mb-[3%]">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="text-white py-8 flex flex-col justify-center md:order-2">
+                <h1 class="text-4xl mb-4">{{page.name}}</h1>
+                {{page.faq[0].a | replace: '<p>', '<p class="text-white">' }}
+                <p>
+                    <a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20{{page.name | replace: ' ', '%20'}}%20at%20Suluh%20Studio" class="button-light button-rounded button-arrow">BOOK YOUR SHOOT </a>
+                </p>
+                    
+            </div>
+            <div class="aspect-[666/702] rounded-4xl overflow-hidden relative">
+                <img class="absolute inset-0 w-full h-full object-fit" src="{{page.featured-images[0].image}}" alt="{{page.featured-images[0].alt}}">
+            </div>
+
+        </div>
+    </div>  
+</section>
+<section class="p-0 gallery-image-holder">
+        <div class="md:grid md:min-h-screen relative" style="grid-template-columns: 3fr 4fr;">
+
+                    <div class="md:h-screen md:overflow-y-scroll">
+
+                        {% for q in page.faq offset: 1 %}
+                        <div class="question border-b-1 border-grey-dark p-4">
+                            <div class="max-height-true">
+                                <div class="faq-header flex justify-between max-height-question  p-2">
+                                    <p class="h-mono mb-0 text-sm uppercase text-dark">{{q.q}}</p>
+                                    <div class="faq-x">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="answer overflow-hidden transition-all" style="height: 0px;">
+                                    <div class="true-height p-2">
+                                        {{q.a}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="relative gallery-image-holder min-h-screen md:order-2">
+                        {% for image in page.featured-images offset: 1 %}
+                            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}">
+                        {% endfor %}
+
+
+                        {% if page.featured-images.size > 2 %}
+                        <div class="absolute bottom-4 right-4 flex gap-1">
+                            <div class="next py-4 px-5 border border-dark rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                            <div class="prev py-4 px-5 border border-dark rounded-full bg-dark"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+</section>
+
+<style>
+    .gallery-image-holder img {
+        opacity: 0;
+        transition: .5s;
+    }
+    .gallery-image-holder img.active {
+        opacity: 1;
+    }
+
+    
+    .reasonButtons{
+        border: 2px solid white;
+    }
+
+    .reasonButtons.active{
+        border: 2px solid var(--dark);
+    }
+</style>
+
+<script>
+    {% include dialog.js %}
+</script>

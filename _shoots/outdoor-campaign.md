@@ -1,4 +1,5 @@
 ---
+layout: shoot
 categories:
     - creative
 name: Outdoor campaign at the studio

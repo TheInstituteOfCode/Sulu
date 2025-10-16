@@ -446,7 +446,8 @@ featured-work-block:
 
         <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
         
-            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'product'" %}
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'product'" | sort: "order" %}
+
             {% for shoot in flat-rate-photo %}
             {% include shoot-block.html shoot=shoot  %}
             {% endfor %}
@@ -464,8 +465,8 @@ featured-work-block:
 
         <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
         
-            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'model'" %}
-            {% for shoot in flat-rate-photo %}
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'model'" | sort: "order" %}
+            {% for shoot in flat-rate-photo  %}
             
             {% include shoot-block.html shoot=shoot  %}
             {% endfor %}
@@ -483,7 +484,7 @@ featured-work-block:
 
         <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
         
-            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'creative'" %}
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'creative'" | sort: "order" %}
             {% for shoot in flat-rate-photo %}
             
             {% include shoot-block.html shoot=shoot  %}
