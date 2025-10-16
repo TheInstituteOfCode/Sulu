@@ -261,9 +261,6 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
-  .col-span-3 {
-    grid-column: span 3 / span 3;
-  }
   .col-span-full {
     grid-column: 1 / -1;
   }
@@ -524,9 +521,6 @@
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
