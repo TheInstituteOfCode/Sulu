@@ -43,90 +43,92 @@ featured-images:
         text-color-light: false
 faq:
     -
-        q: Creative Product Photography
+        q: Natural Light Model Photography
         a: >-
-            <p>More creativity. More storytelling. More impact.</p>
-            <p>Our creative product photography takes your visuals beyond the basics, with styled sets, textured backdrops, and intentional lighting designed to tell your brand story.</p>
-            <p>It’s perfect for brands ready to elevate their product imagery into something that feels aspirational, editorial, and unique — all with the same elevated Suluh production quality that makes every detail shine.</p>
-            <p>Whether you want styled flat lays, products in scene, or creative compositions with props and textures, we’ll design and deliver a shoot that feels unmistakably yours.</p>
+            <p>Soft, natural, and effortlessly elevated — our natural light model photography captures your products in a way that feels organic, authentic, and beautifully refined.</p>
+            <p>Shot within our studio grounds using real sunlight, we work with both strong directional light and soft diffused tones to create a look that feels modern and honest, without losing the polished Suluh aesthetic.</p>
+            <p>This style is perfect for brands that want a clean, natural-feeling lookbook that feels at home on social media yet elevated enough to double as a minimalist campaign.</p>
     -
         q: Perfect For
         a: >-
             <p>This photography style is ideal for:</p>
             <ul>
-                <li>Beauty and skincare brands</li>
-                <li>Homeware and lifestyle brands</li>
-                <li>Food and beverage products</li>
-                <li>Fashion and accessory brands</li>
-                <li>Artisan and handmade products</li>
+                <li>Fashion and apparel brands</li>
+                <li>Swimwear and resortwear labels</li>
+                <li>Lifestyle and activewear brands</li>
+                <li>Sustainable and natural material-based brands</li>
             </ul>
             <p>Commonly used for:</p>
             <ul>
-                <li>Brand campaigns and product launches</li>
-                <li>Website hero images and banner visuals</li>
-                <li>Social media and ad campaigns</li>
-                <li>Press kits and editorial features</li>
+                <li>Lookbooks and product catalogues</li>
+                <li>Campaign imagery and social media content</li>
+                <li>E-commerce product pages</li>
+                <li>Brand storytelling and marketing visuals</li>
             </ul>
     -
         q: How It Works
         a: >-
-            <p>Our creative shoots are designed for flexibility and collaboration, allowing more experimentation, variety, and storytelling throughout your shoot.</p>
+            <p>Our process is designed to be seamless from start to finish:</p>
             <ol>
-                <li><strong>Plan your shoot:</strong> We’ll start with a creative briefing call to understand your brand, visual goals, and campaign concept. From there, our team will put together your creative direction and moodboard.</li>
-                <li><strong>Pre-production:</strong> We’ll finalise your concept, source props and materials if needed, plan lighting setups, and create a detailed shoot plan and timeline so the day runs seamlessly.</li>
-                <li><strong>Shoot day:</strong> Your creative team will include a lead photographer, creative director, production manager, and 2x shoot assistants — all working together to bring your vision to life. You’ll have full flexibility to experiment with angles, lighting, styling, and compositions throughout the shoot.</li>
-                <li><strong>Review & delivery:</strong> Once edited, your final images are uploaded to a private gallery for review, with all post-production and retouching included.</li>
+                <li><strong>Plan your shoot:</strong> We’ll start with a call with one of our experienced shoot producers to get to know your brand, collection, and goals for the shoot, and walk you through exactly what to expect.</li>
+                <li><strong>Moodboard & shotlist:</strong> Next, we’ll create a detailed shoot plan that covers everything from lighting direction and location choice within the studio grounds, to backdrop selection, model poses, and styling notes. You’ll see exactly what’s being captured before we start, so there are no surprises.</li>
+                <li><strong>Send your garments:</strong> Drop them off to our Bali studio or ship them through our trusted local and international partners. Our team will steam, style, and prepare each piece ready for the shoot.</li>
+                <li><strong>We shoot:</strong> Our team handles everything from lighting and direction to styling and model management. Working with natural light creates subtle variations in each image as the light shifts throughout the session, bringing an organic sense of depth and realism to your collection.</li>
+                <li><strong>Review & delivery:</strong> Once edited, your images are uploaded to a private gallery for your review and final approval before delivery.</li>
             </ol>
+            <p>Throughout the process, we keep you updated every step of the way, so you can relax knowing your shoot is in expert hands.</p>
+            <p><a href="#">See the detailed process here.</a></p>
     -
         q: Pricing
         a: >-
-            <p>Creative product photography is priced per hour of <strong>shoot time</strong> to give you full flexibility and creative freedom. Each session includes your full creative team, exclusive studio rental, all equipment, and post-production — everything under one simple rate.</p>
-            <p><strong>Mini Shoot</strong><br>1 hour setup + 2 hours shoot time = $1,650 ($550/hour)</p>
-            <p><strong>Half Day Shoot</strong><br>1 hour setup + 4 hours shoot time = $2,500 ($500/hour)</p>
-            <p><strong>Full Day Shoot</strong><br>1 hour setup + 8 hours shoot time = $4,050 ($450/hour)</p>
-            <p>Need a model? You can add a professional hand model to bring your products to life. Model sourcing is included in your package, with model fees typically ranging from $50–$100 per hour.</p>
-            <p>Rates include all pre-production planning and post-production editing and retouching.</p>
+            <p>We offer flat rate per-image pricing for natural light model photography, with a rate that already includes the studio rental, professional model, stylist, photographer, and professional editing and retouching. It’s an end-to-end service for one simple price.</p>
+            <p>The pricing is simple: just <strong>$75 per image.</strong></p>
+            <p>You can choose how many angles and images you’d like us to capture for each product, with the average being <strong>4 images</strong> (front, back, side, and detail).</p>
+            <p>Rates are based on a minimum of 3 images per product and include a <strong>5-year image license</strong> for all deliverables.</p>
+            <p>Complimentary backup studio lighting is available for inclement weather or low-light conditions.</p>
             <p><a href="#">See full pricing details below.</a></p>
     -
         q: Inclusions
         a: >-
-            <p>Every creative product shoot includes:</p>
+            <p>Every shoot includes:</p>
             <ul>
-                <li>Creative briefing call & moodboard creation</li>
-                <li>Full creative team (photographer, creative director, production manager, 2x assistants)</li>
-                <li>Exclusive access to Suluh Studios, including all indoor & outdoor studio spaces</li>
-                <li>Lighting equipment and prop styling guidance</li>
-                <li>Professional editing and retouching</li>
-                <li>Image licensing for 5 years</li>
+                <li>Shoot planning, moodboard & shotlist creation</li>
+                <li>Professional model from our roster</li>
+                <li>Garment styling, steaming, and fitting</li>
+                <li>Experienced photographer and photography assistant</li>
+                <li>Studio rental (indoor and outdoor natural light spaces)</li>
+                <li>Image editing and accurate colour matching</li>
+                <li>Basic skin and fabric retouching</li>
+                <li>5-year commercial image license</li>
             </ul>
-            <p>Everything is handled in-house, ensuring a seamless process and a final result that’s cohesive, creative, and on-brand.</p>
+            <p>Everything is handled in-house to ensure your final images are cohesive, polished, and perfectly aligned with your brand aesthetic.</p>
             <p><a href="#">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-
-            <p>Every creative product shoot is completely customisable to your brand aesthetic.</p>
-            <p>You can choose from:</p>
+            <p>Every brand has its own visual language — we’ll help you bring yours to life through creative direction and attention to detail.</p>
+            <p>You can customise every aspect of your shoot, including:</p>
             <ul>
-                <li>Backdrop colour or textured sets</li>
-                <li>Lighting style (natural, soft glow, or high-contrast studio light)</li>
-                <li>Prop and styling direction</li>
-                <li>Scene design and composition</li>
+                <li>Choice of location (indoor or outdoor natural light spaces within our studio grounds)</li>
+                <li>Lighting style (strong directional sunlight or soft diffused daylight)</li>
+                <li>Backdrop and shadow preference</li>
+                <li>Model posing, expression, and styling direction</li>
             </ul>
             <p>Optional add-ons include:</p>
             <ul>
-                <li>Hand model (male or female)</li>
-                <li>Custom-designed sets or backgrounds</li>
-                <li>Additional props and styling sourced by our team</li>
+                <li>Custom-designed backdrops or sets created for your brand</li>
+                <li>Additional creative direction or styling support</li>
             </ul>
     -
         q: Let Us Plan Your Shoot
         a: >-
-            <p>Not sure where to start? Our creative team can help you design the perfect shoot concept from start to finish.</p>
-            <p>With over a decade of experience producing high-end visual campaigns, we’ll guide you through the creative process — from concept and styling through to shoot day and delivery.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s start planning your dream shoot.</p>
+            <p>Not sure where to start? Our team can recommend the best package based on your goals and help you plan the perfect shoot for your collection.</p>
+            <p>With over a decade of experience in fashion, beauty, and lifestyle photography, we’ll guide you through everything — from creative direction and model selection to styling and delivery timelines.</p>
+            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
     -
         q: Got More Questions?
         a: >-
-            <p>Ask us anything — we’re happy to help clarify pricing, timelines, workflow, or review your moodboard and let you know what’s possible for your shoot.</p>
+            <p>Ask us anything — we’re happy to help clarify pricing, timelines, workflow or review your moodboard and let you know what’s possible for your shoot.</p>
+
 
 ---

@@ -325,14 +325,14 @@ featured-work-block:
     
  -->
 
-<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-0 ">
-    <div class="col-span-full lg:col-span-1 row-span-3 lg:border-dark lg:border-r-2">
-        <h2 class="text-lg h-mono md:text-md md:uppercase">What we do</h2>
+<section class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="col-span-full lg:col-span-1 row-span-2 lg:border-dark lg:border-r-2">
+        <h2 class="text-lg h-mono md:text-md uppercase">What we do</h2>
     </div>
 
       {% for item in page.features limit:2 %}
 
-    <div class="flex lg:p-8 lg:border-r-2">
+    <div class="flex lg:px-8 mb-4">
         <div class="hidden lg:block"> <i class="iconoir-{{item.icon}} text-sm pr-4"></i></div>
         <div>
             <h3 class="text-sm uppercase">
@@ -349,7 +349,7 @@ featured-work-block:
 
     {% for item in page.features offset:2 %}
 
-    <div class="flex lg:p-8 lg:border-r-2">
+    <div class="flex lg:px-8">
         <div class="hidden lg:block"> <i class="iconoir-{{item.icon}} text-sm pr-4"></i></div>
         <div>
             <h3 class="text-sm uppercase">
@@ -380,9 +380,9 @@ featured-work-block:
         <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end col-span-2 featured-work-gallery">
         {% for item in page.featured-work-block.rows-1.images limit: '1' %}
             <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}" />
-            <div class="p-4 relative flex items-center gap-3 ">
-                <div class="next py-4 px-5 border border-dark rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
-                <div class="prev py-4 px-5 border border-dark rounded-full bg-dark"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+            <div class="p-4 relative flex items-center gap-1">
+                <div class="next"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
+                <div class="prev"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>
                 <!-- <p class="text-dark featured-target-text mb-0"> {{item.text}} </p>                        -->
             </div>
         {% endfor %}
@@ -397,7 +397,7 @@ featured-work-block:
             <div>
                 <h3 class="text-sm leading-[1.1]">READY TO MAKE <br /> SOME MAGIC?</h3>
                 <p class="text-white text-balance">Get in touch today and kick start the content you’ve been looking for. </p>
-                <a href="#" class="text-dark button button-rounded bg-white">I’M READY</a>
+                <a href="/contact" class="text-dark button button-rounded bg-white">I’M READY</a>
             </div>
 
         </div>
@@ -413,10 +413,9 @@ featured-work-block:
         <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end col-span-2 featured-work-gallery">
         {% for item in page.featured-work-block.rows-2.images limit: '1' %}
             <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}" />
-            <div class="p-4 relative flex items-center gap-3 ">
-                <div class="next py-4 px-5 border border-dark rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
-                <div class="prev py-4 px-5 border border-dark rounded-full bg-dark"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
-                <!-- <p class="text-dark featured-target-text mb-0"> {{item.text}} </p>                        -->
+            <div class="p-4 relative flex items-center gap-1">
+         <div class="next"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
+                <div class="prev"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>       <!-- <p class="text-dark featured-target-text mb-0"> {{item.text}} </p>                        -->
             </div>
         {% endfor %}
             <div class="absolute left-[100vw] gallery-image-holder">
