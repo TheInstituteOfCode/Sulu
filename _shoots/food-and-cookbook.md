@@ -125,7 +125,7 @@ faq:
         a: >-
             <p>Not sure where to start? Our creative team can help you design the perfect shoot from concept to delivery.</p>
             <p>With years of experience producing food and lifestyle campaigns, we’ll guide you through every stage — from creative direction to production and delivery.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
+            <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
     -
         q: Got More Questions?
         a: >-

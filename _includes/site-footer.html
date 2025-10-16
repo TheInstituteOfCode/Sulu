@@ -1,0 +1,54 @@
+<footer>
+    <div class="grid grid-col-3 lg:grid-cols-6 gap-2">
+        <div class="col-span-3">
+            <h2 class="text-lg">Suluh Studios.</h2>
+            <p>Suluh Studios is a state-of-the-art indoor & outdoor photography studio in Bali, available both as independent studio rental for your own photoshoots & as a full-service production studio for elevated e-commerce and lifestyle photoshoots. </p>
+    
+            <p>Located in Cemagi, Bali. Studio access by appointment.</p>
+            
+            <p>Project by Kelapa Creative</p>
+        </div>
+        <div>
+            <h3 class="text-md">Contact</h3>
+            {% for shoot in site.shoots %}
+                <a href="{{shoot.url}}">{{shoot.name}}</a>
+            {% endfor %}
+        </div>
+        <div>
+            <h3 class="text-md">SPACES</h3>
+            <a class="block p" href="/studio">
+                NATURAL LIGHT
+            </a>
+            <a class="block p" href="/studio">CYLORAMA</a>
+            <a class="block p" href="/studio">MED GARDEN</a>
+            <a class="block p" href="/studio">SWIMMING POOL </a>
+            <a class="block p" href="/studio">ETC</a>
+            <a class="block p" href="/studio">NATURAL LIGHT</a>
+            <a class="block p" href="/studio">CYLORAMA</a>
+            <a class="block p" href="/studio">MED GARDEN</a>
+            <a class="block p" href="/studio">SWIMMING POOL </a>
+            <a class="block p" href="/studio">ETC</a>
+
+        </div>
+        <div>
+            <h3 class="text-md">EXPLORE</h3>
+            <a class="block p" href="/">
+                HOME
+            </a>
+            <a class="block p" href="/studio">
+                PORTFOLIO
+            </a>
+            <a class="block p" href="/contact">
+                CONTACT
+            </a>
+            <a class="block p" href="https://www.instagram.com/suluhstudio">
+                INSTAGRAM
+            </a>
+            <a class="block p" href="https://www.facebook.com/suluhstudio">
+                FACEBOOK
+            </a>
+
+
+        </div>
+    </div>
+</footer>

@@ -128,7 +128,7 @@ faq:
         a: >-
             <p>Not sure where to start? Our creative team can help you plan your ideal outdoor campaign, from concept to delivery.</p>
             <p>With years of experience shooting under the Bali sun, we’ll guide you through everything — from creative direction and talent selection to styling and production.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s create something unforgettable.</p>
+            <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s create something unforgettable.</p>
     -
         q: Got More Questions?
         a: >-

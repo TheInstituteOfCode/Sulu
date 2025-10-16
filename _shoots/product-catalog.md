@@ -142,5 +142,5 @@ faq:
         a: >-
             <p>Not sure where to start? Our team can recommend the best package based on your goals and help you plan the perfect shoot for your brand.</p>
             <p>With over a decade of experience across photography, marketing, and web development, we’ll guide you through everything — from choosing the right number of images to planning styling, lighting, and delivery timelines.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
+            <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
 ---

@@ -111,7 +111,7 @@ faq:
         a: >-
             <p>Not sure where to start? Our team can help you plan your ideal beach campaign from concept to delivery.</p>
             <p>With years of experience shooting along the Cemagi coast, we’ll manage everything from creative direction and logistics to final delivery.</p>
-            <p><strong><a href="#">Book a complimentary call</a></strong> and let’s create something extraordinary.</p>
+            <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s create something extraordinary.</p>
     -
         q: Got More Questions?
         a: >-
