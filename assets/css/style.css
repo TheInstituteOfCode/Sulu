@@ -372,6 +372,9 @@
   .aspect-4\/5 {
     aspect-ratio: 4/5;
   }
+  .aspect-\[1\/1\] {
+    aspect-ratio: 1/1;
+  }
   .aspect-\[666\/702\] {
     aspect-ratio: 666/702;
   }
@@ -522,6 +525,9 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -592,6 +598,9 @@
   .border-none {
     --tw-border-style: none;
     border-style: none;
+  }
+  .border-\[transparent\] {
+    border-color: transparent;
   }
   .border-dark {
     border-color: var(--color-dark);
