@@ -78,7 +78,7 @@ faq:
             <p>The pricing is simple: just <strong>$55 per image.</strong></p>
             <p>You can choose how many angles and images you would like us to capture for each piece, with the average being 3 to 4 images (front, angled, close-up detail, and lifestyle variation).</p>
             <p>Highly reflective or gemstone-intensive pieces that require advanced lighting or retouching may incur a small additional fee, which we’ll confirm with you in advance.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20watch%20and%20jewellery%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Inclusions
         a: >-
@@ -94,7 +94,7 @@ faq:
                 <li>Lifetime commercial license for all images</li>
             </ul>
             <p>Everything is handled in-house, so your final images are cohesive, polished, and ready to use across your website, social media, and marketing channels.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20watch%20and%20jewellery%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-

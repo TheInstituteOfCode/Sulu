@@ -83,7 +83,7 @@ faq:
             <p>Most brands choose to capture 3–4 images per product (front, side, back, and detail) for a complete, professional presentation.</p>
             <p>This rate applies to furniture that can be easily moved and positioned by one person, generally under <strong>1 metre in size</strong> and <strong>20 kilograms in weight.</strong></p>
             <p>For larger or heavier items that require extra staff for setup or placement, an additional handling fee may apply.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20furniture%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Inclusions
         a: >-
@@ -98,7 +98,7 @@ faq:
                 <li>Lifetime commercial license for all images</li>
             </ul>
             <p>Everything is handled in-house, so your final images are cohesive, polished, and ready to use across your website, social media, and marketing channels.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20furniture%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-

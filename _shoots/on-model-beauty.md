@@ -89,7 +89,8 @@ faq:
             <p>This rate includes a professional model from our roster, with a wide range of looks to suit your brand.</p>
             <p>If you prefer a specific model from one of Bali’s agencies, we can handle scouting and confirm pricing in advance.</p>
             <p>Rates are based on a minimum of 3 images per product or look (if multiple products are worn together).</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20on%20model%20beauty%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
+            
     -
         q: Inclusions
         a: >-
@@ -104,7 +105,7 @@ faq:
                 <li>Lifetime commercial license for all images</li>
             </ul>
             <p>Everything is handled in-house to ensure your final images are consistent, polished, and perfectly aligned with your brand aesthetic.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20on%20model%20beauty%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-
