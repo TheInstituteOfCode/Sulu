@@ -91,7 +91,7 @@ faq:
             <p><strong>Full Day Shoot</strong><br>1 hour setup + 8 hours shoot time = $4,050 ($450/hour)</p>
             <p>Need a model? You can add a professional hand model to bring your products to life. Model sourcing is included in your package, with model fees typically ranging from $50–$100 per hour.</p>
             <p>Rates include all pre-production planning and post-production editing and retouching.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20Creative%20Product%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Inclusions
         a: >-
@@ -105,7 +105,7 @@ faq:
                 <li>Image licensing for 5 years</li>
             </ul>
             <p>Everything is handled in-house, ensuring a seamless process and a final result that’s cohesive, creative, and on-brand.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20Creative%20Product%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-

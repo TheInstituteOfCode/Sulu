@@ -89,7 +89,7 @@ faq:
             <p><strong>Half Day Shoot</strong><br>1 hour setup + 4 hours shoot time = $2,500 ($500/hour)</p>
             <p><strong>Full Day Shoot</strong><br>1 hour setup + 8 hours shoot time = $4,050 ($450/hour)</p>
             <p>Model sourcing is included in all packages — our team will help you find the perfect talent to suit your brand aesthetic. Professional model and HMUA fees are quoted separately.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20indoor%20campaign%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Inclusions
         a: >-
@@ -103,7 +103,7 @@ faq:
                 <li>5-year image license</li>
             </ul>
             <p>Everything is handled in-house to keep the creative process seamless and the final result cohesive and on-brand.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20indoor%20campaign%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-

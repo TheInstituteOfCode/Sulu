@@ -87,7 +87,7 @@ faq:
             <p>Add a professional chef and chef’s assistant for $100 per hour, with ingredients charged separately.</p>
             <p>Model sourcing is included in all packages. Professional model, HMUA, and styling fees are quoted separately.</p>
             <p>Video content can also be added to any package.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20food%20and%20cookbook%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Inclusions
         a: >-
@@ -103,7 +103,7 @@ faq:
                 <li>5-year image license</li>
             </ul>
             <p>Everything is handled in-house to make your experience easy and your final images cohesive, refined, and on-brand.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20food%20and%20cookbook%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-

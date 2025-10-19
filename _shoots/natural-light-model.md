@@ -87,7 +87,7 @@ faq:
             <p>You can choose how many angles and images you’d like us to capture for each product, with the average being <strong>4 images</strong> (front, back, side, and detail).</p>
             <p>Rates are based on a minimum of 3 images per product and include a <strong>5-year image license</strong> for all deliverables.</p>
             <p>Complimentary backup studio lighting is available for inclement weather or low-light conditions.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20natural%20light%20model%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Inclusions
         a: >-
@@ -103,7 +103,7 @@ faq:
                 <li>5-year commercial image license</li>
             </ul>
             <p>Everything is handled in-house to ensure your final images are cohesive, polished, and perfectly aligned with your brand aesthetic.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20natural%20light%20model%20photography%20at%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-

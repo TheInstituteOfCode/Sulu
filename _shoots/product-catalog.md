@@ -95,7 +95,8 @@ faq:
             <p>The pricing is simple — just <strong>$35 per image.</strong></p>
             <p>You can choose how many angles and images you would like us to capture for each product, with the average being 4 images for classic e-commerce (front, back, side, and detail) and add additional images as needed for lifestyle or social content.</p>
             <p>Add a color swatch or texture shot for only <strong>$15 per image.</strong></p>
-            <p><a href="#">See full pricing details.</a></p>
+            
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20product%20catalog%20with%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: What's included
         a: >-
@@ -111,7 +112,7 @@ faq:
                 <li>Lifetime commercial license for all images</li>
             </ul>
             <p>Everything is handled in-house, so your final images are cohesive, polished, and ready to use across your website, social media, and print.</p>
-            <p><a href="#">See full pricing details below.</a></p>
+            <p><a href="https://wa.me/6281215918089?text=Hi%20I’d%20love%20more%20details%20about%20the%20pricing%20for%20product%20catalog%20with%20Suluh%20Studio">See full pricing details below.</a></p>
     -
         q: Customise Your Shoot
         a: >-
