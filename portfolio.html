@@ -1,0 +1,19 @@
+---
+layout: default
+title: Suluh Studio Portfolio | Photography Studio Bali
+---
+
+<section class="grid-cols-3 grid gap-2">
+  <h2 class="h-block col-span-full text-xl mb-2">Our Portfolio.</h2>
+  <p class="col-span-full mb-8">  A selection of our recent photography projects, get in touch to see a full portfolio of projects relevant to your niche or shoot style. </p>
+  {% for shoot in site.shoots reversed %}
+    
+      {% for image in shoot.featured-images %}
+      <div class="image-container">
+        <img src="{{ image.image }}" alt="{{ image.alt }}" class="w-full h-auto object-cover aspect-3/4"/>
+        </div>
+      {% endfor %}
+
+
+  {% endfor %}
+</section>
