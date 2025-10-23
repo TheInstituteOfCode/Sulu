@@ -137,4 +137,5 @@ faq:
         q: Got More Questions?
         a: >-
             <p>Ask us anything — we’re happy to help clarify pricing, timelines, workflow or review your moodboard and let you know what’s possible for your shoot.</p>
+hide-nav-border-bottom: true
 ---
