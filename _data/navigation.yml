@@ -1,12 +1,7 @@
 header:
-  - name: work with us
-    link: /work
-    featured: false
-  - name: portfolio
-    link: /work
-    featured: false
-  - name: studios
-    link: /studios
+
+  - name: studio
+    link: /studio
     featured: false
   - name: Plan your shoot
     link: /contact
