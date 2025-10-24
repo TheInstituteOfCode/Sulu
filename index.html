@@ -269,8 +269,8 @@ featured-work-block:
             A collection of recent projects coming out of Suluh Studio. Want to see more related projects? Just reach out to our team and we'll share a comprehensive portfolio.
         </p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end col-span-2 featured-work-gallery">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end md:col-span-2 featured-work-gallery">
         {% for item in page.featured-work-block.rows-1.images limit: '1' %}
             <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}" />
             <div class="p-4 relative flex items-center gap-1">
@@ -303,7 +303,7 @@ featured-work-block:
             </div>
 
         </div>
-        <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end col-span-2 featured-work-gallery">
+        <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end md:col-span-2 featured-work-gallery">
         {% for item in page.featured-work-block.rows-2.images limit: '1' %}
             <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}" />
             <div class="p-4 relative flex items-center gap-1">
@@ -501,7 +501,10 @@ featured-work-block:
             if (images[activeImage] == img) {
                     targetImages.src = img.src
                     targetImages.alt = img.alt
-                    targetText.innerHTML = img.dataset.text
+                    if (targetText) {
+                        targetText.innerHTML = img.dataset.text
+                    }
+
             }
         })
      }
