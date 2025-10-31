@@ -6,7 +6,7 @@ name: Product Catalog Photography
 order: 1
 vertical-text: Product Catalog Photography
 vertical-font-vh: 5vh
-short-description: lorem consectetur accusantium aliquid
+short-description: Clothing, shoes, bags, accessories, and product & lifestyle brands. 
 long-description: >-
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in
     culpa beatae excepturi est deleniti rem illo consectetur accusantium
