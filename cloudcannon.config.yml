@@ -47,6 +47,22 @@ collections_config:
           empty_type: array
           values: collections.posts[*].categories
         cascade: true
+      a:
+        type: html
+        options:
+          allow_resize: true
+          allow_custom_markup: false
+          remove_custom_markup: false
+          initial_height: 320
+          format: p h2 h3 a
+          horizontalrule: true
+          image: false
+          image_size_attributes: true
+          link: true
+          resize_style: contain
+          snippet: true
+        label: Content
+        cascade: true
       tags:
         type: multiselect
         options:
