@@ -94,6 +94,12 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  props:
+    path: _props
+    name: Props
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 _snippets_imports:
   jekyll: true
 timezone: Asia/Makassar

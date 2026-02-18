@@ -207,6 +207,14 @@ html.lockScroll,html.lockScroll body {
     transform: rotate(45deg);
 }
 
+    .gallery-image-holder img {
+        opacity: 0;
+        transition: .5s;
+    }
+    .gallery-image-holder img.active {
+        opacity: 1;
+    }
+
 
 /* burger styles */
 
@@ -236,6 +244,13 @@ dialog::backdrop {
 
 dialog:focus-visible {
     outline: none;  
+}
+
+.hover-slideshow-container:hover .hover-slideshow-image-initial {
+transition: all 0.5s ease;
+}
+.hover-slideshow-container:hover .hover-slideshow-image-initial {
+    opacity: 0;
 }
 
 } /* end layer base */
