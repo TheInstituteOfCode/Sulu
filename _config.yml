@@ -5,3 +5,5 @@ collections:
     output: true
   spaces:
     output: false
+  props:
+    output: false

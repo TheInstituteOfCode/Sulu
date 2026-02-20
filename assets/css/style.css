@@ -31,6 +31,7 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --font-weight-bold: 700;
     --font-weight-black: 900;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
@@ -252,6 +253,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
   .left-\[100vw\] {
     left: 100vw;
   }
@@ -269,9 +273,6 @@
   }
   .order-2 {
     order: 2;
-  }
-  .col-auto {
-    grid-column: auto;
   }
   .col-span-2 {
     grid-column: span 2 / span 2;
@@ -396,8 +397,17 @@
   .aspect-\[1\/1\] {
     aspect-ratio: 1/1;
   }
+  .aspect-\[45\/55\] {
+    aspect-ratio: 45/55;
+  }
   .aspect-auto {
     aspect-ratio: auto;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .h-\[60vh\] {
+    height: 60vh;
   }
   .h-\[80vh\] {
     height: 80vh;
@@ -441,11 +451,17 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
   .w-5\/6 {
     width: calc(5/6 * 100%);
   }
   .w-\[80vw\] {
     width: 80vw;
+  }
+  .w-\[90vw\] {
+    width: 90vw;
   }
   .w-full {
     width: 100%;
@@ -582,6 +598,9 @@
   .overflow-x-scroll {
     overflow-x: scroll;
   }
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -672,6 +691,10 @@
   .object-cover {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .object-center {
+    -o-object-position: center;
+       object-position: center;
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
@@ -843,6 +866,9 @@
   .text-\[1\.8rem\] {
     font-size: 1.8rem;
   }
+  .text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
   .leading-\[1\.1\] {
     --tw-leading: 1.1;
     line-height: 1.1;
@@ -854,6 +880,10 @@
   .font-black {
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   .text-balance {
     text-wrap: balance;
@@ -933,6 +963,11 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .md\:order-0 {
+    @media (width >= 48rem) {
+      order: 0;
+    }
+  }
   .md\:order-1 {
     @media (width >= 48rem) {
       order: 1;
@@ -941,6 +976,11 @@
   .md\:order-2 {
     @media (width >= 48rem) {
       order: 2;
+    }
+  }
+  .md\:order-3 {
+    @media (width >= 48rem) {
+      order: 3;
     }
   }
   .md\:col-span-2 {

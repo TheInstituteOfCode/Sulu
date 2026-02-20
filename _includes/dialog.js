@@ -61,7 +61,7 @@
     let next = gal.querySelector('.next')
     let prev = gal.querySelector('.prev')
     let verticalText = gal.querySelector('.vertical-text')
-
+    
 
      function changeImage(n) {
         // console.log(n)
@@ -86,10 +86,10 @@
 
      if (next) {
          next.addEventListener('click', () => {
-             changeImage(1)
+             changeImage(images.length - 1)
             })
     
-         prev.addEventListener('click', () => { changeImage(images.length - 1) })
+         prev.addEventListener('click', () => { changeImage(1) })
 
      } else {
         // console.log(gal, 'no gallery')

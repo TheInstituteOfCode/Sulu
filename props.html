@@ -1,0 +1,155 @@
+---
+layout: default
+title: Studios | Indoor & Outdoor Photography Studios at Suluh
+---
+
+<section class="">
+    <div class="w-1/2">
+        <h2 class="text-[2.5rem]">PROP LIBRARY</h2>
+        <p>From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand .</p>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+        {% for prop in site.props %}
+            <div class="p-4 dialog-grid-button">
+                <div class="aspect-[45/55] relative mb-4">
+                    <img class="absolute inset-0 h-full w-full object-center object-cover rounded-4xl" src="{{prop.featured-images[0].image}}" alt="{{prop.featured-images[0].alt}}">
+                </div>
+                <h3 class=" mb-2">{{ prop.title }}</h3>
+                <p>{{ prop.description }}</p>
+            </div>
+            <dialog class="m-auto bg-cream">
+                <div class="flex flex-col md:grid w-[90vw] md:h-[90vh] relative gap-4" style="grid-template-columns: 5fr 2fr 5fr;">
+                    <div class="md:h-[90vh] md:overflow-y-scroll p-8 md:flex flex-col justify-end order-2 md:order-0">
+                       <h3 class="font-bold ">
+                        {{prop.title}}
+                       </h3>
+                       <div>{{prop.long-description}}</div>
+                    </div>
+                    
+                    <div class="hidden md:flex flex-col gap-4 overflow-y-scroll">
+                        {% for image in prop.featured-images %}
+                        <img class="aspect-square object-cover sub-gallery-buttons" src="{{image.image}}" alt="{{image.alt}}" data-number="{{forloop.index}}">
+                        {% endfor %}
+                    </div>
+
+                    <div class="relative gallery-image-holder h-[60vh] md:h-[90vh] md:order-3">
+                    {% for image in prop.featured-images %}
+                        <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="{{image.alt}}" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}">
+                    {% endfor %}
+
+                    <div class="absolute bottom-4 right-4 left-4 flex items-center gap-1">
+                        <p class="bg-white image-text flex-1 m-0 rounded-full" style="padding: 0.7rem 1rem; ">{{prop.featured-images[0].alt}}</p>
+                        {% if prop.featured-images.size > 1 %}
+                            <div class="next shrink-0"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
+                            <div class="prev shrink-0"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>
+                        {% endif %}
+                        </div>
+                    </div>
+                
+                </div>
+            
+            </dialog>
+        {% endfor %}
+    </div>
+</section>
+
+<script>
+
+    const gridButtons = document.querySelectorAll('.dialog-grid-button')
+    const dialogs = document.querySelectorAll('dialog');
+    const body = document.querySelector('html')
+    // console.log()
+
+    gridButtons.forEach(button => {
+        // console.log(button,button.nextElementSibling)
+        button.addEventListener('click', ()=> {
+        // console.log(button,button.nextElementSibling)
+            body.classList.add('lockScroll')
+            button.nextElementSibling.showModal()
+        })
+    })
+
+    dialogs.forEach( dialog => {
+        dialog.addEventListener('click', (event) => {
+         if (event.target === dialog) {
+             // This code will execute when the backdrop is clicked
+            //  console.log('Backdrop clicked!');
+             // Example: Close the dialog
+             dialog.close();
+            body.classList.remove('lockScroll')
+         }
+     });
+
+
+
+
+    
+
+    })
+
+
+        let galleries = document.querySelectorAll('.gallery-image-holder')
+
+    galleries.forEach(gal => {
+    let images = gal.querySelectorAll('img')
+    let activeImage = 0
+    let imageSubTitle = gal.querySelector('.image-text')
+    let next = gal.querySelector('.next')
+    let prev = gal.querySelector('.prev')
+    let subGalleryButtons = gal.parentElement.querySelectorAll('.sub-gallery-buttons')
+    
+    console.log(subGalleryButtons)
+
+     function changeImage(n) {
+        // console.log(n)
+        activeImage = (activeImage + n) % images.length
+        images.forEach(img => {
+            if (images[activeImage] == img) {
+                console.log(img.alt,imageSubTitle)
+            img.classList.add('active')
+            imageSubTitle.innerHTML = img.alt
+            } else {
+                img.classList.remove('active')
+            }
+        })
+     }
+
+
+     if (next) {
+         next.addEventListener('click', () => {
+             changeImage(images.length - 1)
+            })
+         prev.addEventListener('click', () => { changeImage(1) })
+     } else {
+        // console.log(gal, 'no gallery')
+     }
+
+    subGalleryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+        activeImage = button.dataset.number - 1
+        
+        images.forEach(img => {
+            if (images[activeImage] == img) {
+            img.classList.add('active')
+            imageSubTitle.innerHTML = img.alt
+            
+            } else {
+                img.classList.remove('active')
+            }
+            })
+        })
+    })
+    
+})
+
+    // subGalleryButtons.forEach(button => {
+    //     button.addEventListener('click', () => {
+    //         let mainImages = button.parentElement.nextElementSibling.querySelectorAll('img')
+    //         console.log(mainImages)
+    //         mainImages.forEach(img => {
+    //             img.classList.remove('active')
+    //         })
+    //         mainImages[button.dataset.number - 1].classList.add('active')
+    //     })
+    // })
+</script>
