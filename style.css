@@ -86,6 +86,10 @@ html.lockScroll,html.lockScroll body {
         text-wrap: balance;
     }
 
+    .balanced-div *{
+        text-wrap: balance;
+    }
+
     ul,li {
         color: rgb(120,120,120);
         @apply list-disc ml-4 mb-2;
