@@ -246,9 +246,9 @@ faq:
         </div>
 </section>
 
-<section class="pb-0">
+<section class="p-0">
     <div class="grid md:grid-cols-2">
-        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end pr-8 py-8">
+        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 py-8">
             <h2>INDOOR PHOTOGRAPHY STUDIO IN CEMAGI, BALI</h2>
             <p>From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand.</p>
             <p>Showcase your beauty products in use with our  model photography services.</p>
@@ -264,14 +264,14 @@ faq:
     </div>
 </section>
     
-<section class="pt-0">
+<section class="p-0">
     <div class="grid md:grid-cols-2">
         <div>
             {% for image in page.studio-images-2 %}
                 <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full" />
             {% endfor %}
         </div>
-        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end pl-8">
+        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 pb-8">
             <h2>DESIGNED BY PHOTOGRAPHERS, FOR PHOTOGRAPHERS. </h2>
             <p>From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand.</p>
             <p>Showcase your beauty products in use with our  model photography services.</p>
@@ -295,7 +295,7 @@ faq:
         <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
         
             {% for shoot in page.sets-images %}
-            <div class="hover-slideshow-container shrink-0 w-5/6 md:w-2/7">
+            <div class="{% if shoot.hover-images.size >= 1 %} hover-slideshow-container {% endif %} shrink-0 w-5/6 md:w-2/7">
                 <div class="relative rounded mb-4" style="aspect-ratio: 45/55;" data-current-slide="0" data-total-slides="{{shoot.hover-images | size}}">
                     <img class="rounded-2xl aspect-4/5 w-full object-cover relative z-10 hover-slideshow-image-initial" src="{{shoot.image_path}}" alt="{{shoot.alt}}" />
                     <img class="hover-slideshow-image-secondary rounded-2xl aspect-4/5 w-full object-cover absolute top-0 left-0" src="{{shoot.hover-images.first.image_path}}" alt="{{shoot.alt}}" />
@@ -325,7 +325,7 @@ faq:
     <div class="col-span-full mb-16">
         <h2 class="text-5xl text-center max-w-[32rem] mx-auto">photography studio details</h2>
     </div>
-<div class="md:grid w-[80vw] md:h-[90vh] relative border-2 rounded-4xl border-black " style="grid-template-columns: 3fr 4fr;">
+<div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-black " style="grid-template-columns: 3fr 4fr;">
     {% for q in page.faq %}
     <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries rounded-r-4xl overflow-hidden" data-gallery-number="{{forloop.index}}">
         <div class="relative gallery-image-holder h-[90vh] ">
