@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "4.2.2"
+gem "jekyll", "~> 4.4"
 gem "webrick"
-gem "bigdecimal" 
 
-# for netlify
-gem 'logger'
-gem 'csv'
-gem 'base64'
+# stdlib gems (only needed for Netlify / Ruby ≥ 3)
+gem "bigdecimal"
+gem "logger"
+gem "csv"
+gem "base64"

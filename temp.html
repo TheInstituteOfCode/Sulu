@@ -197,11 +197,11 @@ add-ons:
                 <h3>HALF DAY</h3>
                 <p>Up to 5 hours</p>
             </div>
-            <div  class="border-r border-b border-gray-400 text-center p-4">
+            <div  class="border-r border-b border-gray-300 text-center p-4">
                 <h3>FULL DAY</h3>
                 <p>Up to 10 hours</p>
             </div>
-            <div  class="border-b border-gray-400 text-center p-4">
+            <div  class="border-b border-gray-300 text-center p-4">
                 <h3>EXTENDED</h3>
                 <p>5am - midnight</p>
             </div>
@@ -242,7 +242,7 @@ add-ons:
             <h3 class="text-lg text-center md:text-left">add-ons</h3>
             <div class="grid border-2 border-black rounded-4xl" style="grid-template-columns: 1fr 8rem;">
             {% for space in page.add-ons %}
-                <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-400 p-4 balanced-div">
+                <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-300 p-4 balanced-div">
                     <h3>{{space.name}}</h3>
                     <p>
                         {{space.description}}
