@@ -100,6 +100,23 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+_inputs:
+  a:
+    type: html
+    options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      format: p h2 h3 a
+      horizontalrule: true
+      image: false
+      image_size_attributes: true
+      link: true
+      resize_style: contain
+      snippet: true
+    label: Content
+    cascade: true
 _snippets_imports:
   jekyll: true
 timezone: Asia/Makassar
