@@ -620,6 +620,9 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .rounded-tl-4xl {
+    border-top-left-radius: var(--radius-4xl);
+  }
   .rounded-r-4xl {
     border-top-right-radius: var(--radius-4xl);
     border-bottom-right-radius: var(--radius-4xl);
@@ -743,6 +746,9 @@
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-\[5\%\] {
+    padding-inline: 5%;
   }
   .px-\[5vw\] {
     padding-inline: 5vw;
@@ -1080,6 +1086,11 @@
       overflow-y: scroll;
     }
   }
+  .md\:rounded-tl-none {
+    @media (width >= 48rem) {
+      border-top-left-radius: 0;
+    }
+  }
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
@@ -1291,6 +1302,30 @@ html.lockScroll,html.lockScroll body {
   .h-mono {
     font-family: "Inconsolata", monospace;
     font-weight: 600;
+  }
+  .last-child-remove-margin > :last-child {
+    margin-bottom: 0;
+  }
+  .clickable {
+    cursor: pointer;
+    transform: rotate(0);
+  }
+  .clickable:hover {
+    animation: hoverAbleWiggle 2s linear infinite;
+  }
+  @keyframes hoverAbleWiggle {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
   footer, section {
     padding: 5%;

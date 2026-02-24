@@ -106,6 +106,30 @@ html.lockScroll,html.lockScroll body {
         font-weight: 600;
     }
 
+    .last-child-remove-margin > :last-child{
+        margin-bottom: 0;
+    }
+
+
+    .clickable {
+        cursor: pointer;
+        /* transition: all 1s; */
+        transform: rotate(0);
+    }
+
+    .clickable:hover {
+        animation: hoverAbleWiggle 2s linear infinite;
+    }
+
+    @keyframes hoverAbleWiggle {
+        0% {transform: rotate(0);};
+        25% {transform: rotate(2deg);};
+        75% {transform: rotate(-2deg);};
+        100% {transform: rotate(0);};
+
+    }
+
+
     footer, section {
         /* margin-right: var(--side-gap);
         margin-left: var(--side-gap);

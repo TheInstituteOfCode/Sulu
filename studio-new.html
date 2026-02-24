@@ -330,7 +330,7 @@ faq:
     </div>
 <div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-black " style="grid-template-columns: 3fr 4fr;">
     {% for q in page.faq %}
-    <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries rounded-r-4xl overflow-hidden" data-gallery-number="{{forloop.index}}">
+    <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries rounded-tl-4xl md:rounded-tl-none rounded-r-4xl overflow-hidden" data-gallery-number="{{forloop.index}}">
         <div class="relative gallery-image-holder h-[90vh] ">
             {% for image in q.featured-images %}
             <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}" />

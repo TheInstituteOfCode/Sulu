@@ -141,52 +141,57 @@ add-ons:
         per_description: per shoot
 ---
 
-<section class="pb-0">
+<section class="p-0">
 
-        <div>
+        <div class="pt-[5%] px-[5%]">
             <h2 class="text-xl h-block mb-12 text-center">studio pricing</h2>
             <h3 class="text-lg  text-center">single space</h3>
         </div>
-        <div class="grid border-2 border-black rounded-4xl mx-auto overflow-x-scroll" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
-            <div class="border-r border-b border-gray-400 text-center p-4"></div>
-            <div class="border-r border-b border-gray-400 text-center p-4">
-                <h3>HALF DAY</h3>
-                <p>Up to 5 hours</p>
+        <div class="px-[5%] overflow-x-scroll">
+                
+            <div class="grid border-2 border-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
+                <div class="border-r border-b border-gray-400 text-center p-4"></div>
+                <div class="border-r border-b border-gray-400 text-center p-4">
+                    <h3>HALF DAY</h3>
+                    <p>Up to 5 hours</p>
+                </div>
+                <div  class="border-r border-b border-gray-400 text-center p-4">
+                    <h3>FULL DAY</h3>
+                    <p>Up to 10 hours</p>
+                </div>
+                <div  class="border-b border-gray-400 text-center p-4">
+                    <h3>EXTENDED</h3>
+                    <p>5am - midnight</p>
+                </div>
+            {% for space in page.single-space %}
+                <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-400 p-4">
+                    <h3>{{space.name}}</h3>
+                    <p class="text-balance">{{space.description}}</p>
+                </div>
+                <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-400 text-center p-4 flex justify-center items-center">
+                    <p class="text-sm text-black">{{space.half_day}}</p>
+                </div>
+                <div  class="border-r{% unless forloop.last %} border-b {% endunless %} border-gray-400 flex justify-center items-center p-4">
+                    <p class="text-sm text-black">{{space.full_day}}</p>
+                </div>
+                <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-400 flex justify-center items-center p-4">
+                    <p class="text-sm text-black">{{space.extended}}</p>
+                </div>
+            {% endfor %}
             </div>
-            <div  class="border-r border-b border-gray-400 text-center p-4">
-                <h3>FULL DAY</h3>
-                <p>Up to 10 hours</p>
-            </div>
-            <div  class="border-b border-gray-400 text-center p-4">
-                <h3>EXTENDED</h3>
-                <p>5am - midnight</p>
-            </div>
-        {% for space in page.single-space %}
-            <div class="border-r border-b border-gray-400 p-4">
-                <h3>{{space.name}}</h3>
-                <p class="text-balance">{{space.description}}</p>
-            </div>
-            <div class="border-r border-b border-gray-400 text-center p-4 flex justify-center items-center">
-                <p class="text-sm text-black">{{space.half_day}}</p>
-            </div>
-            <div  class="border-r border-b border-gray-400 flex justify-center items-center p-4">
-                <p class="text-sm text-black">{{space.full_day}}</p>
-            </div>
-            <div  class="border-b border-gray-400 flex justify-center items-center p-4">
-                <p class="text-sm text-black">{{space.extended}}</p>
-            </div>
-        {% endfor %}
+        
         </div>
-
 
 </section>
 
-<section class="pb-0">
+<section class="p-0">
 
-        <div>
+        <div class="pt-[5%] px-[5%]">
             <h3 class="text-lg text-center">studio bundles</h3>
         </div>
-        <div class="grid border-2 border-black rounded-4xl mx-auto overflow-x-scroll" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
+        <div class="px-[5%] overflow-x-scroll">
+                
+            <div class="grid border-2 border-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
             <div class="border-r border-b border-gray-400 text-center p-4"></div>
             <div class="border-r border-b border-gray-400 text-center p-4">
                 <h3>HALF DAY</h3>
@@ -201,23 +206,23 @@ add-ons:
                 <p>5am - midnight</p>
             </div>
         {% for space in page.bundles %}
-            <div class="border-r border-b border-gray-400 p-4">
+            <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-400 p-4">
                 <h3>{{space.name}}</h3>
                 <p class="text-balance">{{space.description}}</p>
             </div>
-            <div class="border-r border-b border-gray-400 text-center p-4 flex justify-center items-center">
+            <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-400 text-center p-4 flex justify-center items-center">
                 <p class="text-sm text-black">{{space.half_day}}</p>
             </div>
-            <div  class="border-r border-b border-gray-400 flex justify-center items-center p-4">
+            <div  class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-400 flex justify-center items-center p-4">
                 <p class="text-sm text-black">{{space.full_day}}</p>
             </div>
-            <div  class="border-b border-gray-400 flex justify-center items-center p-4">
+            <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-400 flex justify-center items-center p-4">
                 <p class="text-sm text-black">{{space.extended}}</p>
             </div>
         {% endfor %}
         </div>
 
-
+    </div>  
 </section>
 
 <section>
@@ -226,7 +231,7 @@ add-ons:
             <h3 class="text-lg text-center md:text-left">inclusions</h3>
             <div class="grid border-2 border-black rounded-4xl">
             {% for space in page.inclusions %}
-                <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-400 p-4 balanced-div">
+                <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-400 p-4 balanced-div last-child-remove-margin">
                     <h3>{{space.name}}</h3>
                     {{space.description-html}}
                 </div>
