@@ -78,6 +78,10 @@ html.lockScroll,html.lockScroll body {
         color: rgb(120,120,120);
     }
 
+    .p-parent-white p{
+        color: white;
+    }
+
     h1,h2,h3,h4,h5 {
         font-family: "Questrial", sans-serif;
         font-size: 1.5rem;

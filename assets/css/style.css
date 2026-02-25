@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
@@ -261,6 +260,9 @@
   }
   .left-\[100vw\] {
     left: 100vw;
+  }
+  .z-2 {
+    z-index: 2;
   }
   .z-10 {
     z-index: 10;
@@ -1285,6 +1287,9 @@ html.lockScroll,html.lockScroll body {
     line-height: 1.4;
     margin-bottom: 1rem;
     color: rgb(120,120,120);
+  }
+  .p-parent-white p {
+    color: white;
   }
   h1,h2,h3,h4,h5 {
     font-family: "Questrial", sans-serif;

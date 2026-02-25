@@ -21,7 +21,7 @@
                     <h3>EXTENDED</h3>
                     <p>5am - midnight</p>
                 </div>
-            {% for space in site.data.price.single-space %}
+            {% for space in page.single-space %}
                 <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-400 p-4">
                     <h3>{{space.name}}</h3>
                     <p class="text-balance">{{space.description}}</p>
@@ -63,7 +63,7 @@
                 <h3>EXTENDED</h3>
                 <p>5am - midnight</p>
             </div>
-        {% for space in site.data.price.bundles %}
+        {% for space in page.bundles %}
             <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-400 p-4">
                 <h3>{{space.name}}</h3>
                 <p class="text-balance">{{space.description}}</p>
@@ -88,7 +88,7 @@
         <div>
             <h3 class="text-lg text-center md:text-left">inclusions</h3>
             <div class="grid border-2 border-black rounded-4xl">
-            {% for space in site.data.price.inclusions %}
+            {% for space in page.inclusions %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-400 p-4 balanced-div last-child-remove-margin">
                     <h3>{{space.name}}</h3>
                     {{space.description-html}}
@@ -99,7 +99,7 @@
                 <div>
             <h3 class="text-lg text-center md:text-left">add-ons</h3>
             <div class="grid border-2 border-black rounded-4xl" style="grid-template-columns: 1fr 8rem;">
-            {% for space in site.data.price.add-ons %}
+            {% for space in page.add-ons %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-300 p-4 balanced-div">
                     <h3>{{space.name}}</h3>
                     <p>
