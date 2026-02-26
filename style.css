@@ -35,6 +35,7 @@
 /* CSS variable colors */
 
 :root {
+    --psudo-black: #2A2A2A;
     --dark: rgb(42,42,42);
     --cream-400: #F9F7F4;
     --cream-300: #FAFAF7;
@@ -117,13 +118,41 @@ html.lockScroll,html.lockScroll body {
 
     .clickable {
         cursor: pointer;
-        /* transition: all 1s; */
+        transition: all 1s;
         transform: rotate(0);
         position: relative;
     }
 
     .clickable:hover {
-        animation: bounce 2s linear infinite;
+        transform: scale(1.02);
+        /* animation: bounce 2s linear infinite; */
+    }
+
+
+    .clickable-color-flip{
+        transition: all .5s;
+    }
+
+    .clickable-underline{
+        position: relative;
+    }
+    .clickable-underline::after {
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        left:0;
+        border-bottom:2px solid transparent;
+        width:0;
+        transition: all .5s;
+
+    }
+    .clickable-underline:hover::after{
+        width: 100%;
+        border-color: initial;
+    }
+
+    .clickable-color-flip:hover {
+        filter: invert(1);
     }
 
     @keyframes bounce {

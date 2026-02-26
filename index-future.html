@@ -203,8 +203,8 @@ featured-work-block:
         {% for item in page.featured-work-block.rows-1.images limit: '1' %}
             <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}">
             <div class="p-4 relative flex items-center gap-3 ">
-                <div class="next py-4 px-5 border border-dark rounded-full clickable"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
-                <div class="prev py-4 px-5 border border-dark rounded-full bg-dark clickable"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+                <div class="next py-4 px-5 border border-dark rounded-full "> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                <div class="prev py-4 px-5 border border-dark rounded-full bg-dark "> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
                 <p class="text-dark featured-target-text mb-0"> {{item.text}} </p>                       
             </div>
         {% endfor %}
@@ -219,7 +219,7 @@ featured-work-block:
             <div>
                 <h3 class="text-sm leading-[1.1]">READY TO MAKE <br> SOME MAGIC?</h3>
                 <p class="text-white text-balance">Get in touch today and kick start the content you’ve been looking for. </p>
-                <a href="#" class="text-dark button button-rounded bg-white clickable">I’M READY</a>
+                <a href="#" class="text-dark button button-rounded bg-white ">I’M READY</a>
             </div>
 
         </div>
@@ -228,7 +228,7 @@ featured-work-block:
             <div>
                 <h3 class="text-sm uppercase leading-[1.1]">Looking for more of our portfolio?</h3>
                 <p class="text-white text-balance">With over a decade of experience behind us over a range of niches, we've got you covered. </p>
-                <a href="/portfolio" class="button-light button-rounded button-arrow clickable">Portfolio </a>
+                <a href="/portfolio" class="button-light button-rounded button-arrow ">Portfolio </a>
             </div>
 
         </div>
@@ -236,8 +236,8 @@ featured-work-block:
         {% for item in page.featured-work-block.rows-2.images limit: '1' %}
             <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}">
             <div class="p-4 relative flex items-center gap-3 ">
-                <div class="next py-4 px-5 border border-dark rounded-full clickable"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
-                <div class="prev py-4 px-5 border border-dark rounded-full bg-dark clickable"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
+                <div class="next py-4 px-5 border border-dark rounded-full "> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
+                <div class="prev py-4 px-5 border border-dark rounded-full bg-dark "> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
                 <p class="text-dark featured-target-text mb-0"> {{item.text}} </p>                       
             </div>
         {% endfor %}
@@ -320,7 +320,7 @@ featured-work-block:
 <section class="bg-dark text-white mx-0 py-0 px-0">
     <div class="lg:grid lg:pl-[5vw]" style="grid-template-columns: 17vh 25rem 2fr;">
         <div class="vertical-text border-r-2 border-white py-4 hidden lg:block">
-            <h2 class="m-0 rotate-180 leading-none font-black" style="font-size: 27vh;">STUDIO</h2>
+            <h2 class="m-0 rotate-180 leading-none font-psudo-black" style="font-size: 27vh;">STUDIO</h2>
         </div>
 
         <div class="p-8 flex items-end">
@@ -330,12 +330,12 @@ featured-work-block:
                 <p class="text-white">We built a state of the art studio in tropical Bali, covering both indoor and outdoor needs. With a range of sets, from our Mediterranean terrace to 144m2 rooftop, to our mid-century pool with diving board and 850m2 of gardens we have you covered.</p>
                 <div class="border-y-2 border-white grid grid-cols-2 mb-8">
                     <div class="border-r-2 border-white">
-                        <a href="/studio" class="py-4 pr-4 block clickable">
+                        <a href="/studio" class="py-4 pr-4 block ">
                             <span class="pr-2">Indoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
                         </a>
                     </div>
                     <div class="text-right">
-                        <a href="/studio" class="py-4 pl-4 block clickable">
+                        <a href="/studio" class="py-4 pl-4 block ">
                             <span class="pr-2">Outdoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
                         </a>
                     </div>
@@ -362,7 +362,7 @@ featured-work-block:
     </div>
     <div class="flex gap-4 flex-nowrap overflow-x-scroll [var(--side-gap)] mb-8 px-[var(--side-gap)] pb-8">
         {% for reason in page.reasons %}
-        <div class="basis-2/5 md:basis-1/5 md:shrink shrink-0 p-4 bg-white rounded-3xl cursor-pointer reasonButtons  {% if forloop.first %} active {% endif %} clickable" data-scroll-number="{{forloop.index0}}" >
+        <div class="basis-2/5 md:basis-1/5 md:shrink shrink-0 p-4 bg-white rounded-3xl cursor-pointer reasonButtons  {% if forloop.first %} active {% endif %} " data-scroll-number="{{forloop.index0}}" >
             <h4 class="h-mono opacity-60 text-[1.1rem] mb-8">0{{forloop.index}}</h4>
             <h3 class="text-[1.1rem] max-w-24 h-mono">{{reason.title}}</h2>
             <p class="text-xs">{{reason.short-description}}</p>

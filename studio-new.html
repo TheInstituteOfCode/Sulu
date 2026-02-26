@@ -346,7 +346,7 @@ add-ons:
                 <h1 class="text-lg sm:text-xl md:text-2xl h-block editable mb-2 text-white">
                     photography studio.
                 </h1>
-                <p class="text-balance text-black editable">
+                <p class="text-balance text-psudo-black editable">
                     Welcome to our indoor studio - a huge 12m x 7m space with natural textured limewash walls, beautiful polished concrete floors and huge floor to ceiling windows.
                 </p>
                 <a href="/portfolio" class="button-light button-rounded button-arrow editable">
@@ -435,7 +435,7 @@ add-ons:
     <div class="col-span-full mb-16">
         <h2 class="text-5xl text-center max-w-[32rem] mx-auto h-block">photography studio details</h2>
     </div>
-<div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-black " style="grid-template-columns: 3fr 4fr;">
+<div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-psudo-black " style="grid-template-columns: 3fr 4fr;">
     {% for q in page.faq %}
     <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries rounded-tl-4xl md:rounded-tl-none rounded-r-4xl overflow-hidden" data-gallery-number="{{forloop.index}}">
         <div class="relative gallery-image-holder h-[90vh] ">
@@ -489,7 +489,7 @@ add-ons:
             <h2 class="text-xl h-block mb-12 text-center">studio pricing</h2>
             <h3 class="text-lg  text-center h-block">book a single space</h3>
         </div>
-        <div class="grid border-2 border-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
+        <div class="grid border-2 border-psudo-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
             <div class="border-r border-b border-gray-300 text-center p-4"></div>
             <div class="border-r border-b border-gray-300 text-center p-4">
                 <h3>HALF DAY</h3>
@@ -509,13 +509,13 @@ add-ons:
                 <p class="text-balance">{{space.description}}</p>
             </div>
             <div class="border-r border-b border-gray-300 text-center p-4 flex justify-center items-center">
-                <p class="text-sm text-black">{{space.half_day}}</p>
+                <p class="text-sm text-psudo-black">{{space.half_day}}</p>
             </div>
             <div class="border-r border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-black">{{space.full_day}}</p>
+                <p class="text-sm text-psudo-black">{{space.full_day}}</p>
             </div>
             <div class="border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-black">{{space.extended}}</p>
+                <p class="text-sm text-psudo-black">{{space.extended}}</p>
             </div>
         {% endfor %}
         </div>
@@ -528,7 +528,7 @@ add-ons:
         <div>
             <h3 class="text-lg text-center h-block">studio bundles</h3>
         </div>
-        <div class="grid border-2 border-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
+        <div class="grid border-2 border-psudo-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
             <div class="border-r border-b border-gray-300 text-center p-4"></div>
             <div class="border-r border-b border-gray-300 text-center p-4">
                 <h3>HALF DAY</h3>
@@ -548,13 +548,13 @@ add-ons:
                 <p class="text-balance">{{space.description}}</p>
             </div>
             <div class="border-r border-b border-gray-300 text-center p-4 flex justify-center items-center">
-                <p class="text-sm text-black">{{space.half_day}}</p>
+                <p class="text-sm text-psudo-black">{{space.half_day}}</p>
             </div>
             <div class="border-r border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-black">{{space.full_day}}</p>
+                <p class="text-sm text-psudo-black">{{space.full_day}}</p>
             </div>
             <div class="border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-black">{{space.extended}}</p>
+                <p class="text-sm text-psudo-black">{{space.extended}}</p>
             </div>
         {% endfor %}
         </div>
@@ -566,7 +566,7 @@ add-ons:
     <div class="grid md:grid-cols-2 gap-16">
         <div>
             <h3 class="text-lg text-center md:text-left h-block">complimentary inclusions</h3>
-            <div class="grid border-2 border-black rounded-4xl pricing-table">
+            <div class="grid border-2 border-psudo-black rounded-4xl pricing-table">
             {% for space in page.inclusions %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-300 p-6 balanced-div">
                     <h3>{{space.name}}</h3>
@@ -577,7 +577,7 @@ add-ons:
         </div>
                 <div>
             <h3 class="text-lg text-center md:text-left h-block">optional add-ons</h3>
-            <div class="grid border-2 border-black rounded-4xl pricing-table" style="grid-template-columns: 1fr 8rem;">
+            <div class="grid border-2 border-psudo-black rounded-4xl pricing-table" style="grid-template-columns: 1fr 8rem;">
             {% for space in page.add-ons %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-300 p-6 balanced-div">
                     <h3>{{space.name}}</h3>
