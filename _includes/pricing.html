@@ -3,111 +3,113 @@
 
         <div class="pt-[5%] px-[5%]">
             <h2 class="text-xl h-block mb-12 text-center">studio pricing</h2>
-            <h3 class="text-lg  text-center">single space</h3>
+            <h3 class="text-lg text-center h-block">single space</h3>
         </div>
         <div class="px-[5%] overflow-x-scroll">
                 
-            <div class="grid border-2 border-psudo-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
+            <div class="grid border-2 border-psudo-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
                 <div class="border-r border-b border-gray-300 text-center p-4"></div>
-                <div class="border-r border-b border-gray-300 text-center p-4">
+                <div class="border-r border-b border-gray-300 text-center p-4 py-6">
                     <h3>HALF DAY</h3>
                     <p>Up to 5 hours</p>
                 </div>
-                <div  class="border-r border-b border-gray-300 text-center p-4">
+                <div  class="border-r border-b border-gray-300 text-center p-4 py-6">
                     <h3>FULL DAY</h3>
                     <p>Up to 10 hours</p>
                 </div>
-                <div  class="border-b border-gray-300 text-center p-4">
+                <div  class="border-b border-gray-300 text-center p-4 py-6">
                     <h3>EXTENDED</h3>
                     <p>5am - midnight</p>
                 </div>
             {% for space in page.single-space %}
                 <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 p-6">
-                    <h3>{{space.name}}</h3>
+                    <h3 class="uppercase">{{space.name}}</h3>
                     <p class="text-balance mb-0">{{space.description}}</p>
                 </div>
-                <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 text-center p-6 flex justify-center items-center">
+                <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 text-center p-4 flex justify-center items-center">
                     <p class="text-sm text-psudo-black mb-0" >{{space.half_day}}</p>
                 </div>
-                <div  class="border-r{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
+                <div  class="border-r{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-4">
                     <p class="text-sm text-psudo-black mb-0">{{space.full_day}}</p>
                 </div>
-                <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
+                <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-4">
                     <p class="text-sm text-psudo-black mb-0">{{space.extended}}</p>
                 </div>
             {% endfor %}
             </div>
         
         </div>
+        <p class="text-center mt-4"><i>Mini-shoots of 2-hour availabile on selected days, enquire for details. Prices in IDR, 1 mill is approximately $60 USD. </i> </p>
 
 </section>
 
 <section class="p-0">
 
         <div class="pt-[5%] px-[5%]">
-            <h3 class="text-lg text-center">studio bundles</h3>
+            <h3 class="text-lg text-center h-block">studio bundles</h3>
         </div>
         <div class="px-[5%] overflow-x-scroll">
                 
-            <div class="grid border-2 border-psudo-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
+            <div class="grid border-2 border-psudo-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
             <div class="border-r border-b border-gray-300 text-center p-4"></div>
-            <div class="border-r border-b border-gray-300 text-center p-4">
+            <div class="border-r border-b border-gray-300 text-center p-4 py-6">
                 <h3>HALF DAY</h3>
                 <p class=" mb-0">Up to 5 hours</p>
             </div>
-            <div  class="border-r border-b border-gray-300 text-center p-4">
+            <div  class="border-r border-b border-gray-300 text-center p-4 py-6">
                 <h3>FULL DAY</h3>
                 <p class=" mb-0">Up to 10 hours</p>
             </div>
-            <div  class="border-b border-gray-300 text-center p-4">
+            <div  class="border-b border-gray-300 text-center p-4 py-6">
                 <h3>EXTENDED</h3>
                 <p class=" mb-0">5am - midnight</p>
             </div>
         {% for space in page.bundles %}
             <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 p-6">
-                <h3>{{space.name}}</h3>
+                <h3 class="uppercase">{{space.name}}</h3>
                 <p class="text-balance mb-0">{{space.description}}</p>
             </div>
-            <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 text-center p-6 flex justify-center items-center">
+            <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 text-center p-4 flex justify-center items-center">
                 <p class="text-sm text-psudo-black mb-0">{{space.half_day}}</p>
             </div>
-            <div  class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
+            <div  class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-4">
                 <p class="text-sm text-psudo-black mb-0">{{space.full_day}}</p>
             </div>
-            <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
+            <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-4">
                 <p class="text-sm text-psudo-black mb-0">{{space.extended}}</p>
             </div>
         {% endfor %}
         </div>
+        
 
     </div>  
 </section>
 
 <section>
-    <div class="grid md:grid-cols-2 gap-4">
+    <div class="grid md:grid-cols-2 gap-12 pt-[5%]">
         <div>
-            <h3 class="text-lg text-center md:text-left">inclusions</h3>
+            <h3 class="text-lg text-center md:text-left h-block">inclusions</h3>
             <div class="grid border-2 border-psudo-black rounded-4xl">
             {% for space in page.inclusions %}
-                <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-300 p-4 balanced-div last-child-remove-margin">
-                    <h3>{{space.name}}</h3>
+                <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-300 p-6 balanced-div last-child-remove-margin">
+                    <h3 class="uppercase">{{space.name}}</h3>
                     {{space.description-html}}
                 </div>
             {% endfor %}
             </div>
         </div>
                 <div>
-            <h3 class="text-lg text-center md:text-left">add-ons</h3>
+            <h3 class="text-lg text-center md:text-left h-block">add-ons</h3>
             <div class="grid border-2 border-psudo-black rounded-4xl" style="grid-template-columns: 1fr 8rem;">
             {% for space in page.add-ons %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-300 p-6 balanced-div last-child-remove-margin">
-                    <h3>{{space.name}}</h3>
+                    <h3 class="uppercase">{{space.name}}</h3>
                     <p>
                         {{space.description}}
                     </p>
 
                 </div>
-                <div class="flex justify-center items-center {% unless forloop.last %} border-b border-gray-300{% endunless %}">
+                <div class="flex justify-center items-center p-4 {% unless forloop.last %} border-b border-gray-300{% endunless %}">
                     <div>
                         <h3 class="mb-0">{{space.price}}</h3>
                         <p class="mb-0">{{space.per_description}}</p>

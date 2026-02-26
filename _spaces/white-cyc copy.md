@@ -1,14 +1,14 @@
 ---
 categories: 
-    - outdoor
-name: Hideaway
-order: 6
+    - indoor
+name: 'Backlit Window'
+order: 3
 vertical-font-vh: 5vh
-short-description: Something special is being cooked up in the design room and will be revealed very soon. 
+short-description: Classic seamless backdround in white or any shade of grey using white seamless backdrop. 
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
-short-pricing: coming soon
+short-pricing: 
 featured-images: 
-    - image: /assets/images/sulu-studio-space-12.jpg
+    - image: /uploads/suluh-backlit window.jpg
       alt: A
 faq:
     -   q: What we do

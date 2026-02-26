@@ -171,13 +171,15 @@ reasons:
     <div class="max-w-screen-md px-[5vw] md:px-0 mb-8">
         <h3 class="uppercase text-md">Indoor studio spaces</h3>
         <p> State of the art photography studio with a mix of natural light and artificial lighting options to create stunning e-commerce, fashion & studio imagery.</p>
+        <p>Available 7 days per week from 5am till midnight, this is the studio you’ve been waiting for. <a href="/indoor-studio">Explore our indoor studio.</a></p>
+        </div>
     </div>
 
         <div class="flex flex-nowrap md:grid grid-cols-3 overflow-x-scroll gap-8 py-3 px-[var(--side-gap)] md:p-0">
         
             {% assign indoor-spaces = site.spaces | sort: "order" | where_exp:"page","page.categories contains 'indoor'"   %}
             {% for shoot in indoor-spaces %}
-            <div class="dialog-grid-button basis-[300px] shrink-0 mb-12">
+            <a class="basis-[300px] shrink-0 mb-12" href="/indoor-studio">
                 <div class="relative rounded mb-4" style="aspect-ratio: 45/55;">
                     {% if shoot.short-pricing %}
                     <span class="text-xs bg-white rounded-lg absolute top-4 right-4 p-2">{{shoot.short-pricing}} </span>
@@ -186,7 +188,7 @@ reasons:
                 </div>
                 <h2>{{shoot.name}}</h2>
                 <p class="text-balance text-xs">{{shoot.short-description}}</p>
-            </div>
+            </a>
 
             {% comment %}
             <dialog>

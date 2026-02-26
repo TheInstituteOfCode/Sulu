@@ -8,7 +8,7 @@ short-description: Clear blue skys as far as the eye can see, means unlimited po
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
 short-pricing:  
 featured-images: 
-    - image: /assets/images/sulu-studio-space-5.jpg
+    - image: /uploads/rooftop-3.jpg
       alt: A
 faq:
     -   q: What we do

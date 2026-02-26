@@ -1,14 +1,14 @@
 ---
 categories: 
     - indoor
-name: 'Set #06'
+name: 'Daylight'
 order: 6
 vertical-font-vh: 5vh
 short-description: Let there be sun - With our state of the art lighting system, we can bring the sun to even the darkest days.
 long-description:   <p>Let there be sun - With our state of the art lights system, we can bring the sun to even the darkest days. </p>
 short-pricing: 
 featured-images: 
-    - image: /assets/images/sulu-studio-space-2.jpg
+    - image: /uploads/suluh-light and bright.jpg
       alt: A
 faq:
     -   q: What we do
