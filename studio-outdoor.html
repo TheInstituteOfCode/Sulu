@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Studios | Indoor & Outdoor Photography Studios at Suluh
+hide-nav-border-bottom: true
 studio-images-marble:
   - alt: img 1
     image_path: /uploads/outdoor-marble garden studio-1.jpg
@@ -294,7 +295,7 @@ faq:
       everything to ensure not just a stunning end result but a seamless and
       stress-free process. 
     featured-images:
-      - image: /uploads/suluh-about-the-space.jpg
+      - image: /uploads/outdoor photography studio details.jpg
         alt: img 1
         text-color-light: true
   - q: COMPLETE PRIVACY & EASY ACCESS
@@ -338,6 +339,7 @@ faq:
       - image: /uploads/suluh-lighting-and-grip-equipment.jpg
         alt: ''
         text-color-light: true
+
 ---
 <section class="bg-dark">
         <div class="flex justify-center items-center relative min-h-[80vh]">
@@ -346,7 +348,7 @@ faq:
                 <h1 class="text-lg sm:text-xl md:text-2xl h-block editable mb-2 text-white">
                     studio &amp; film set.
                 </h1>
-                <p class="text-balance text-black editable">
+                <p class="text-balance text-psudo-black editable">
                     Welcome to our outdoor photography studio - a huge 1200m2 space with natural textured stone &amp; limewash walls, beautiful gardens and stunning light all day long.
                 </p>
                 <a href="/portfolio" class="button-light button-rounded button-arrow editable">
@@ -514,33 +516,34 @@ faq:
 {% include hover-slide.js %}
 </script>
 
+
 <section>
     <div class="col-span-full mb-16">
-        <h2 class="text-5xl text-center max-w-[32rem] mx-auto">photography studio details</h2>
+        <h2 class="text-5xl text-center max-w-[32rem] mx-auto h-block">photography studio details</h2>
     </div>
-<div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-black " style="grid-template-columns: 3fr 4fr;">
-    {% for q in page.faq %}
-    <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries rounded-r-4xl overflow-hidden" data-gallery-number="{{forloop.index}}">
-        <div class="relative gallery-image-holder h-[90vh] ">
-            {% for image in q.featured-images %}
-            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}" />
-            {% endfor %}
-            
-            {% if q.featured-images.size > 1 %}
-            <div class="absolute bottom-4 right-4 flex gap-1">
-                <div class="next"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
-                <div class="prev"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>
-            </div>
-            {% endif %}
-            
-        </div>
-    </div>
-    {% endfor %}
+    <div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-psudo-black overflow-hidden" style="grid-template-columns: 3fr 4fr;">
+          {% for q in page.faq %}
+          <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries overflow-hidden" data-gallery-number="{{forloop.index}}">
+              <div class="relative gallery-image-holder h-[90vh] ">
+                  {% for image in q.featured-images %}
+                  <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}" />
+                  {% endfor %}
+                  
+                  {% if q.featured-images.size > 1 %}
+                  <div class="absolute bottom-4 right-4 flex gap-1">
+                      <div class="next"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
+                      <div class="prev"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>
+                  </div>
+                  {% endif %}
+                  
+              </div>
+          </div>
+          {% endfor %}
 
         <div class="md:h-[90vh] md:overflow-y-scroll">
 
             {% for q in page.faq %}
-            <div class="question border-b-1 border-grey-dark p-4" data-q-number="{{forloop.index}}">
+            <div class="question  {% unless forloop.last %} border-b-1 {% endunless %} border-grey-dark p-4" data-q-number="{{forloop.index}}">
                 <div class="max-height-true">
                     <div class="faq-header flex justify-between max-height-question  p-2">
                         <p class="h-mono mb-0 text-sm uppercase text-dark">{{q.q}}</p>
@@ -551,7 +554,9 @@ faq:
                     </div>
                     <div class="answer overflow-hidden transition-all" style="height: 0px;">
                         <div class="true-height p-2">
+                          
                             {{q.a}}
+                          
                         </div>
                     </div>
 
@@ -565,35 +570,48 @@ faq:
 
 <section class="bg-dark text-white">
   <h2 class="text-5xl text-center mx-auto">studio floor plan</h2>
-  <img src="/uploads/suluh-natural-light-studio.jpg" alt="" class="editable rounded-4xl mb-8" />
+  <img src="/uploads/outdoor-studio floor plan.jpg" class="editable rounded-4xl mb-8" />
   <h3>Studio floorplan</h3>
   <p>featuring a 1200m2 space that includes xyz broken up into 3 areas to choose from, xyz...</p>
 </section>
+
+
     <script>
-        //  don't have both this js and the dialog js as its repeated code With small changes to enable multi gallery bassed on selected faq. 
+       //  don't have both this js and the dialog js as its repeated code With small changes to enable multi gallery bassed on selected faq. 
     let questions = document.querySelectorAll('.question')
-    let faqGalleries = document.querySelectorAll('.faq-galleries')
     console.log(questions, 'questions')
-     questions.forEach(question => {
-        let answer =  question.querySelector('.answer')
+    questions.forEach(question => {
+      let answer =  question.querySelector('.answer')
+      
+      let faqGalleries = question.parentElement.parentElement.querySelectorAll('.faq-galleries')
+
 
         question.addEventListener('click', ()=>{
-                faqGalleries.forEach(gal => gal.classList.add('hidden'))
-                faqGalleries.forEach(gal => {
-                    if (gal.dataset.galleryNumber == question.dataset.qNumber) {
-                        gal.classList.remove('hidden')
-                    }
-                })
-                questions.forEach(q => {
-                    if (q != question) {
-                        q.classList.remove('active')
-                        q.querySelector('.answer').style.height = '0px'
+            if (faqGalleries.length > 1){
+
+              faqGalleries.forEach(gal => gal.classList.add('hidden'))
+              faqGalleries.forEach(gal => {
+                if (gal.dataset.galleryNumber == question.dataset.qNumber) {
+                  gal.classList.remove('hidden')
+                }
+              })
+            }
+              questions.forEach(q => {
+                console.log(q, question, q != question)
+                  if (q != question) {
+                      q.classList.remove('active')
+                      q.querySelector('.answer').style.height = '0px'
+                  } else {
+                    if (q.classList.contains('active')){
+                      q.classList.remove('active')
+                      q.querySelector('.answer').style.height = '0px'
                     } else {
-                        q.classList.add('active')
-                        answer.style.height = `${answer.scrollHeight}px`
+                      q.classList.add('active')
+                      answer.style.height = `${answer.scrollHeight}px`
+
                     }
-                })
-            question.classList.toggle('active')
+                  }
+              })
             // console.log(answer.scrollHeight)
             // if (question.classList.contains('active')) {
             //     answer.style.height = `${answer.scrollHeight}px`

@@ -35,6 +35,7 @@
 /* CSS variable colors */
 
 :root {
+    --psudo-black: #2A2A2A;
     --dark: rgb(42,42,42);
     --cream-400: #F9F7F4;
     --cream-300: #FAFAF7;
@@ -78,6 +79,10 @@ html.lockScroll,html.lockScroll body {
         color: rgb(120,120,120);
     }
 
+    .p-parent-white p{
+        color: white;
+    }
+
     h1,h2,h3,h4,h5 {
         font-family: "Questrial", sans-serif;
         font-size: 1.5rem;
@@ -105,6 +110,67 @@ html.lockScroll,html.lockScroll body {
         font-family: "Inconsolata", monospace;
         font-weight: 600;
     }
+
+    .last-child-remove-margin > :last-child{
+        margin-bottom: 0;
+    }
+
+
+    .clickable {
+        cursor: pointer;
+        transition: all 1s;
+        transform: rotate(0);
+        position: relative;
+    }
+
+    .clickable:hover {
+        transform: scale(1.02);
+        /* animation: bounce 2s linear infinite; */
+    }
+
+
+    .clickable-color-flip{
+        transition: all .5s;
+    }
+
+    .clickable-underline{
+        position: relative;
+    }
+    .clickable-underline::after {
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        left:0;
+        border-bottom:2px solid transparent;
+        width:0;
+        transition: all .5s;
+
+    }
+    .clickable-underline:hover::after{
+        width: 100%;
+        border-color: initial;
+        transition: border-color 2s, width .5;
+    }
+
+    .clickable-color-flip:hover {
+        filter: invert(1);
+    }
+
+    @keyframes bounce {
+        0% {top:0;};
+        25% {top:1px;};
+        75% {top:-1px;};
+        100% {top:0;};
+    }
+
+    @keyframes hoverAbleWiggle {
+        0% {transform: rotate(0);};
+        25% {transform: rotate(2deg);};
+        75% {transform: rotate(-2deg);};
+        100% {transform: rotate(0);};
+
+    }
+
 
     footer, section {
         /* margin-right: var(--side-gap);

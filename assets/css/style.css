@@ -7,10 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-md: 48rem;
@@ -35,7 +33,6 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-bold: 700;
-    --font-weight-black: 900;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -262,6 +259,9 @@
   .left-\[100vw\] {
     left: 100vw;
   }
+  .z-2 {
+    z-index: 2;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -324,6 +324,9 @@
   }
   .mt-auto {
     margin-top: auto;
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
@@ -592,9 +595,6 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .gap-16 {
-    gap: calc(var(--spacing) * 16);
-  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -624,6 +624,9 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-tl-4xl {
+    border-top-left-radius: var(--radius-4xl);
   }
   .rounded-r-4xl {
     border-top-right-radius: var(--radius-4xl);
@@ -669,9 +672,6 @@
     --tw-border-style: none;
     border-style: none;
   }
-  .border-black {
-    border-color: var(--color-black);
-  }
   .border-dark {
     border-color: var(--color-dark);
   }
@@ -683,9 +683,6 @@
   }
   .border-white {
     border-color: var(--color-white);
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-cream {
     background-color: var(--color-cream);
@@ -748,6 +745,9 @@
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-\[5\%\] {
+    padding-inline: 5%;
   }
   .px-\[5vw\] {
     padding-inline: 5vw;
@@ -894,19 +894,12 @@
     --tw-leading: 1;
     line-height: 1;
   }
-  .font-black {
-    --tw-font-weight: var(--font-weight-black);
-    font-weight: var(--font-weight-black);
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
   .text-balance {
     text-wrap: balance;
-  }
-  .text-black {
-    color: var(--color-black);
   }
   .text-dark {
     color: var(--color-dark);
@@ -959,6 +952,20 @@
       color: var(--color-white);
     }
   }
+  .hover\:bg-dark {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-dark);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
@@ -978,6 +985,11 @@
     @media (width >= 40rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:sticky {
+    @media (width >= 48rem) {
+      position: sticky;
     }
   }
   .md\:order-0 {
@@ -1083,6 +1095,11 @@
   .md\:overflow-y-scroll {
     @media (width >= 48rem) {
       overflow-y: scroll;
+    }
+  }
+  .md\:rounded-tl-none {
+    @media (width >= 48rem) {
+      border-top-left-radius: 0;
     }
   }
   .md\:p-0 {
@@ -1244,6 +1261,7 @@
   }
 }
 :root {
+  --psudo-black: #2A2A2A;
   --dark: rgb(42,42,42);
   --cream-400: #F9F7F4;
   --cream-300: #FAFAF7;
@@ -1272,6 +1290,9 @@ html.lockScroll,html.lockScroll body {
     margin-bottom: 1rem;
     color: rgb(120,120,120);
   }
+  .p-parent-white p {
+    color: white;
+  }
   h1,h2,h3,h4,h5 {
     font-family: "Questrial", sans-serif;
     font-size: 1.5rem;
@@ -1296,6 +1317,69 @@ html.lockScroll,html.lockScroll body {
   .h-mono {
     font-family: "Inconsolata", monospace;
     font-weight: 600;
+  }
+  .last-child-remove-margin > :last-child {
+    margin-bottom: 0;
+  }
+  .clickable {
+    cursor: pointer;
+    transition: all 1s;
+    transform: rotate(0);
+    position: relative;
+  }
+  .clickable:hover {
+    transform: scale(1.02);
+  }
+  .clickable-color-flip {
+    transition: all .5s;
+  }
+  .clickable-underline {
+    position: relative;
+  }
+  .clickable-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    border-bottom: 2px solid transparent;
+    width: 0;
+    transition: all .5s;
+  }
+  .clickable-underline:hover::after {
+    width: 100%;
+    border-color: initial;
+    transition: border-color 2s, width .5;
+  }
+  .clickable-color-flip:hover {
+    filter: invert(1);
+  }
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: 1px;
+    }
+    75% {
+      top: -1px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @keyframes hoverAbleWiggle {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
   footer, section {
     padding: 5%;
