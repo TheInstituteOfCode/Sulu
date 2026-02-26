@@ -149,6 +149,7 @@ html.lockScroll,html.lockScroll body {
     .clickable-underline:hover::after{
         width: 100%;
         border-color: initial;
+        transition: border-color 2s, width .5;
     }
 
     .clickable-color-flip:hover {

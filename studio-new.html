@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Studios | Indoor & Outdoor Photography Studios at Suluh
+hide-nav-border-bottom: true
 studio-images-1:
   - alt: img 1
     image_path: /uploads/studio-images-1-1.jpg
@@ -358,7 +359,7 @@ add-ons:
 
 <section class="p-0">
     <div class="grid md:grid-cols-2">
-        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 py-8">
+        <div class="md:sticky top-0 md:h-screen flex flex-col justify-end px-8 py-8">
             <h2>INDOOR PHOTOGRAPHY STUDIO IN CEMAGI, BALI</h2>
             <p>From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand.</p>
             <p>Showcase your beauty products in use with our  model photography services.</p>
@@ -381,7 +382,7 @@ add-ons:
                 <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full" />
             {% endfor %}
         </div>
-        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 pb-8">
+        <div class="md:sticky top-0 md:h-screen flex flex-col justify-end px-8 py-8">
             <h2>DESIGNED BY PHOTOGRAPHERS, FOR PHOTOGRAPHERS. </h2>
             <p>From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand.</p>
             <p>Showcase your beauty products in use with our  model photography services.</p>
@@ -435,29 +436,29 @@ add-ons:
     <div class="col-span-full mb-16">
         <h2 class="text-5xl text-center max-w-[32rem] mx-auto h-block">photography studio details</h2>
     </div>
-<div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-psudo-black " style="grid-template-columns: 3fr 4fr;">
-    {% for q in page.faq %}
-    <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries rounded-tl-4xl md:rounded-tl-none rounded-r-4xl overflow-hidden" data-gallery-number="{{forloop.index}}">
-        <div class="relative gallery-image-holder h-[90vh] ">
-            {% for image in q.featured-images %}
-            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}" />
-            {% endfor %}
-            
-            {% if q.featured-images.size > 1 %}
-            <div class="absolute bottom-4 right-4 flex gap-1">
-                <div class="next"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
-                <div class="prev"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>
-            </div>
-            {% endif %}
-            
-        </div>
-    </div>
-    {% endfor %}
+    <div class="md:grid w-[80vw] mx-auto md:h-[90vh] relative border-2 rounded-4xl border-psudo-black overflow-hidden" style="grid-template-columns: 3fr 4fr;">
+          {% for q in page.faq %}
+          <div class="{% unless forloop.first %} hidden {% endunless %} md:order-2 faq-galleries overflow-hidden" data-gallery-number="{{forloop.index}}">
+              <div class="relative gallery-image-holder h-[90vh] ">
+                  {% for image in q.featured-images %}
+                  <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" data-text-color="{% if image.text-color-light %}light{% else %}dark{% endif %}" />
+                  {% endfor %}
+                  
+                  {% if q.featured-images.size > 1 %}
+                  <div class="absolute bottom-4 right-4 flex gap-1">
+                      <div class="next"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
+                      <div class="prev"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>
+                  </div>
+                  {% endif %}
+                  
+              </div>
+          </div>
+          {% endfor %}
 
         <div class="md:h-[90vh] md:overflow-y-scroll">
 
             {% for q in page.faq %}
-            <div class="question border-b-1 border-grey-dark p-4" data-q-number="{{forloop.index}}">
+            <div class="question  {% unless forloop.last %} border-b-1 {% endunless %} border-grey-dark p-4" data-q-number="{{forloop.index}}">
                 <div class="max-height-true">
                     <div class="faq-header flex justify-between max-height-question  p-2">
                         <p class="h-mono mb-0 text-sm uppercase text-dark">{{q.q}}</p>
@@ -482,123 +483,7 @@ add-ons:
     </div>
 </section>
 
-
-<section class="pb-0 overflow-x-scroll">
-
-        <div>
-            <h2 class="text-xl h-block mb-12 text-center">studio pricing</h2>
-            <h3 class="text-lg  text-center h-block">book a single space</h3>
-        </div>
-        <div class="grid border-2 border-psudo-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
-            <div class="border-r border-b border-gray-300 text-center p-4"></div>
-            <div class="border-r border-b border-gray-300 text-center p-4">
-                <h3>HALF DAY</h3>
-                <p>Up to 5 hours</p>
-            </div>
-            <div class="border-r border-b border-gray-300 text-center p-4">
-                <h3>FULL DAY</h3>
-                <p>Up to 10 hours</p>
-            </div>
-            <div class="border-b border-gray-300 text-center p-4">
-                <h3>EXTENDED</h3>
-                <p>5am - midnight</p>
-            </div>
-        {% for space in page.single-space %}
-            <div class="border-r border-b border-gray-300 p-6">
-                <h3>{{space.name}}</h3>
-                <p class="text-balance">{{space.description}}</p>
-            </div>
-            <div class="border-r border-b border-gray-300 text-center p-4 flex justify-center items-center">
-                <p class="text-sm text-psudo-black">{{space.half_day}}</p>
-            </div>
-            <div class="border-r border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-psudo-black">{{space.full_day}}</p>
-            </div>
-            <div class="border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-psudo-black">{{space.extended}}</p>
-            </div>
-        {% endfor %}
-        </div>
-
-
-</section>
-
-<section class="pb-0 overflow-x-scroll">
-
-        <div>
-            <h3 class="text-lg text-center h-block">studio bundles</h3>
-        </div>
-        <div class="grid border-2 border-psudo-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px;">
-            <div class="border-r border-b border-gray-300 text-center p-4"></div>
-            <div class="border-r border-b border-gray-300 text-center p-4">
-                <h3>HALF DAY</h3>
-                <p>Up to 5 hours</p>
-            </div>
-            <div class="border-r border-b border-gray-300 text-center p-4">
-                <h3>FULL DAY</h3>
-                <p>Up to 10 hours</p>
-            </div>
-            <div class="border-b border-gray-300 text-center p-4">
-                <h3>EXTENDED</h3>
-                <p>5am - midnight</p>
-            </div>
-        {% for space in page.bundles %}
-            <div class="border-r border-b border-gray-300 p-6">
-                <h3>{{space.name}}</h3>
-                <p class="text-balance">{{space.description}}</p>
-            </div>
-            <div class="border-r border-b border-gray-300 text-center p-4 flex justify-center items-center">
-                <p class="text-sm text-psudo-black">{{space.half_day}}</p>
-            </div>
-            <div class="border-r border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-psudo-black">{{space.full_day}}</p>
-            </div>
-            <div class="border-b border-gray-300 flex justify-center items-center p-4">
-                <p class="text-sm text-psudo-black">{{space.extended}}</p>
-            </div>
-        {% endfor %}
-        </div>
-
-
-</section>
-
-<section>
-    <div class="grid md:grid-cols-2 gap-16">
-        <div>
-            <h3 class="text-lg text-center md:text-left h-block">complimentary inclusions</h3>
-            <div class="grid border-2 border-psudo-black rounded-4xl pricing-table">
-            {% for space in page.inclusions %}
-                <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-300 p-6 balanced-div">
-                    <h3>{{space.name}}</h3>
-                    {{space.description-html}}
-                </div>
-            {% endfor %}
-            </div>
-        </div>
-                <div>
-            <h3 class="text-lg text-center md:text-left h-block">optional add-ons</h3>
-            <div class="grid border-2 border-psudo-black rounded-4xl pricing-table" style="grid-template-columns: 1fr 8rem;">
-            {% for space in page.add-ons %}
-                <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-300 p-6 balanced-div">
-                    <h3>{{space.name}}</h3>
-                    <p>
-                        {{space.description}}
-                    </p>
-
-                </div>
-                <div class="flex justify-center items-center text-center {% unless forloop.last %} border-b border-gray-300{% endunless %}">
-                    <div>
-                        <h3 class="mb-0">{{space.price}}</h3>
-                        <p>{{space.per_description}}</p>
-                    </div>
-                </div>
-            {% endfor %}
-            </div>
-        </div>
-    </div>
-</section>
-
-
+{% include pricing.html %}
 
 
 
@@ -608,28 +493,39 @@ add-ons:
     <script>
         //  don't have both this js and the dialog js as its repeated code With small changes to enable multi gallery bassed on selected faq. 
     let questions = document.querySelectorAll('.question')
-    let faqGalleries = document.querySelectorAll('.faq-galleries')
     console.log(questions, 'questions')
-     questions.forEach(question => {
-        let answer =  question.querySelector('.answer')
+    questions.forEach(question => {
+      let answer =  question.querySelector('.answer')
+      
+      let faqGalleries = question.parentElement.parentElement.querySelectorAll('.faq-galleries')
+
 
         question.addEventListener('click', ()=>{
-                faqGalleries.forEach(gal => gal.classList.add('hidden'))
-                faqGalleries.forEach(gal => {
-                    if (gal.dataset.galleryNumber == question.dataset.qNumber) {
-                        gal.classList.remove('hidden')
-                    }
-                })
-                questions.forEach(q => {
-                    if (q != question) {
-                        q.classList.remove('active')
-                        q.querySelector('.answer').style.height = '0px'
+            if (faqGalleries.length > 1){
+
+              faqGalleries.forEach(gal => gal.classList.add('hidden'))
+              faqGalleries.forEach(gal => {
+                if (gal.dataset.galleryNumber == question.dataset.qNumber) {
+                  gal.classList.remove('hidden')
+                }
+              })
+            }
+              questions.forEach(q => {
+                console.log(q, question, q != question)
+                  if (q != question) {
+                      q.classList.remove('active')
+                      q.querySelector('.answer').style.height = '0px'
+                  } else {
+                    if (q.classList.contains('active')){
+                      q.classList.remove('active')
+                      q.querySelector('.answer').style.height = '0px'
                     } else {
-                        q.classList.add('active')
-                        answer.style.height = `${answer.scrollHeight}px`
+                      q.classList.add('active')
+                      answer.style.height = `${answer.scrollHeight}px`
+
                     }
-                })
-            question.classList.toggle('active')
+                  }
+              })
             // console.log(answer.scrollHeight)
             // if (question.classList.contains('active')) {
             //     answer.style.height = `${answer.scrollHeight}px`
