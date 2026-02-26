@@ -119,10 +119,18 @@ html.lockScroll,html.lockScroll body {
         cursor: pointer;
         /* transition: all 1s; */
         transform: rotate(0);
+        position: relative;
     }
 
     .clickable:hover {
-        animation: hoverAbleWiggle 2s linear infinite;
+        animation: bounce 2s linear infinite;
+    }
+
+    @keyframes bounce {
+        0% {top:0;};
+        25% {top:1px;};
+        75% {top:-1px;};
+        100% {top:0;};
     }
 
     @keyframes hoverAbleWiggle {
