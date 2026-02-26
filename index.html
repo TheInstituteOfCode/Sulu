@@ -330,14 +330,14 @@ featured-work-block:
         </div>
 
 </section>
-<section class="px-0 pt-0">
+<section class="p-0 pt-0">
     
-    <div class="px-[5vw] max-w-screen-lg">
+    <div class="px-[5vw] pt-[5vw] max-w-screen-lg">
             <h3 class="text-[1.8rem]">FLAT-RATE PRODUCT PHOTOGRAPHY</h3>
             <p class="text-balance"> Simple, affordable, per-image pricing - fill in our simple shoot planner, send us your products and we’ll handle everything else.</p>
     </div>
 
-        <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 pt-3 pb-[5vw]  px-[var(--side-gap)]">
         
             {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'product'" | sort: "order" %}
 
@@ -349,14 +349,14 @@ featured-work-block:
     
 </section>
 
-<section class="px-0 pt-0"> 
+<section class="p-0 pt-0"> 
 
-    <div class="px-[5vw] max-w-screen-lg">
+    <div class="px-[5vw] pt-[5vw] max-w-screen-lg">
             <h3 class="text-[1.8rem]">FLAT-RATE MODEL PHOTOGRAPHY</h3>
             <p class="text-balance"> Simple, affordable, flat-rate that covers everything - the studio rental, the photographer, a professional model, hair & makeup artist, and image editing & re-touching. </p>
     </div>
 
-        <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 pt-3 pb-[5vw] px-[var(--side-gap)]">
         
             {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'model'" | sort: "order" %}
             {% for shoot in flat-rate-photo  %}
@@ -368,14 +368,14 @@ featured-work-block:
 </section>
 
 
-<section class="px-0 pt-0"> 
+<section class="p-0 pt-0"> 
 
-    <div class="px-[5vw] max-w-screen-lg">
+    <div class="px-[5vw] pt-[5vw] max-w-screen-lg">
             <h3 class="text-[1.8rem]">CREATIVE CAMPAIGNS</h3>
             <p class="text-balance"> More flexibility, more creativity designed just for your brand. Choose from a mini-shoot, a half-day or a full day and design your dream shoot. </p>
     </div>
 
-        <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 pt-3 pb-[5vw] px-[var(--side-gap)]">
         
             {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'creative'" | sort: "order" %}
             {% for shoot in flat-rate-photo %}
