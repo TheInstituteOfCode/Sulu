@@ -3,9 +3,13 @@ order: 17
 ---
 <!-- image container with padding to match Figma spacing -->
 
-<div class="card w-[27.5625rem] h-[38.9375rem] bg-[#F2F3ED] flex flex-col justify-between">
+<div class="card w-[27.5625rem] h-[38.9375rem] bg-[#F2F3ED] flex flex-col justify-between group">
     <div class="p-2 pb-0">
-        <img src="assets/images/gallery-card-1.jpg" alt="" class="w-full h-[28.25rem] object-cover" />
+        <!-- <img src="assets/images/gallery-card-1.jpg" alt="" class="w-full h-[28.25rem] object-cover" /> -->
+                <div class="relative w-full  h-[28.25rem] ">
+             <img src="/assets/images/card-1-2.png" alt="Epitex Bedding" class=" object-cover object-center absolute h-full w-full inset-0"/>
+             <img src="/assets/images/card-1-1.png" alt="Epitex Bedding" class=" group-hover:opacity-0 transition-opacity duration-[.5s] object-cover object-center absolute h-full w-full inset-0"/>
+         </div>
     </div>
 
     <!-- text content beneath image -->

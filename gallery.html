@@ -17,9 +17,17 @@ layout: default
     let desiredRem = 16
     let base = document.querySelector('html')
     function adaptGrid(){
+
+        let maxRems = 16
+
         console.log(base,window,window.innerWidth)
         desiredRem =  window.innerWidth / 90
-        base.style.fontSize = `${desiredRem}px`
+        if (desiredRem < maxRems) {
+            base.style.fontSize = `${desiredRem}px`
+        } else {
+            base.style.fontSize = `${maxRems}px`
+        }
+
     }
 
     adaptGrid()

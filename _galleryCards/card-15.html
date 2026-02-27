@@ -3,7 +3,7 @@ order: 15
 ---
 
 <!-- quote-style gallery card based on Figma node 624:1000 -->
-<div class="card w-[27.5625rem] h-[38.9375rem] bg-[#8E794A] text-white relative p-4">
+<div class="card w-[27.5625rem] h-[38.9375rem] bg-[#8E794A] text-white relative p-4 group">
     <!-- main quote text -->
     <p class="text-[2rem] leading-[1.75rem] font-extrabold text-black w-[17rem] tracking-[0.06rem]">“Working with the team was seamless. They captured our values beautifully, elevating our brand with imagery that feels authentic, considered, and truly us — from the styling to the lighting.”</p>
 
@@ -12,5 +12,9 @@ order: 15
 
     <!-- small image in bottom-right corner; swap src as needed -->
     <img src="assets/images/gallery-card-1.jpg" alt="Photographer portrait" class="absolute bottom-4 right-4 w-[10.7rem] h-[10.7rem] object-cover" />
+        <div class="absolute bottom-4 right-4 w-[10.7rem] h-[10.7rem]">
+             <img src="/assets/images/card-1-2.png" alt="Epitex Bedding" class=" object-cover object-center absolute h-full w-full inset-0"/>
+             <img src="/assets/images/card-1-1.png" alt="Epitex Bedding" class=" group-hover:opacity-0 transition-opacity duration-[.5s] object-cover object-center absolute h-full w-full inset-0"/>
+         </div>
 </div>
 

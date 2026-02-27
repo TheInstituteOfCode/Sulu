@@ -3,7 +3,7 @@ order: 23
 ---
 
 <!-- gallery card styled according to Figma design for Epitex Bedding collection -->
-<div class="card w-[27.5625rem] h-[38.9375rem] bg-[#f2f3ed] flex flex-col">
+<div class="card w-[27.5625rem] h-[38.9375rem] bg-[#f2f3ed] flex flex-col group">
     <!-- image container with padding to match existing cards -->
     <div class="flex justify-between items-start px-4 pt-0">
         <span class="text-[1.6rem] font-extrabold leading-[3rem] uppercase">NOMADA</span>
@@ -11,7 +11,11 @@ order: 23
     </div>
     <div class="relative p-[0.9375rem] mt-auto">
         <!-- replace the src with the actual photo for the project -->
-        <img src="uploads/gallery-card-1.jpg" alt="Epitex Bedding" class="w-full h-[18.7rem] object-cover" />
+        <!-- <img src="uploads/gallery-card-1.jpg" alt="Epitex Bedding" class="w-full h-[18.7rem] object-cover" /> -->
+        <div class="relative w-full h-[18.7rem] object-cover">
+             <img src="/assets/images/card-1-2.png" alt="Epitex Bedding" class=" object-cover object-center absolute h-full w-full inset-0"/>
+             <img src="/assets/images/card-1-1.png" alt="Epitex Bedding" class=" group-hover:opacity-0 transition-opacity duration-[.5s] object-cover object-center absolute h-full w-full inset-0"/>
+         </div>
 
         <!-- overlay text positioned in each corner -->
         <div class="pointer-events-none">
