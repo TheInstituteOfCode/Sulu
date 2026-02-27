@@ -2,7 +2,7 @@
 categories: 
     - indoor
 name: 'Vintage Elegance'
-order: 4
+order: 30
 vertical-font-vh: 5vh
 short-description: Vintage elegance - parquet floor and a color wall of your choice, its the perfect way to add a touch of drama.
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>

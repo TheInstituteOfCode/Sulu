@@ -9,3 +9,4 @@ collections:
     output: false
   galleryCards: 
     output: false
+    sort_by: order
