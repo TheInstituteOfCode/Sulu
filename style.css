@@ -16,6 +16,7 @@
   --color-grey: var(--grey-400);
   --color-grey-dark: var(--grey-600);
 
+
   /* Font sizes */
   --text-tiny: 0.8rem;
   --text-xs: 0.9rem;
@@ -101,6 +102,11 @@ html.lockScroll,html.lockScroll body {
         color: rgb(120,120,120);
         @apply list-disc ml-4 mb-2;
     }
+
+    .font-dm{
+        font-family: "DM Sans", sans-serif;
+    }
+
 
     .h-block {
         font-family: "DM Sans", sans-serif;
