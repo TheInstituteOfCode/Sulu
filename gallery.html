@@ -19,11 +19,17 @@ layout: default
     function adaptGrid(){
 
         let maxRems = 16
+        let minRems = 12
 
         console.log(base,window,window.innerWidth)
         desiredRem =  window.innerWidth / 90
         if (desiredRem < maxRems) {
-            base.style.fontSize = `${desiredRem}px`
+            if (desiredRem < minRems) {
+                base.style.fontSize = `${minRems}px`
+            } else {
+                base.style.fontSize = `${desiredRem}px`
+            }
+
         } else {
             base.style.fontSize = `${maxRems}px`
         }
