@@ -1,14 +1,14 @@
 ---
 categories: 
     - outdoor
-name: Rooftop No.2
+name: The Balcony
 order: 6
 vertical-font-vh: 5vh
-short-description: Our hand made terracotta tile rooftop will have you glowing like a day in the south of Italy.
+short-description: 15m long stone balcony in the Marble Graden, under cover in case of rain and with optional billowing sheer curtains.
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
-short-pricing: coming soon
+short-pricing: 
 featured-images: 
-    - image: /assets/images/sulu-studio-space-10.jpg
+    - image: /uploads/outdoor-studio and film set.jpg
       alt: A
 faq:
     -   q: What we do

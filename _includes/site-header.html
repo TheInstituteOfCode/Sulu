@@ -1,3 +1,5 @@
+
+   
    <header class=" pt-8 p-[5%] pb-0 ">
       <div class="flex justify-between {% unless page.hide-nav-border-bottom == true %} border-b-2 border-dark {% endunless %}">
             <h2 class="mb-0 pt-4"><a href="/"> Suluh Studios</a></h2>
@@ -6,7 +8,8 @@
                 <span class="border-r-2 border-dark py-2 pr-8 mr-8 hidden lg:inline-block">
                 
 
-                
+                <a href="/indoor-studio" class="ml-4">Indoor Studio</a>
+                <a href="/outdoor-studio" class="ml-4">Outdoor Studio</a>
                 <a href="/contact" class="ml-4 button-featured button-rounded">Plan your shoot</a>
                 
             </span> 
@@ -46,8 +49,12 @@
         </div>
     </header>
 
+
+
+
     {% comment %}
-   
+
+
    <header class="p-[5%] pb-0 ">
       <div class="flex justify-between {% unless page.hide-nav-border-bottom == true %} border-b-2 border-dark {% endunless %}">
             <h2 class="mb-0 pt-4"> Suluh Studios</h2>
@@ -56,7 +63,7 @@
                 <span class="border-r-2 border-dark py-2 pr-8 mr-8 hidden lg:inline-block">
                 
                 <span class="ml-4"> shoot types </span>
-                <div class="hidden "> 
+                <div class="hidden"> 
                     {% for type in site.shoots %}
                     <a href="{{type.url}}">{{type.shoot-type}}</a>
                     {% endfor %}

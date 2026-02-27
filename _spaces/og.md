@@ -1,14 +1,14 @@
 ---
 categories: 
     - indoor
-name: 'Set #01'
+name: 'The main stage'
 order: 1
 vertical-font-vh: 5vh
 short-description: The OG - Warm limewashed walls and polished concrete floors, the perfect mix of soft and hard textures. 
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
 short-pricing: 
 featured-images: 
-    - image: /assets/images/sulu-studio-space-1.jpg
+    - image: /uploads/shot-at-suluh-studio-nomad-the-label-fashion-shoot-1.jpg
       alt: A
 faq:
     -   q: What we do

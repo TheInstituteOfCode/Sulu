@@ -1,7 +1,13 @@
 header:
 
-  - name: studio
-    link: /studio
+  - name: indoor studio
+    link: /indoor-studio
+    featured: false
+  - name: studio rental rates
+    link: /indoor-studio#details
+    featured: false
+  - name: outdoor studio
+    link: /spaces
     featured: false
   - name: Plan your shoot
     link: /contact

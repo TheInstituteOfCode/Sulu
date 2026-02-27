@@ -6,9 +6,9 @@ order: 6
 vertical-font-vh: 5vh
 short-description: We are bringing the ocean to the backyard with aTake a dip in out 8m long swimming pool, perfect for swimwear & beauty. 
 long-description:   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum in culpa beatae excepturi est deleniti rem illo consectetur accusantium aliquid. Placeat veritatis modi unde consequuntur sunt voluptas sapiente hic nobis?</p><p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis in inventore ad nihil, consequuntur sed fuga illum praesentium tempore esse necessitatibus minus quis, nam ipsum fugit veritatis aut obcaecati.</p>
-short-pricing: coming soon
+short-pricing: Opening March 6th
 featured-images: 
-    - image: /assets/images/sulu-studio-space-6.jpg
+    - image: /uploads/pool-1.jpg
       alt: A
 faq:
     -   q: What we do
