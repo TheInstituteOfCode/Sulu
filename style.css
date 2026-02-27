@@ -8,6 +8,7 @@
 
 @theme {
   /* Custom colors using your CSS variables */
+  --color-black: #2A2A2A;
   --color-dark: var(--dark);
   --color-cream: var(--cream-400);
   --color-lightcream: var(--cream-300);
@@ -35,7 +36,7 @@
 /* CSS variable colors */
 
 :root {
-    --psudo-black: #2A2A2A;
+    --black: #2A2A2A;
     --dark: rgb(42,42,42);
     --cream-400: #F9F7F4;
     --cream-300: #FAFAF7;

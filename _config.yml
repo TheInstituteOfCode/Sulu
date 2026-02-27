@@ -7,3 +7,5 @@ collections:
     output: false
   props:
     output: false
+  galleryCards: 
+    output: false

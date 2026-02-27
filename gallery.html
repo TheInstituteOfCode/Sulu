@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<section class="flex flex-wrap gap-3 justify-center bg-black">
+
+    {% for card in site.galleryCards %}
+    
+    
+        {{card}}
+    </div>
+    {% endfor %}
+
+</section>
+
+
+<script>
+
+    let desiredRem = 16
+    let base = document.querySelector('html')
+    function adaptGrid(){
+        console.log(base,window,window.innerWidth)
+        desiredRem =  window.innerWidth / 90
+        base.style.fontSize = `${desiredRem}px`
+    }
+
+    adaptGrid()
+
+    window.addEventListener('resize',adaptGrid)
+</script>

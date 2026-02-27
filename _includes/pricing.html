@@ -7,7 +7,7 @@
         </div>
         <div class="px-[5%] overflow-x-scroll">
                 
-            <div class="grid border-2 border-psudo-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
+            <div class="grid border-2 border-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
                 <div class="border-r border-b border-gray-300 text-center p-4"></div>
                 <div class="border-r border-b border-gray-300 text-center p-4">
                     <h3>HALF DAY</h3>
@@ -27,13 +27,13 @@
                     <p class="text-balance mb-0">{{space.description}}</p>
                 </div>
                 <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 text-center p-6 flex justify-center items-center">
-                    <p class="text-sm text-psudo-black mb-0" >{{space.half_day}}</p>
+                    <p class="text-sm text-black mb-0" >{{space.half_day}}</p>
                 </div>
                 <div  class="border-r{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
-                    <p class="text-sm text-psudo-black mb-0">{{space.full_day}}</p>
+                    <p class="text-sm text-black mb-0">{{space.full_day}}</p>
                 </div>
                 <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
-                    <p class="text-sm text-psudo-black mb-0">{{space.extended}}</p>
+                    <p class="text-sm text-black mb-0">{{space.extended}}</p>
                 </div>
             {% endfor %}
             </div>
@@ -49,7 +49,7 @@
         </div>
         <div class="px-[5%] overflow-x-scroll">
                 
-            <div class="grid border-2 border-psudo-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
+            <div class="grid border-2 border-black rounded-4xl mx-auto" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
             <div class="border-r border-b border-gray-300 text-center p-4"></div>
             <div class="border-r border-b border-gray-300 text-center p-4">
                 <h3>HALF DAY</h3>
@@ -69,13 +69,13 @@
                 <p class="text-balance mb-0">{{space.description}}</p>
             </div>
             <div class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 text-center p-6 flex justify-center items-center">
-                <p class="text-sm text-psudo-black mb-0">{{space.half_day}}</p>
+                <p class="text-sm text-black mb-0">{{space.half_day}}</p>
             </div>
             <div  class="border-r {% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
-                <p class="text-sm text-psudo-black mb-0">{{space.full_day}}</p>
+                <p class="text-sm text-black mb-0">{{space.full_day}}</p>
             </div>
             <div  class="{% unless forloop.last %} border-b {% endunless %} border-gray-300 flex justify-center items-center p-6">
-                <p class="text-sm text-psudo-black mb-0">{{space.extended}}</p>
+                <p class="text-sm text-black mb-0">{{space.extended}}</p>
             </div>
         {% endfor %}
         </div>
@@ -87,7 +87,7 @@
     <div class="grid md:grid-cols-2 gap-4">
         <div>
             <h3 class="text-lg text-center md:text-left">inclusions</h3>
-            <div class="grid border-2 border-psudo-black rounded-4xl">
+            <div class="grid border-2 border-black rounded-4xl">
             {% for space in page.inclusions %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-gray-300 p-4 balanced-div last-child-remove-margin">
                     <h3>{{space.name}}</h3>
@@ -98,7 +98,7 @@
         </div>
                 <div>
             <h3 class="text-lg text-center md:text-left">add-ons</h3>
-            <div class="grid border-2 border-psudo-black rounded-4xl" style="grid-template-columns: 1fr 8rem;">
+            <div class="grid border-2 border-black rounded-4xl" style="grid-template-columns: 1fr 8rem;">
             {% for space in page.add-ons %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-300 p-6 balanced-div last-child-remove-margin">
                     <h3>{{space.name}}</h3>
