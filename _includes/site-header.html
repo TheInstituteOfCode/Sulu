@@ -8,7 +8,7 @@
                 <span class="border-r-2 border-dark py-2 pr-8 mr-8 hidden lg:inline-block">
                 
                 
-                <a href="/outdoor-studio" class="ml-4">Shoot Production</a>
+                <a href="/shoot-production" class="ml-4">Shoot Production</a>
                 <a href="/indoor-studio" class="ml-4">Indoor Studio</a>
                 <a href="/outdoor-studio" class="ml-4">Outdoor Studio</a>
                   
@@ -27,7 +27,7 @@
 
         <!-- Burger Menu -->
         <div class="burger-menu lg:hidden fixed top-0 left-[100vw] bg-white/95 w-full h-screen p-8 transition-all duration-300 ease-in-out z-30 text-center pt-40">
-            <div class="flex flex-col justify-center items-center gap-8">
+            <div class="flex flex-col justify-center items-center gap-4">
                 {% for link in site.data.navigation.header %}
                 <a href="{{link.link}}" class="mb-4 {% if link.featured %}button-featured button-rounded {% endif %}">{{link.name}}</a>
                 {% endfor %}

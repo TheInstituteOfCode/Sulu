@@ -1,12 +1,14 @@
 header:
 
+  - name: home
+    link: /
+  - name: shoot production
+    link: /shoot-production
+    featured: false
   - name: indoor studio
     link: /indoor-studio
     featured: false
-  - name: studio rental rates
-    link: /indoor-studio#details
-    featured: false
-  - name: outdoor studio
+  - name: outdoor studios
     link: /spaces
     featured: false
   - name: Plan your shoot
