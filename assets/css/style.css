@@ -248,11 +248,20 @@
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
+  .top-\[5vh\] {
+    top: 5vh;
+  }
+  .top-\[5vw\] {
+    top: 5vw;
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
   .right-4 {
     right: calc(var(--spacing) * 4);
+  }
+  .right-\[5vw\] {
+    right: 5vw;
   }
   .-bottom-8 {
     bottom: calc(var(--spacing) * -8);
@@ -265,6 +274,9 @@
   }
   .left-4 {
     left: calc(var(--spacing) * 4);
+  }
+  .left-\[5vw\] {
+    left: 5vw;
   }
   .left-\[100vw\] {
     left: 100vw;
@@ -491,6 +503,15 @@
   .h-\[calc\(100\%-2rem\)\] {
     height: calc(100% - 2rem);
   }
+  .h-\[calc\(100\%-5vh\)\] {
+    height: calc(100% - 5vh);
+  }
+  .h-\[calc\(100\%-10vh\)\] {
+    height: calc(100% - 10vh);
+  }
+  .h-\[calc\(100\%-10vw\)\] {
+    height: calc(100% - 10vw);
+  }
   .h-\[calc\(100vh\)\] {
     height: calc(100vh);
   }
@@ -524,6 +545,9 @@
   .min-h-\[80vh\] {
     min-height: 80vh;
   }
+  .min-h-\[90vh\] {
+    min-height: 90vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -554,6 +578,24 @@
   .w-\[90vw\] {
     width: 90vw;
   }
+  .w-\[calc\(45vw-\.5rem\)\] {
+    width: calc(45vw - .5rem);
+  }
+  .w-\[calc\(45vw-1rem\)\] {
+    width: calc(45vw - 1rem);
+  }
+  .w-\[calc\(45vw-5rem\)\] {
+    width: calc(45vw - 5rem);
+  }
+  .w-\[calc\(49vw-5rem\)\] {
+    width: calc(49vw - 5rem);
+  }
+  .w-\[calc\(50\%-\.5rem\)\] {
+    width: calc(50% - .5rem);
+  }
+  .w-\[calc\(50vw-4rem\)\] {
+    width: calc(50vw - 4rem);
+  }
   .w-\[calc\(100\%-2rem\)\] {
     width: calc(100% - 2rem);
   }
@@ -574,6 +616,9 @@
   }
   .max-w-\[32rem\] {
     max-width: 32rem;
+  }
+  .max-w-\[47rem\] {
+    max-width: 47rem;
   }
   .max-w-\[70\%\] {
     max-width: 70%;
@@ -832,6 +877,10 @@
       background-color: color-mix(in oklab, var(--color-white) 95%, transparent);
     }
   }
+  .object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .object-cover {
     -o-object-fit: cover;
        object-fit: cover;
@@ -860,9 +909,6 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
