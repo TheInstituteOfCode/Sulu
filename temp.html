@@ -26,7 +26,7 @@ vision-points:
         para: You can request anything from a 2-hour block to a full day, and either a single space (indoor or outdoor) or the entire studio. We have limited capacity and can’t guarantee.
 ---
 <section class=" bg-black text-white">
-    <div class="flex justify-center items-center min-h-[70vh] relative mb-4">
+    <div class="flex justify-center items-center min-h-[140vh] relative mb-4">
         <div class="text-center relative z-20">
             <h1 class="text-lg sm:text-xl md:text-2xl h-block editable mb-0 ">
                 one location. 
@@ -71,7 +71,7 @@ vision-points:
      <h2 class="text-lg sm:text-xl md:text-2xl h-block editable mb-0 text-center">
                 we had a vision
             </h2>
-            <p class="text-white text-balance text-center mx-auto mb-12 max-w-[47rem]">
+            <p class="text-white text-balance text-center mx-auto mb-24 max-w-[47rem]">
                 You can request anything from a 2-hour block to a full day, and either a single space (indoor or outdoor) or the entire studio. We have limited capacity and can’t guarantee we’ll be able to accommodate every request but encourage you to reach out and let us know what you have in mind. 
             </p>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 px-12">
@@ -94,7 +94,7 @@ vision-points:
             <p class="text-balance"> Simple, affordable, flat-rate that covers everything - the studio rental, the photographer, a professional model, hair & makeup artist, and image editing & re-touching. </p>
     </div>
 
-        <div class="flex flex-nowrap md:grid grid-cols-3 overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
 
             {% assign outdoor-spaces = site.spaces | where_exp:"page","page.categories contains 'outdoor'" %}
             {% for shoot in outdoor-spaces %}
@@ -164,7 +164,7 @@ vision-points:
         </div>
     </div>
 
-        <div class="flex flex-nowrap md:grid grid-cols-3 overflow-x-scroll gap-8 py-3 px-[var(--side-gap)] md:p-0">
+        <div class="flex flex-nowrap overflow-x-scroll gap-8 py-3 px-[var(--side-gap)] md:p-0">
         
             {% assign indoor-spaces = site.spaces | sort: "order" | where_exp:"page","page.categories contains 'indoor'"   %}
             {% for shoot in indoor-spaces %}
