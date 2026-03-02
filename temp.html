@@ -24,6 +24,17 @@ vision-points:
     -
         heading: INDOOR & OUTDOOR SPACES IN ONE LOCATION
         para: You can request anything from a 2-hour block to a full day, and either a single space (indoor or outdoor) or the entire studio. We have limited capacity and can’t guarantee.
+
+gallery:
+    - 
+        top-text: JEWLLERY SHOOT
+        sub-text: Shot by Nyata Visuals at Suluh Indoor Studio
+        image_path: /assets/images/featured-3.png
+    - 
+        top-text: second SHOOT
+        sub-text: Shot by dan Visuals at Suluh Indoor Studio
+        image_path: /assets/images/featured-2.png
+        
 ---
 <section class=" bg-black text-white">
     <div class="flex justify-center items-center min-h-[140vh] relative mb-4">
@@ -62,9 +73,41 @@ vision-points:
     </div>
 </section>
 
-<!-- <section>
+<section class="p-0 galleryWithTwoParagraphsNeededBasedOnImage">
+    <div class="grid grid-cols-3 gap-8 mb-[5vw]">
+        <div class="flex flex-col justify-between pl-[5vw] pt-4">
+            <div>
+                <p class="top-text text-right">
+                 {{page.gallery[0].top-text}}
+                </p>
+            </div>
+            <div>
+                <h2>
+                    SHOT AT SULUH
+                </h2>
+                <p>
+                    From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand .
+                </p>
+            </div>
+        </div>
+        <div class="col-span-2 galleryWithTwoParagraphsNeededBasedOnImage" data-active-image="3">
+            <div class="aspect-[6/5.5] relative overflow-hidden rounded-l-4xl mb-4">
+                {% for pic in page.gallery %}
+                <img class="absolute inset-0 h-full w-full object-center object-cover {% unless forloop.index %} active {% endunless %}" src="{{pic.image_path}}" alt="{{pic.top-text}}" data-top-text="{{pic.top-text}}"data-sub-text="{{pic.sub-text}}">
+                {% endfor %}
+            </div>
+            <div class="flex justify-end items-center gap-3 pr-[5vw]">
+                <p class="sub-text shrink inline-block mb-0">
+                    {{page.gallery[0].sub-text}}
+                </p>
+                <div class="next clickable-color-flip"> {% include icon/gallery-arrow-left.html width= "3rem" color="#000" %} </div>
+                <div class="prev clickable-color-flip"> {% include icon/gallery-arrow-right.html width= "3rem" color="#fff" %} </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-</section> -->
+
 
 
 <section class="bg-black text-white">
@@ -108,48 +151,6 @@ vision-points:
                 <h2>{{shoot.name}}</h2>
                 <p>{{shoot.short-description}}</p>
             </div>
-
-            {% comment %}
-            <dialog>
-                <div class="grid w-[80vw] mx-auto h-[80vh]" style="grid-template-columns: 400px 1fr;">
-                    <div class="p-4 h-[80vh] overflow-scroll">
-
-                        {% for q in shoot.faq %}
-                        <div class="question">
-                            <div class="max-height-true">
-                                <div class="faq-header flex justify-between max-height-question  p-2">
-                                    <p class="h-mono mb-0 text-sm uppercase text-dark">{{q.q}}</p>
-                                    <div class="faq-x">
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="answer overflow-hidden transition-all" style="height: 0px;">
-                                    <div class="true-height px-2 pb-2">
-                                        {{q.a}}
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div class="relative gallery-image-holder">
-                        {% for image in shoot.featured-images %}
-                            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" />
-                        {% endfor %}
-                        <div class="absolute right-4 flex items-center z-20 h-full">
-                            <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.name}}</h3>
-                        </div>
-
-                        <div class="absolute bottom-4 right-4 flex gap-1">
-                            <div class="next py-4 px-5 border border-dark rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
-                            <div class="prev py-4 px-5 border border-dark rounded-full bg-dark"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
-                        </div>
-                    </div>
-                </div>
-            </dialog>
-            {% endcomment %}
             {% endfor %}
         </div>
     
@@ -178,48 +179,6 @@ vision-points:
                 <h2>{{shoot.name}}</h2>
                 <p class="text-balance text-xs text-white">{{shoot.short-description}}</p>
             </a>
-
-            {% comment %}
-            <dialog>
-                <div class="grid w-[80vw] mx-auto h-[80vh]" style="grid-template-columns: 400px 1fr;">
-                    <div class="p-4 h-[80vh] overflow-scroll">
-
-                        {% for q in shoot.faq %}
-                        <div class="question">
-                            <div class="max-height-true">
-                                <div class="faq-header flex justify-between max-height-question  p-2">
-                                    <p class="h-mono mb-0 text-sm uppercase text-dark">{{q.q}}</p>
-                                    <div class="faq-x">
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="answer overflow-hidden transition-all" style="height: 0px;">
-                                    <div class="true-height px-2 pb-2">
-                                        {{q.a}}
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div class="relative gallery-image-holder">
-                        {% for image in shoot.featured-images %}
-                            <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" />
-                        {% endfor %}
-                        <div class="absolute right-4 flex items-center z-20 h-full">
-                            <h3 class="absolute rotate-180 right-0 vertical-text" style="font-size: {{shoot.vertical-font-vh}};">{{shoot.name}}</h3>
-                        </div>
-
-                        <div class="absolute bottom-4 right-4 flex gap-1">
-                            <div class="next py-4 px-5 border border-dark rounded-full"> {% include icon/gallery-arrow-left.html width= "1rem" color="#000" %} </div>
-                            <div class="prev py-4 px-5 border border-dark rounded-full bg-dark"> {% include icon/gallery-arrow-right.html width= "1rem" color="#fff" %} </div>
-                        </div>
-                    </div>
-                </div>
-            </dialog>
-            {% endcomment %}
 
             {% endfor %}
         </div>
@@ -282,3 +241,36 @@ vision-points:
 
     </div>
 </section>
+
+
+<script>
+    const galleryWithTwoParagraphsNeededBasedOnImage = document.querySelectorAll('.galleryWithTwoParagraphsNeededBasedOnImage')
+    galleryWithTwoParagraphsNeededBasedOnImage.forEach(gallery => {
+        let images = gallery.querySelectorAll('img')
+        let nextButton = gallery.querySelector('.next')
+        let prevButton = gallery.querySelector('.prev')
+        let topText = gallery.querySelector('.top-text')
+        let subText = gallery.querySelector('.sub-text')
+
+        let activeImage = 0
+        console.log(images.length,activeImage)
+        function updateGallery(t) {
+            console.log(t,t + activeImage,images.length)
+            target = (t + activeImage) % images.length
+            debugger
+            images.forEach(img => {
+                img.classList.remove('active')
+            })
+            images[target].classList.add('active')
+            topText.innerHTML = images[target].dataset.topText
+            subText.innerHTML = images[target].dataset.subText
+
+            activeImage = target
+            console.log(target,images[activeImage],images)
+        }
+
+        nextButton.addEventListener('click', ()=> { updateGallery(images.length - 1)})
+        prevButton.addEventListener('click', ()=> { updateGallery(1) })
+
+    })
+</script>

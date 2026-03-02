@@ -449,6 +449,9 @@
   .aspect-\[1\/1\] {
     aspect-ratio: 1/1;
   }
+  .aspect-\[6\/5\.5\] {
+    aspect-ratio: 6/5.5;
+  }
   .aspect-\[45\/55\] {
     aspect-ratio: 45/55;
   }
@@ -743,6 +746,10 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .rounded-l-4xl {
+    border-top-left-radius: var(--radius-4xl);
+    border-bottom-left-radius: var(--radius-4xl);
+  }
   .rounded-tl-4xl {
     border-top-left-radius: var(--radius-4xl);
   }
@@ -974,6 +981,9 @@
   }
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
+  }
+  .pr-\[5vw\] {
+    padding-right: 5vw;
   }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
@@ -1819,6 +1829,13 @@ html.lockScroll,html.lockScroll body {
   }
   .hover-slideshow-container:hover .hover-slideshow-image-initial {
     opacity: 0;
+  }
+  .galleryWithTwoParagraphsNeededBasedOnImage img {
+    opacity: 0;
+    transition: all .2s;
+  }
+  .galleryWithTwoParagraphsNeededBasedOnImage img.active {
+    opacity: 1;
   }
 }
 @property --tw-rotate-x {
