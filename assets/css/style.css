@@ -287,6 +287,21 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+  .col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+  .col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+  .col-span-10 {
+    grid-column: span 10 / span 10;
+  }
   .col-span-full {
     grid-column: 1 / -1;
   }
@@ -388,6 +403,9 @@
   }
   .mb-24 {
     margin-bottom: calc(var(--spacing) * 24);
+  }
+  .mb-26 {
+    margin-bottom: calc(var(--spacing) * 26);
   }
   .mb-\[3\%\] {
     margin-bottom: 3%;
@@ -491,8 +509,14 @@
   .h-\[80vh\] {
     height: 80vh;
   }
+  .h-\[85vh\] {
+    height: 85vh;
+  }
   .h-\[90vh\] {
     height: 90vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
   }
   .h-\[calc\(100\%-2rem\)\] {
     height: calc(100% - 2rem);
@@ -530,8 +554,23 @@
   .min-h-\[80vh\] {
     min-height: 80vh;
   }
+  .min-h-\[90vh\] {
+    min-height: 90vh;
+  }
+  .min-h-\[100vh\] {
+    min-height: 100vh;
+  }
+  .min-h-\[110vh\] {
+    min-height: 110vh;
+  }
   .min-h-\[140vh\] {
     min-height: 140vh;
+  }
+  .min-h-\[800vh\] {
+    min-height: 800vh;
+  }
+  .min-h-\[900vh\] {
+    min-height: 900vh;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -592,6 +631,9 @@
   }
   .max-w-\[70\%\] {
     max-width: 70%;
+  }
+  .max-w-\[80\%\] {
+    max-width: 80%;
   }
   .max-w-screen-lg {
     max-width: var(--breakpoint-lg);
@@ -668,6 +710,12 @@
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+  .grid-cols-14 {
+    grid-template-columns: repeat(14, minmax(0, 1fr));
+  }
+  .grid-cols-16 {
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -715,6 +763,16 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
+  .gap-x-16 {
+    -moz-column-gap: calc(var(--spacing) * 16);
+         column-gap: calc(var(--spacing) * 16);
+  }
+  .gap-y-20 {
+    row-gap: calc(var(--spacing) * 20);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -981,6 +1039,9 @@
   }
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
+  }
+  .pr-\[2vw\] {
+    padding-right: 2vw;
   }
   .pr-\[5vw\] {
     padding-right: 5vw;
@@ -1486,6 +1547,11 @@
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
     }
   }
   .lg\:grid {
