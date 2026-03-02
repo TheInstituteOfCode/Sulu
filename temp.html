@@ -259,16 +259,16 @@ gallery:
         let activeImage = 0
         console.log(images.length,activeImage)
         function updateGallery(t) {
+            console.log('dan t +active',  t + activeImage,images.length)
             target = (t + activeImage) % images.length
-            console.log(t,t + activeImage,images.length)
             images.forEach(img => {
-                if (img = images[target]) {
-                    img.classList.remove('active')
-                } else {
-                    images[target].classList.add('active')
+                console.log(img)
+                if (img == images[target]) {
+                    img.classList.add('active')
                     topText.innerHTML = images[target].dataset.topText
                     subText.innerHTML = images[target].dataset.subText
-
+                } else {
+                    img.classList.remove('active')
                 }
 
             })
