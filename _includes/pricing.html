@@ -39,8 +39,14 @@
             </div>
         
         </div>
-        <p class="text-center mt-4"><i>Mini-shoots of 2-hour availabile on selected days, enquire for details. Prices in IDR, 1 mill is approximately $60 USD. </i> </p>
-
+        
+        <div class="px-[5%]">
+            <div class=" mt-4 mx-auto max-w-[1000px] flex justify-between items-center gap-8">
+                <p class="text-balance"><i>Mini-shoots of 2-hour availabile on selected days, enquire for details. Prices in IDR, 1 mill is approximately $60 USD. </i> </p>
+                <a href="/contact" class="bg-dark text-white button-rounded button-arrow editable shrink-0">book Now</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="p-0">
@@ -48,7 +54,7 @@
         <div class="pt-[5%] px-[5%]">
             <h3 class="text-lg text-center h-block">studio bundles</h3>
         </div>
-        <div class="px-[5%] overflow-x-scroll">
+        <div class="px-[5%] overflow-x-scroll mb-8">
                 
             <div class="grid border-2 border-black rounded-4xl mx-auto pricing-table" style="grid-template-columns: 1fr repeat(3,10rem); max-width: 1000px; min-width: 700px;">
             <div class="border-r border-b border-gray-300 text-center p-4"></div>
@@ -82,7 +88,12 @@
         </div>
         
 
-    </div>  
+    </div>
+        <div class="px-[5%]">
+            <div class="text-left mx-auto max-w-[1000px]">
+                <a href="/contact" class="bg-dark text-white button-rounded button-arrow editable">book book</a>
+            </div>
+        </div>
 </section>
 
 <section>
@@ -98,9 +109,9 @@
             {% endfor %}
             </div>
         </div>
-                <div>
+        <div>
             <h3 class="text-lg text-center md:text-left h-block">add-ons</h3>
-            <div class="grid border-2 border-black rounded-4xl" style="grid-template-columns: 1fr 8rem;">
+            <div class="grid border-2 border-black rounded-4xl mb-6" style="grid-template-columns: 1fr 8rem;">
             {% for space in page.add-ons %}
                 <div class="{% unless forloop.last %} border-b{% endunless %} border-r border-gray-300 p-6 balanced-div last-child-remove-margin">
                     <h3 class="uppercase">{{space.name}}</h3>
@@ -117,6 +128,11 @@
                 </div>
             {% endfor %}
             </div>
+        <div class="">
+            <div class="text-right">
+                <a href="/contact" class="bg-dark text-white button-rounded button-arrow editable">book book</a>
+            </div>
+        </div>
         </div>
     </div>
 </section>

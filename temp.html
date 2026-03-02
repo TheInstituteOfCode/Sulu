@@ -38,7 +38,7 @@ gallery:
 ---
 <section class=" bg-black text-white">
     <div class="flex justify-center items-center min-h-[90vh] relative mb-4">
-        <div class="text-center relative z-20">
+        <div class="text-center relative z-20 max-w-[29rem]">
             <h1 class="text-lg sm:text-xl md:text-2xl h-block editable mb-0 ">
                 one location. 
             </h1>
@@ -103,8 +103,8 @@ gallery:
             <p class="sub-text shrink inline-block mb-0 mr-2">
                 {{page.gallery[0].sub-text}}
             </p>
-            <div class="next clickable-color-flip"> {% include icon/gallery-arrow-left.html width= "2.5rem" color="#000" %} </div>
-            <div class="prev clickable-color-flip"> {% include icon/gallery-arrow-right.html width= "2.5rem" color="#fff" %} </div>
+            <div class="next clickable-color-flip cursor-pointer"> {% include icon/gallery-arrow-left.html width= "2.5rem" color="#000" %} </div>
+            <div class="prev clickable-color-flip cursor-pointer"> {% include icon/gallery-arrow-right.html width= "2.5rem" color="#fff" %} </div>
         </div>
 
     </div>
@@ -116,19 +116,23 @@ gallery:
 <section class="bg-black text-white">
      <h2 class="text-lg sm:text-xl md:text-2xl h-block editable text-center">
                 we had a vision
-            </h2>
-            <p class="text-white text-balance text-center mx-auto mb-26 max-w-[47rem]">
-                You can request anything from a 2-hour block to a full day, and either a single space (indoor or outdoor) or the entire studio. We have limited capacity and can’t guarantee we’ll be able to accommodate every request but encourage you to reach out and let us know what you have in mind. 
-            </p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20 px-12">
-                {% for vision in page.vision-points %}
-                <div>
-                    <h3 class="">{{vision.heading}}</h3>
-                    <p class="text-white">{{vision.para}}</p>
-                </div>
+    </h2>
+    <p class="text-white text-balance text-center mx-auto mb-26 max-w-[47rem]">
+        You can request anything from a 2-hour block to a full day, and either a single space (indoor or outdoor) or the entire studio. We have limited capacity and can’t guarantee we’ll be able to accommodate every request but encourage you to reach out and let us know what you have in mind. 
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20 px-12 pb-16">
+        {% for vision in page.vision-points %}
+        <div>
+            <h3 class="">{{vision.heading}}</h3>
+            <p class="text-white">{{vision.para}}</p>
+        </div>
 
-                {% endfor %}
-            </div>
+        {% endfor %}
+    </div>
+    <div class="text-center ">
+        <a href="/gallery" class="button-light button-rounded button-arrow editable mr-8"> explore our vision</a>
+        <a href="/contact" class="button-light button-rounded button-arrow editable">book our space</a>
+    </div>
 </section>
 
 
