@@ -103,7 +103,7 @@ gallery:
         <div class="lg:col-span-10">
             <div class="h-[50vh] lg:h-[85vh] relative overflow-hidden rounded-l-4xl">
                 {% for pic in page.gallery %}
-                <img class="absolute inset-0 h-full w-full object-center object-cover {% if forloop.index %} active {% endif %}" src="{{pic.image_path}}" alt="{{pic.top-text}}" data-top-text="{{pic.top-text}}"data-sub-text="{{pic.sub-text}}">
+                <img class="absolute inset-0 h-full w-full object-center object-cover {% if forloop.index == 1 %} active {% endif %}" src="{{pic.image_path}}" alt="{{pic.top-text}}" data-top-text="{{pic.top-text}}"data-sub-text="{{pic.sub-text}}">
                 {% endfor %}
             </div>
         </div>
