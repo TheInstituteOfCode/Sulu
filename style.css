@@ -127,6 +127,7 @@ html.lockScroll,html.lockScroll body {
     .h-mono {
         font-family: "Inconsolata", monospace;
         font-weight: 600;
+        text-transform: uppercase;
     }
 
     .last-child-remove-margin > :last-child{
