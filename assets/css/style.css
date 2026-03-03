@@ -294,12 +294,6 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
-  .col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-  .col-span-10 {
-    grid-column: span 10 / span 10;
-  }
   .col-span-full {
     grid-column: 1 / -1;
   }
@@ -513,6 +507,9 @@
   .h-\[90vh\] {
     height: 90vh;
   }
+  .h-\[calc\(50\%-\.5rem\)\] {
+    height: calc(50% - .5rem);
+  }
   .h-\[calc\(100\%-2rem\)\] {
     height: calc(100% - 2rem);
   }
@@ -702,9 +699,6 @@
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-  .grid-cols-16 {
-    grid-template-columns: repeat(16, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -752,6 +746,10 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .gap-x-8 {
+    -moz-column-gap: calc(var(--spacing) * 8);
+         column-gap: calc(var(--spacing) * 8);
   }
   .gap-x-16 {
     -moz-column-gap: calc(var(--spacing) * 16);
@@ -1020,9 +1018,6 @@
   .pt-\[0\.9375rem\] {
     padding-top: 0.9375rem;
   }
-  .pt-\[1\.4rem\] {
-    padding-top: 1.4rem;
-  }
   .pt-\[5\%\] {
     padding-top: 5%;
   }
@@ -1168,9 +1163,6 @@
   }
   .text-\[3\.4375rem\] {
     font-size: 3.4375rem;
-  }
-  .text-\[3rem\] {
-    font-size: 3rem;
   }
   .text-\[4\.7rem\] {
     font-size: 4.7rem;
@@ -1726,11 +1718,6 @@
   .xl\:inline-flex {
     @media (width >= 80rem) {
       display: inline-flex;
-    }
-  }
-  .xl\:pt-\[1\.4rem\] {
-    @media (width >= 80rem) {
-      padding-top: 1.4rem;
     }
   }
 }
