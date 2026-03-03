@@ -1,0 +1,490 @@
+---
+layout: default
+title: Suluh Studio | Photography Studio Bali
+features:
+    -
+        title: FAST TURNAROUND
+        icon: clock-rotate-right
+        description: We offer guaranteed turnaround on all images, or your money back.
+    -
+        title: High end results
+        icon: fire-flame
+        description: Elevated photography that boosts conversion and stops the scroll.
+    -
+        title: TAILORED TO YOU
+        icon: color-filter
+        description: >-
+            From the lighting setup, to the models poses, to the final edit
+            every step is customised to suit your brand.
+    -
+        title: REMOTE PHOTOSHOOT
+        icon: camera
+        description: >-
+            Send us your product and let us handle the rest, or join the shoot
+            remotely or in-person in Bali.
+featured-work-block:
+    rows-1:
+        images:
+            -
+                image: /uploads/sulu-featured-work-row1-01.jpg
+                alt: featured 2
+                text: We are a digital agency from Bali and we love xyz.
+            -
+                image: /uploads/sulu-featured-work-row1-02.jpg
+                alt: featured 3
+                text: We are a digital agency from Bali and we love xyz.
+            -
+                image: /uploads/sulu-featured-work-row1-03.jpg
+                alt: ''
+                text: ''
+            -
+                image: /uploads/sulu-featured-work-row1-04.jpg
+                alt: ''
+                text: ''
+            -
+                image: /uploads/sulu-featured-work-row1-05.jpg
+                alt: ''
+                text: ''
+    rows-2:
+        images:
+            -
+                image: /uploads/sulu-featured-work-row2-01.jpg
+                alt: featured 3
+                text: We are a digital agency from Bali and we love xyz.
+            -
+                image: /uploads/sulu-featured-work-row2-02.jpg
+                alt: featured 2
+                text: We are a digital agency from Bali and we love xyz.
+            -
+                image: /uploads/sulu-featured-work-row2-03.jpg
+                alt: ''
+                text: ''
+            -
+                image: /uploads/sulu-featured-work-row2-04.jpg
+                alt: ''
+                text: ''
+            -
+                image: /uploads/sulu-featured-work-row2-05.jpg
+                alt: ''
+                text: ''
+---
+
+
+
+<section class="pb-0">
+    <div class="grid lg:grid-cols-2 gap-8 border-b-2 border-dark pb-[5%] items-end">
+        <div>
+            <h1 class="text-lg sm:text-xl md:text-2xl h-block editable">
+                Elevated studio photography
+            </h1>
+            <p class="md:text-sm editable">
+                Full-service creative agency in Bali that delivers high-end e-commerce & lifestyle photography with affordable, transparent pricing and a streamlined process. 
+            </p>
+            
+        </div>
+        <div class="aspect-auto: 7/5.6 rounded">
+            <img src="/assets/images/featured-3.png" alt="" />
+        </div>
+    </div>
+</section>
+
+<!-- <section class="border-y-2 border-dark">
+    <div class="grid grid-cols-5">
+        <div class="flex flex-col justify-center border-r-2 border-dark">
+            <h2 class="h-mono text-sm uppercase">OUR CLIENTS</h2>
+
+        </div>
+        <span class="flex items-center justify-center">{% include icon/vela.html width = '70%' %}
+        <span class="flex items-center justify-center">{% include icon/regent.html width = '83%' %}</span>
+        <span class="flex items-center justify-center">{% include icon/nirjhara-logo.html width = '60%' %}</span>
+        <span class="flex items-center justify-center">{% include icon/ing-full.html width = '96%' %}</span>
+
+    
+ -->
+
+ <!-- What we do -->
+<section class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="col-span-full lg:col-span-1 row-span-2 lg:border-dark lg:border-r-2">
+        <h2 class="text-md h-mono md:text-md uppercase">What we do</h2>
+    </div>
+
+      {% for item in page.features limit:2 %}
+
+    <div class="flex lg:px-8 mb-4">
+        <div class="hidden lg:block"> <i class="iconoir-{{item.icon}} text-sm pr-4"></i></div>
+        <div>
+            <h3 class="text-sm uppercase">
+                {{item.title}}
+            </h3>
+            <p class="text-balance">
+                {{item.description}}
+            </p>
+        </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+    {% for item in page.features offset:2 %}
+
+    <div class="flex lg:px-8">
+        <div class="hidden lg:block"> <i class="iconoir-{{item.icon}} text-sm pr-4"></i></div>
+        <div>
+            <h3 class="text-sm uppercase">
+                {{item.title}}
+            </h3>
+            <p class="text-balance">
+                {{item.description}}
+            </p>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<div class="mx-[5%] border-b-2"></div>
+
+
+<section class="bg-dark text-white mx-0 py-0 px-0">
+    <div class="lg:grid lg:pl-[5vw]" style="grid-template-columns: 17vh 25rem 2fr;">
+        <div class="vertical-text border-r-2 border-white py-4 hidden lg:block">
+            <h2 class="m-0 rotate-180 leading-none font-black" style="font-size: 27vh; margin-right:-2rem;">STUDIO</h2>
+        </div>
+
+        <div class="p-8 flex items-end">
+            <div>
+                
+                <h3 class="text-md">Take a look around our studio.</h3>
+                <p class="">We built a state of the art studio in tropical Bali, covering both indoor and outdoor needs. With a range of sets, from our marble garden and mediterranean terrace to 144m2 rooftop, to our mid-century pool and lush wildflower gardens we have you covered.</p>
+                <div class="border-y-2 border-white grid grid-cols-2 mb-8">
+                    <div class="border-r-2 border-white">
+                        <a href="/indoor-studio" class="py-4 pr-4 block ">
+                            <span class="mr-2 clickable-underline">Indoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                        </a>
+                    </div>
+                    <div class="text-right">
+                        <a href="/spaces" class="py-4 pl-4 block ">
+                            <span class="mr-2 clickable-underline">Outdoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="/assets/images/outside.jpg" alt="outside picnic" />
+                </div>
+            </div>
+            
+        </div>
+        <div class="relative rounded-3xl overflow-hidden">
+            <img class="inset-0 absolute h-full w-full object-cover" src="assets/images/two-hands-in-water.jpg" alt="two hands in water" />
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Featured Work -- hidden temporarily -->
+{% comment %}
+<section>
+    <div class="max-w-screen-md mb-[3%]">
+        <h2 class="text-lg md:uppercase mb-2">
+            Featured Work
+        </h2>
+        <p class="text-balance">
+            A collection of recent projects coming out of Suluh Studio. Want to see more related projects? Just reach out to our team and we'll share a comprehensive portfolio.
+        </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end md:col-span-2 featured-work-gallery">
+        {% for item in page.featured-work-block.rows-1.images limit: '1' %}
+            <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}" />
+            <div class="p-4 relative flex items-center gap-1">
+                <div class="next clickable-color-flip"> {% include icon/gallery-arrow-left.html width= "2.5rem" color="#000" %} </div>
+                <div class="prev clickable-color-flip"> {% include icon/gallery-arrow-right.html width= "2.5rem" color="#fff" %} </div>
+                <!-- <p class="text-dark featured-target-text mb-0"> {{item.text}} </p>                        -->
+            </div>
+        {% endfor %}
+            <div class="absolute left-[100vw] gallery-image-holder">
+            {% for item in page.featured-work-block.rows-1.images  %}
+                    <img src="{{item.image}}" alt="{{item.alt}}" data-text="{{item.text}}" />
+            {% endfor %}
+            </div>
+        </div>
+
+        <div class="rounded-3xl bg-dark p-6 text-white min-h-[45vh] flex items-end">
+            <div>
+                <h3 class="text-sm leading-[1.1]">READY TO MAKE <br /> SOME MAGIC?</h3>
+                <p class="text-balance">Get in touch today and kick start the content you’ve been looking for. </p>
+                <a href="/contact" class="text-dark button button-rounded bg-white hover:bg-dark hover:text-white transition-all">I’M READY</a>
+            </div>
+
+        </div>
+        
+        <div class="rounded-3xl bg-dark p-6 text-white min-h-[45vh] items-end hidden md:flex">
+            <div>
+                <h3 class="text-sm uppercase leading-[1.1]">Looking for more of our portfolio?</h3>
+                <p class=" text-balance">With over a decade of experience behind us over a range of niches, we've got you covered. </p>
+                <a href="#" class="button-light button-rounded button-arrow ">Portfolio </a>
+            </div>
+
+        </div>
+        <div class="rounded-3xl relative overflow-hidden min-h-[70vh] flex items-end md:col-span-2 featured-work-gallery">
+        {% for item in page.featured-work-block.rows-2.images limit: '1' %}
+            <img class="absolute h-full w-full object-cover inset-0 featured-target-img" src="{{item.image}}" alt="{{item.alt}}" />
+            <div class="p-4 relative flex items-center gap-1">
+         <div class="next clickable-color-flip"> {% include icon/gallery-arrow-left.html width= "2.5rem" color="#000" %} </div>
+                <div class="prev clickable-color-flip"> {% include icon/gallery-arrow-right.html width= "2.5rem" color="#fff" %} </div>       <!-- <p class="text-dark featured-target-text mb-0"> {{item.text}} </p>                        -->
+            </div>
+        {% endfor %}
+            <div class="absolute left-[100vw] gallery-image-holder">
+            {% for item in page.featured-work-block.rows-2.images  %}
+                    <img src="{{item.image}}" alt="{{item.alt}}" data-text="{{item.text}}" />
+            {% endfor %}
+            </div>
+        </div>
+    
+    </div>
+        
+</section>
+{% endcomment %}
+
+<!-- Transparent Pricing -->
+<section class="pb-0 mt-12">
+
+        <div>
+            <h2 class="text-lg md:text-xl h-block mb-12 leading-[1.1]">End-to-end shoot production. </h2>
+
+        </div>
+
+</section>
+
+<!-- Flat Rate Product Photopgrahy -->
+<section class="p-0 pt-0">
+    
+    <div class="px-[5vw] pt-[5vw] max-w-screen-lg">
+            <h3 class="text-[1.8rem]">FLAT-RATE PRODUCT PHOTOGRAPHY</h3>
+            <p class="text-balance"> Simple, affordable, per-image pricing that covers everything from the studio, to the creative team and post-production - fill in our simple shoot planner, send us your products and we’ll handle everything else.</p>
+    </div>
+
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 pt-3 pb-[5vw]  px-[var(--side-gap)]">
+        
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'product'" | sort: "order" %}
+
+            {% for shoot in flat-rate-photo %}
+            {% include shoot-block.html shoot=shoot  %}
+            {% endfor %}
+            
+        </div>
+    
+</section>
+
+<!-- Flat Rate Model -->
+<section class="p-0 pt-0"> 
+
+    <div class="px-[5vw] pt-[5vw] max-w-screen-lg">
+            <h3 class="text-[1.8rem]">FLAT-RATE MODEL PHOTOGRAPHY</h3>
+            <p class="text-balance"> Simple, affordable, flat-rate that covers everything - the studio rental, the photographer, a professional model, hair & makeup artist, and image editing & re-touching. </p>
+    </div>
+
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 pt-3 pb-[5vw] px-[var(--side-gap)]">
+        
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'model'" | sort: "order" %}
+            {% for shoot in flat-rate-photo  %}
+            
+            {% include shoot-block.html shoot=shoot  %}
+            {% endfor %}
+        </div>
+    
+</section>
+
+<!-- Creative Campaigns  -->
+<section class="p-0 pt-0"> 
+
+    <div class="px-[5vw] pt-[5vw] max-w-screen-lg">
+            <h3 class="text-[1.8rem]">CREATIVE CAMPAIGNS</h3>
+            <p class="text-balance"> More flexibility, more creativity designed just for your brand. Choose from a mini-shoot, a half-day or a full day and design your dream shoot. </p>
+    </div>
+
+        <div class="flex flex-nowrap overflow-x-scroll gap-6 pt-3 pb-[5vw] px-[var(--side-gap)]">
+        
+            {% assign flat-rate-photo = site.shoots | where_exp:"page","page.categories contains 'creative'" | sort: "order" %}
+            {% for shoot in flat-rate-photo %}
+            
+            {% include shoot-block.html shoot=shoot  %}
+            {% endfor %}
+        </div>
+    
+</section>
+
+
+
+<section class="px-0 bg-dark">
+    <div class="px-[var(--side-gap)]">
+        <h2 class="text-lg md:text-xl h-block mx-0 text-white">Why choose Suluh for your product photography</h2>
+    </div>
+    <div class="flex gap-4 flex-nowrap overflow-x-scroll [var(--side-gap)] mb-8 px-[var(--side-gap)] py-8">
+        {% for reason in site.data.reasons %}
+        <div class="basis-2/5 md:basis-1/5 md:shrink shrink-0 p-4 bg-white rounded-3xl cursor-pointer reasonButtons clickable {% if forloop.first %} active {% endif %} " data-scroll-number="{{forloop.index0}}">
+            <h4 class="h-mono opacity-60 text-[1.1rem] mb-8">0{{forloop.index}}</h4>
+            <h3 class="text-[1.1rem] max-w-[8rem] h-mono uppercase">{{reason.title}} </h3>
+            <p class="text-xs">{{reason.short-description}}</p>
+        </h3></div>
+        {% endfor %}
+    </div>
+
+    <div class="flex flex-nowrap overflow-scroll reasonGrid snap-x snap-mandatory pb-4">
+        {% for reason in site.data.reasons %}
+        <div class="px-[var(--side-gap)] w-screen shrink-0  snap-center">
+            <div class="bg-white rounded-3xl flex flex-col md:flex-row overflow-hidden">
+                <div class="relative gallery-image-holder min-h-30vh max-h-full flex-1 basis-full md:basis-[40%] md:order-1 order-2" style="aspect-ratio: 44/54;">
+                    {% for image in reason.images %}
+                        <img class="absolute w-full h-full object-cover {% if forloop.first %} active {% endif %}" src="{{image.image}}" alt="image.alt" />
+                    {% endfor %}
+
+                    <!-- <div class="absolute bottom-4 right-4 flex gap-1">
+                        <div class="next py-4 px-5 border border-dark rounded-full"> <i class="iconoir-arrow-left align-middle" aria-hidden="true"></i> </div>
+                        <div class="prev py-4 px-5 border border-dark rounded-full bg-dark text-white"> <i class="iconoir-arrow-right align-middle" aria-hidden="true"></i> </div>
+                    </div> -->
+                </div>
+                <div class="p-8 md:basis-[60%] flex-shrink-0 basis-full">
+                    <div class="flex flex-col justify-between h-full">
+                        <p class="hidden md:block text-right h-mono">0{{forloop.index}}</p>
+                        <div>
+                        <h3 class="text-md md:text-lg uppercase">
+                            {{reason.title}}
+                        </h3>
+                        <div>
+                            {{reason.long-description}}
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+
+
+
+<script>
+
+
+    let featuredGalleries = document.querySelectorAll('.featured-work-gallery')
+    console.log(featuredGalleries, 'look here')
+
+    featuredGalleries.forEach(gal => {
+    let targetImages = gal.querySelector('.featured-target-img')
+    let targetText = gal.querySelector('.featured-target-text')
+    let images = gal.querySelectorAll('.gallery-image-holder img')
+    let activeImage = 0
+    let next = gal.querySelector('.next')
+    let prev = gal.querySelector('.prev')
+
+     console.log(next,prev,images.length - 1)
+
+     function changeImage(n) {
+        // console.log(n)
+        activeImage = (activeImage + n) % images.length
+        images.forEach(img => {
+            if (images[activeImage] == img) {
+                    targetImages.src = img.src
+                    targetImages.alt = img.alt
+                    if (targetText) {
+                        targetText.innerHTML = img.dataset.text
+                    }
+
+            }
+        })
+     }
+
+    //  console.log(changeImage)
+
+     if (next) {
+         next.addEventListener('click', () => {
+             changeImage(1)
+            })
+    
+         prev.addEventListener('click', () => { changeImage(images.length - 1) })
+
+     } else {
+        // console.log(gal, 'no gallery')
+     }
+
+
+    //  console.log(changeImage)
+
+
+//   console.log(next,prev)
+    })
+</script>
+
+
+
+
+<style>
+    .gallery-image-holder img {
+        opacity: 0;
+        transition: .5s;
+    }
+    .gallery-image-holder img.active {
+        opacity: 1;
+    }
+
+    
+    .reasonButtons{
+        border: 2px solid white;
+    }
+
+    .reasonButtons.active{
+        border: 2px solid var(--dark);
+    }
+</style>
+
+<script>
+    {% include dialog.js %}
+
+    let reasonButtons = document.querySelectorAll('.reasonButtons')
+    let reasonGrid = document.querySelector('.reasonGrid')
+
+    function reasonScroll(n) {
+        // console.log(n * reasonGrid.width)
+        reasonGrid.scrollTo({
+            left: `${n * reasonGrid.clientWidth}`,
+            behavior: "smooth",
+        })
+    }
+
+reasonButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        let target = button.dataset.scrollNumber
+        // console.log(target)
+        reasonButtons.forEach(b => {
+            if (b == reasonButtons[target]) {
+                b.classList.add("active")
+            } else {
+                b.classList.remove('active')
+            }
+            reasonScroll(target)
+        })
+    })
+})
+
+reasonScroll(0)
+
+setInterval(() => {
+    let newTarget = Math.floor((reasonGrid.scrollLeft)/(reasonGrid.clientWidth - 100))
+//    console.log(newTarget,reasonGrid.clientWidth)
+   reasonButtons.forEach(b => {
+            if (b == reasonButtons[newTarget]) {
+                b.classList.add("active")
+            } else {
+                b.classList.remove('active')
+            }
+        })
+}, 500);
+
+
+</script>
