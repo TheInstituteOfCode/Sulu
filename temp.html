@@ -60,13 +60,13 @@ gallery:
     </div>
     <div class="flex justify-between">
         <a href="/outdoor-studio.html">
-            <span class="mr-2 clickable-underline">See Outdoor Studio</span>
+            <span class="mr-2 clickable-underline h-mono">See Outdoor Studio</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="15" viewBox="0 0 45 15" fill="none">
                 <path d="M1 6.36426C0.447715 6.36426 0 6.81197 0 7.36426C0 7.91654 0.447715 8.36426 1 8.36426V7.36426V6.36426ZM44.7071 8.07136C45.0976 7.68084 45.0976 7.04768 44.7071 6.65715L38.3431 0.29319C37.9526 -0.0973344 37.3195 -0.0973344 36.9289 0.29319C36.5384 0.683714 36.5384 1.31688 36.9289 1.7074L42.5858 7.36426L36.9289 13.0211C36.5384 13.4116 36.5384 14.0448 36.9289 14.4353C37.3195 14.8259 37.9526 14.8259 38.3431 14.4353L44.7071 8.07136ZM1 7.36426V8.36426H44V7.36426V6.36426H1V7.36426Z" fill="#F9F7F4"/>
             </svg>      
         </a>
         <a href="/indoor-studio" class="">
-            <span class="mr-2 clickable-underline">See Indoor Studio</span>
+            <span class="mr-2 clickable-underline h-mono">See Indoor Studio</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="15" viewBox="0 0 45 15" fill="none">
                 <path d="M1 6.36426C0.447715 6.36426 0 6.81197 0 7.36426C0 7.91654 0.447715 8.36426 1 8.36426V7.36426V6.36426ZM44.7071 8.07136C45.0976 7.68084 45.0976 7.04768 44.7071 6.65715L38.3431 0.29319C37.9526 -0.0973344 37.3195 -0.0973344 36.9289 0.29319C36.5384 0.683714 36.5384 1.31688 36.9289 1.7074L42.5858 7.36426L36.9289 13.0211C36.5384 13.4116 36.5384 14.0448 36.9289 14.4353C37.3195 14.8259 37.9526 14.8259 38.3431 14.4353L44.7071 8.07136ZM1 7.36426V8.36426H44V7.36426V6.36426H1V7.36426Z" fill="#F9F7F4"/>
             </svg>
@@ -76,7 +76,7 @@ gallery:
 </section>
 
 <section class="p-0 galleryWithTwoParagraphsNeededBasedOnImage">
-    <div class="grid grid-cols-16 gap-8 mb-[5vw]">
+    <div class="grid grid-cols-16 gap-x-8 gap-y-4 mb-[2.5vw]">
         <div class="flex flex-col col-span-6 justify-between pl-[5vw] pt-4">
             <div>
                 <p class="top-text text-right">
@@ -93,14 +93,14 @@ gallery:
             </div>
         </div>
         <div class="col-span-10" data-active-image="3">
-            <div class="h-[85vh] relative overflow-hidden rounded-l-4xl mb-4">
+            <div class="h-[85vh] relative overflow-hidden rounded-l-4xl">
                 {% for pic in page.gallery %}
                 <img class="absolute inset-0 h-full w-full object-center object-cover {% if forloop.index %} active {% endif %}" src="{{pic.image_path}}" alt="{{pic.top-text}}" data-top-text="{{pic.top-text}}"data-sub-text="{{pic.sub-text}}">
                 {% endfor %}
             </div>
         </div>
         <div class="col-span-full flex justify-end items-center gap-1 pr-[5vw]">
-            <p class="sub-text shrink inline-block mb-0 mr-2">
+            <p class="sub-text shrink inline-block mb-0 mr-4">
                 {{page.gallery[0].sub-text}}
             </p>
             <div class="next clickable-color-flip cursor-pointer"> {% include icon/gallery-arrow-left.html width= "2.5rem" color="#000" %} </div>
@@ -123,7 +123,7 @@ gallery:
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20 px-12 pb-16">
         {% for vision in page.vision-points %}
         <div>
-            <h3 class="">{{vision.heading}}</h3>
+            <h3 class="h-mono">{{vision.heading}}</h3>
             <p class="text-white">{{vision.para}}</p>
         </div>
 
@@ -167,8 +167,8 @@ gallery:
     
     <div class="max-w-screen-md px-[5vw] mb-8">
         <h3 class="uppercase text-md">Indoor studio spaces</h3>
-        <p class="text-white"> State of the art photography studio with a mix of natural light and artificial lighting options to create stunning e-commerce, fashion & studio imagery.</p>
-        <p class="text-white">Available 7 days per week from 5am till midnight, this is the studio you’ve been waiting for. <a href="/indoor-studio">Explore our indoor studio.</a></p>
+        <p> State of the art photography studio with a mix of natural light and artificial lighting options to create stunning e-commerce, fashion & studio imagery.</p>
+        <p>Available 7 days per week from 5am till midnight, this is the studio you’ve been waiting for. <a href="/indoor-studio">Explore our indoor studio.</a></p>
         </div>
     </div>
 
@@ -184,7 +184,7 @@ gallery:
                     <img class="rounded-2xl aspect-4/5 w-full object-cover" src="{{shoot.featured-images[0].image}}" alt="{{shoot.featured-images[0].alt}}">
                 </div>
                 <h2>{{shoot.name}}</h2>
-                <p class="text-balance text-xs text-white">{{shoot.short-description}}</p>
+                <p class="text-balance text-xs">{{shoot.short-description}}</p>
             </a>
 
             {% endfor %}
@@ -214,7 +214,7 @@ gallery:
 
 
 <section class="mx-0 py-0 px-0">
-    <div class="lg:grid lg:pl-[5vw]" style="grid-template-columns: 25vh 25rem 2fr;">
+    <div class="lg:grid lg:pl-[2.6vw]" style="grid-template-columns: 25vh 25rem 2fr;">
         <div class="vertical-text border-r-2 border-black pr-[2vw] hidden lg:flex justify-center items-center">
             <img src="/assets/images/shoot-logo-text-black.svg" alt="SHOOT">
 
@@ -228,12 +228,12 @@ gallery:
                 <div class="border-y-2 border-black grid grid-cols-2 mb-8">
                     <div class="border-r-2 border-black">
                         <a href="/indoor-studio" class="py-4 pr-4 block ">
-                            <span class="mr-2 clickable-underline">Indoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                            <span class="mr-2 clickable-underline">Indoor Studio</span> {% include icon/arrow-right.html color="black" width='1rem' %}
                         </a>
                     </div>
                     <div class="text-right">
                         <a href="/spaces" class="py-4 pl-4 block ">
-                            <span class="mr-2 clickable-underline">Outdoor Studio</span> {% include icon/arrow-right.html color="white" width='1rem' %}
+                            <span class="mr-2 clickable-underline">Outdoor Studio</span> {% include icon/arrow-right.html color="black" width='1rem' %}
                         </a>
                     </div>
                 </div>

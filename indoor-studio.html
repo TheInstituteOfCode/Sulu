@@ -493,12 +493,15 @@ shot-at-suluh:
             <h2>INDOOR PHOTOGRAPHY STUDIO IN CEMAGI, BALI</h2>
             <p>Say hello to Suluh’s professional photography studio, featuring both natural light through 3x huge floor to ceiling windows and fully equipped studio lighting. </p>
             <p>Available 7 days per week from 5am till midnight, this is the studio you’ve been waiting for. </p>
-            <p>Whether you’re shooting a lookbook or e-commerce project, or a lifestyle campaign we’ve got a range of backdrops and set design options to suit every brand and style from bright and white classic cut-out on our cyclorama wall, to soft neutral tones or our rich timber backdrop. </p>
+            <p>Whether you’re shooting a lookbook or e-commerce project, or a lifestyle campaign we’ve got a range of backdrops and set design options to suit every brand and style from bright and white classic cut-out on our cyclorama wall, to soft neutral tones or our rich timber backdrop. </p>              
+              <p>
+                <a href="#pricw" class="button-dark-lines button-rounded button-arrow editable mt-6 button-hover-white-lines button-hover-dark-bg uppercase">rates & details</a>
+              </p>
         </div>
         
-        <div>
+        <div class="flex gap-2 max-w-full md:h-[50vh] overflow-x-scroll">
             {% for image in page.studio-images-1 %}
-                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full mb-1" />
+                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="md:w-full h-full md:h-[initial] md:mb-1" />
             {% endfor %}
         </div>
     </div>
@@ -506,17 +509,21 @@ shot-at-suluh:
     
 <section class="p-0">
     <div class="grid md:grid-cols-2">
-        <div>
-            {% for image in page.studio-images-2 %}
-                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full mb-1" />
-            {% endfor %}
-        </div>
-        <div class="md:sticky top-0 md:h-screen flex flex-col justify-end px-8 py-8">
+
+        <div class="md:sticky top-0 md:h-screen flex flex-col justify-end px-8 py-8 order-2">
             <h2>DESIGNED BY PHOTOGRAPHERS, FOR PHOTOGRAPHERS. </h2>
             <p>With over a decade of experience running a creative agency in Bali, we designed Suluh to solve every frustration we had with studios in the past. </p>
             <p>From making sure the studio is spotlessly clean when you arrive, to convenient flow for booking check-ins and check-outs to having everything you need for a smooth shoot day (like as many tables as you need, and more than enough clothing racks and coat hangers). </p>
-            <p>Production delay? We’ve got complimentary rescheduling. Want to setup the day before? Drop-off everything in advance so you can start fresh on the shoot day. Need an extra hand? Book a styling assistant to steam all the garments or a shoot assistant to help with lighting and gear. </p>
+            <p>Production delay? We’ve got complimentary rescheduling. Want to setup the day before? Drop-off everything in advance so you can start fresh on the shoot day. Need an extra hand? Book a styling assistant to steam all the garments or a shoot assistant to help with lighting and gear. </p>           
+              <p>
+                <a href="#pricw" class="button-dark-lines button-rounded button-arrow editable mt-6 button-hover-white-lines button-hover-dark-bg uppercase">rates & details</a>
+              </p>
 
+        </div>
+          <div class="order-3 md:order-1 flex gap-2 max-w-full md:h-[50vh] overflow-x-scroll">
+            {% for image in page.studio-images-2 %}
+                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="md:w-full h-full md:h-[initial] md:mb-1" />
+            {% endfor %}
         </div>
         
     </div>

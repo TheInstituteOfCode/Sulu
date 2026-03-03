@@ -476,14 +476,14 @@ shot-at-suluh:
               You’ll find lush gardens at one end, and a hidden reading nook framed by the  branches of a 50 year old tree. It’s got a wide space for building sets and lots of negative space and stunning natural light & shadows.  </p>
               <p>And at the other end you’ll find a smaller tree and grassy hill, with a stone feature wall behind it and an antique looking ‘shed’ with aged timber doors.  </p>
               <p>
-                <a href="/contact" class="button-dark button-rounded button-arrow editable">book our space</a>
+                <a href="#pricw" class="button-dark-lines button-rounded button-arrow editable mt-6 button-hover-white-lines button-hover-dark-bg uppercase">rates & details</a>
               </p>
 
         </div>
         
-        <div>
+        <div class="flex gap-2 max-w-full md:h-[50vh] overflow-x-scroll">
             {% for image in page.studio-images-marble %}
-                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full" />
+                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="md:w-full h-full md:h-[initial] md:mb-1" />
             {% endfor %}
         </div>
     </div>
@@ -526,22 +526,22 @@ shot-at-suluh:
 
 <section class="p-0">
     <div class="grid md:grid-cols-2">
-        <div>
-            {% for image in page.studio-images-mediterranean %}
-                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full" />
-            {% endfor %}
-        </div>
-        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 py-8">
+
+        <div class="order-2 sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 py-8">
             <h2>MEDITERRANEAN GARDEN IN CEMAGI, BALI</h2>
             <p>Welcome to the med terrace, a diverse outdoor area with a variety of different spaces to shoot in.  </p>
             <p>
               With a custom-built italian style outdoor kitchen setup, a stunning staircase and private rooftop and lush wildflower gardens this is a studio that transports you straight to the mediteranean. </p>
               <p>Start with a blank canvas and make it your own, or let our team style it for you with timber table, linen tablecloths, handmade pottery and fresh vases of flowers. </p>
               <p>
-                <a href="/contact" class="button-dark button-rounded button-arrow editable">book our space</a>
+                <a href="#pricw" class="button-dark-lines button-rounded button-arrow editable mt-6 button-hover-white-lines button-hover-dark-bg uppercase">rates & details</a>
               </p>
         </div>
-        
+          <div class="order-3 md:order-1 flex gap-2 max-w-full md:h-[50vh] overflow-x-scroll">
+            {% for image in page.studio-images-mediterranean %}
+                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="md:w-full h-full md:h-[initial] md:mb-1" />
+            {% endfor %}
+        </div>
 
     </div>
 </section>
@@ -586,14 +586,14 @@ shot-at-suluh:
             <p>The dreamiest location in Bali for swimwwear & luxury lifestyle shoots. With a textured hand-rendered 8m swimming pool, a cosy red-brick courtyard framed by citrus trees, and an abundance of natural light for 12 hours per day.  </p>
             <p>
               Play with the light and shadows from our endless sunshine, or add our outdoor difussion scrim for soft morning light all day long.  </p>           
-                 <p>
-                <a href="/contact" class="button-dark button-rounded button-arrow editable">book our space</a>
+              <p>
+                <a href="#pricw" class="button-dark-lines button-rounded button-arrow editable mt-6 button-hover-white-lines button-hover-dark-bg uppercase">rates & details</a>
               </p>
         </div>
         
-        <div>
+        <div class="flex gap-2 max-w-full md:h-[50vh] overflow-x-scroll">
             {% for image in page.studio-images-pool %}
-                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full" />
+                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="md:w-full h-full md:h-[initial] md:mb-1" />
             {% endfor %}
         </div>
     </div>

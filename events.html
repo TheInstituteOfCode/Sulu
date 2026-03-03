@@ -20,7 +20,7 @@ sticky-grid-1:
     image_path: /uploads/event-our event-8.jpg
   - alt: img 9
     image_path: /uploads/event-our event-9.jpg
-hover-gallery-1:
+hover-gallery-2:
   - alt: img 1
     image_path:
     heading: Minimalist neutral
@@ -55,7 +55,7 @@ sticky-grid-2:
     image_path: /uploads/event-our latest event-8.jpg
   - alt: img 9
     image_path: /uploads/event-our latest event-9.jpg
-hover-gallery-2:
+hover-gallery-1:
   - alt: img 1
     image_path: /uploads/brand activation.jpg
     heading: Brand Activations
@@ -102,25 +102,6 @@ hover-gallery-2:
     hover-images:
       - alt: img 2
         image_path: /uploads/recovery day.jpg
-sticky-grid-3:
-  - alt: img 1
-    image_path: /uploads/studio-images-1-1.jpg
-hover-gallery-3:
-  - alt: img 1
-    image_path: /uploads/sulu-indoor-campaign-photography-01.jpg
-    heading: Minimalist neutral
-    p: Using cool toned lights and a soft even glow, get that concrete feeling.
-    hover-images:
-      - alt: img 2
-        image_path: /uploads/sulu-indoor-campaign-photography-02.jpg
-      - alt: img 3
-        image_path: /uploads/sulu-indoor-campaign-photography-03.jpg
-      - alt: img 4
-        image_path: /uploads/sulu-indoor-campaign-photography-04.jpg
-      - alt: img 5
-        image_path: /uploads/sulu-indoor-campaign-photography-05.jpg
-      - alt: img 6
-        image_path: /uploads/sulu-indoor-campaign-photography-06.jpg
 faq:
   - q: ABOUT THE SPACE
     a: >-
@@ -402,6 +383,9 @@ images-hover-speed: 1500
         <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 py-8 editable">
             <h2>Our event space in <br />Cemagi, Bali</h2>
             <p>Say hello to Suluh’s professional photography studio, featuring both natural light through 3x huge floor to ceiling windows and fully equipped studio lighting. <br /><br />Available 7 days per week from 7am till midnight, this is the studio you’ve been waiting for. <br /><br />Whether you’re shooting a lookbook or e-commerce project, or a lifestyle campaign we’ve got a range of backdrops and set design options to suit every brand and style from bright and white classic cut-out on our cyclorama wall, to soft neutral tones or our rich timber backdrop.</p>
+              <p>
+                <a href="/contact" class="button-dark-lines button-rounded button-arrow editable mt-6 button-hover-white-lines button-hover-dark-bg">book our space</a>
+              </p>
         </div>
         
         <div>
@@ -452,6 +436,9 @@ images-hover-speed: 1500
         <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 py-8 editable">
             <h2>Our latest event with Salt &amp; Pepper Catering</h2>
             <p>With over a decade of experience running a creative agency in Bali, we designed Suluh to solve every frustration we had with studios in the past.             From making sure the studio is spotlessly clean when you arrive, to convenient flow for booking check-ins and check-outs to having everything you need for a smooth shoot day (like as many tables as you need, and more than enough clothing racks and coat hangers). <br /><br />Production delay? We’ve got complimentary rescheduling. Want to setup the day before? Drop-off everything in advance so you can start fresh on the shoot day. Need an extra hand? Book a styling assistant to steam all the garmets or a shoot assistant to help with lighting and gear.</p>
+              <p>
+                <a href="/contact" class="button-dark-lines button-rounded button-arrow editable mt-6 button-hover-white-lines button-hover-dark-bg">book our space</a>
+              </p>
         </div>
         
         <div>
@@ -495,58 +482,6 @@ images-hover-speed: 1500
     
 </section>
 
-
-<section class="p-0">
-    <div class="grid md:grid-cols-2">
-          <div>
-            {% for image in page.sticky-grid-3 %}
-                <img src="{{ image.image_path }}" alt="{{ image.alt }}" class="w-full" />
-            {% endfor %}
-        </div>
-        <div class="sticky top-0 h-[calc(100vh)] flex flex-col justify-end px-8 py-8 editable">
-            <h2>INDOOR PHOTOGRAPHY STUDIO IN CEMAGI, BALI</h2>
-            <p>From skincare to makeup, showcase your beauty products in use with our  model photography services. Customize the shoot to meet your brand.</p>
-            <p>Showcase your beauty products in use with our  model photography services.</p>
-            <p>First we’ll have a call to run you through the process and make sure you understand exactly that to expect, we’ll learn your preferences.</p>
-            <p>At this stage you’ll have lots of options to do cool shit and get really excited about your product.</p>
-        </div>
-        
-
-    </div>
-</section>
-
-
-<section class="px-0 bg-dark text-white">
-    
-    <div class="px-[5vw] max-w-screen-lg">
-            <h3 class="text-[1.8rem] edtiable">EXPLORE SETS & STYLES</h3>
-            <p class="text-balance edtiable"> On studio, endless options to create a space that fits your brand vision. </p>
-    </div>
-
-        <div class="flex flex-nowrap overflow-x-scroll gap-6 py-3 px-[var(--side-gap)]">
-        
-            {% for shoot in page.hover-gallery-3 %}
-            <div class="{% if shoot.hover-images.size >= 1 %} hover-slideshow-container {% endif %} shrink-0 w-5/6 md:w-2/7">
-                <div class="relative rounded mb-4" style="aspect-ratio: 45/55;" data-current-slide="0" data-total-slides="{{shoot.hover-images | size}}">
-                    <img class="rounded-2xl aspect-4/5 w-full object-cover relative z-10 hover-slideshow-image-initial" src="{{shoot.image_path}}" alt="{{shoot.alt}}" />
-                    <img class="hover-slideshow-image-secondary rounded-2xl aspect-4/5 w-full object-cover absolute top-0 left-0" src="{{shoot.hover-images.first.image_path}}" alt="{{shoot.alt}}" />
-                </div>
-                <h2 class="text-[1.2rem]">{{shoot.heading}}</h2>
-                <p class="text-xs">{{shoot.p}}</p>
-                <div class="hidden data-div">
-                    {% for image in shoot.hover-images %}
-                        <img class="hidden" src="{{image.image_path}}" alt="{{image.alt}}" />
-                    {% endfor %}
-                </div>
-            </div>
-                
-
-            
-            {% endfor %}
-            
-        </div>
-    
-</section>
 
 
 
