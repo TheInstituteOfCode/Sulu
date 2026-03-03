@@ -51,10 +51,10 @@ gallery:
             </p>
             
         </div>
-        <div class="absolute h-full w-[calc(50%-.5rem)] top-0 left-0">
+        <div class="absolute h-[calc(50%-.5rem)] w-full lg:h-full lg:w-[calc(50%-.5rem)] top-0 left-0">
             <img class="absolute rounded-4xl inset-0 h-full w-full object-center object-cover" src="/assets/images/featured-3.png" alt="" />
         </div>
-        <div class="absolute h-full w-[calc(50%-.5rem)] top-0 right-0">
+        <div class="absolute h-[calc(50%-.5rem)] w-full lg:h-full lg:w-[calc(50%-.5rem)] bottom-0 right-0">
             <img class="absolute rounded-4xl inset-0 h-full w-full object-center object-cover" src="/assets/images/featured-3.png" alt="" />
         </div>
     </div>
@@ -76,9 +76,9 @@ gallery:
 </section>
 
 <section class="p-0 galleryWithTwoParagraphsNeededBasedOnImage">
-    <div class="grid grid-cols-16 gap-x-8 gap-y-4 mb-[2.5vw]">
-        <div class="flex flex-col col-span-6 justify-between pl-[5vw] pt-4">
-            <div>
+    <div class="grid lg:grid-cols-16 gap-x-8 gap-y-4 mb-[2.5vw]">
+        <div class="flex flex-col lg:col-span-6 justify-between pl-[5vw] pt-4">
+            <div class="hidden lg:block">
                 <p class="top-text text-right">
                  {{page.gallery[0].top-text}}
                 </p>
@@ -92,19 +92,19 @@ gallery:
                 </p>
             </div>
         </div>
-        <div class="col-span-10" data-active-image="3">
-            <div class="h-[85vh] relative overflow-hidden rounded-l-4xl">
+        <div class="lg:col-span-10">
+            <div class="h-[50vh] lg:h-[85vh] relative overflow-hidden rounded-l-4xl">
                 {% for pic in page.gallery %}
                 <img class="absolute inset-0 h-full w-full object-center object-cover {% if forloop.index %} active {% endif %}" src="{{pic.image_path}}" alt="{{pic.top-text}}" data-top-text="{{pic.top-text}}"data-sub-text="{{pic.sub-text}}">
                 {% endfor %}
             </div>
         </div>
-        <div class="col-span-full flex justify-end items-center gap-1 pr-[5vw]">
-            <p class="sub-text shrink inline-block mb-0 mr-4">
+        <div class="col-span-full flex justify-end items-center gap-1 px-[5vw]">
+            <p class="sub-text shrink inline-block mb-0 mr-4 text-balance">
                 {{page.gallery[0].sub-text}}
             </p>
-            <div class="next clickable-color-flip cursor-pointer"> {% include icon/gallery-arrow-left.html width= "2.5rem" color="#000" %} </div>
-            <div class="prev clickable-color-flip cursor-pointer"> {% include icon/gallery-arrow-right.html width= "2.5rem" color="#fff" %} </div>
+            <div class="next clickable-color-flip cursor-pointer shrink-0"> {% include icon/gallery-arrow-left.html width= "2.5rem" color="#000" %} </div>
+            <div class="prev clickable-color-flip cursor-pointer shrink-0"> {% include icon/gallery-arrow-right.html width= "2.5rem" color="#fff" %} </div>
         </div>
 
     </div>
@@ -129,8 +129,8 @@ gallery:
 
         {% endfor %}
     </div>
-    <div class="text-center ">
-        <a href="/gallery" class="button-light button-rounded button-arrow editable mr-8"> explore our vision</a>
+    <div class="flex justify-center flex-wrap gap-8 items-center">
+        <a href="/gallery" class="button-light button-rounded button-arrow editable"> explore our vision</a>
         <a href="/contact" class="button-light button-rounded button-arrow editable">book our space</a>
     </div>
 </section>
@@ -228,12 +228,12 @@ gallery:
                 <div class="border-y-2 border-black grid grid-cols-2 mb-8">
                     <div class="border-r-2 border-black">
                         <a href="/indoor-studio" class="py-4 pr-4 block ">
-                            <span class="mr-2 clickable-underline">Indoor Studio</span> {% include icon/arrow-right.html color="black" width='1rem' %}
+                            <span class="mr-2 clickable-underline h-mono">Indoor Studio</span> {% include icon/arrow-right.html color="black" width='1rem' %}
                         </a>
                     </div>
                     <div class="text-right">
                         <a href="/spaces" class="py-4 pl-4 block ">
-                            <span class="mr-2 clickable-underline">Outdoor Studio</span> {% include icon/arrow-right.html color="black" width='1rem' %}
+                            <span class="mr-2 clickable-underline h-mono">Outdoor Studio</span> {% include icon/arrow-right.html color="black" width='1rem' %}
                         </a>
                     </div>
                 </div>
@@ -260,7 +260,7 @@ gallery:
         let topText = gallery.querySelector('.top-text')
         let subText = gallery.querySelector('.sub-text')
 
-        let activeImage = 0
+        let activeImage = 1
         console.log(images.length,activeImage)
         function updateGallery(t) {
             console.log('dan t +active',  t + activeImage,images.length)
