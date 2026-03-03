@@ -70,16 +70,26 @@ html.lockScroll,html.lockScroll body {
 }
 
         
-    body {
+    body,html {
         font-family: 'DM Sans', sans-serif;
         font-weight: 300;
         background-color: #F9F7F4;
+        scroll-behavior: smooth;
     }
 
-    p , .p{
+    p , .p, .p-back-to-grey > p{
         line-height: 1.4;
         margin-bottom: 1rem;
         color: rgb(120,120,120);
+    }
+
+     .p-back-to-grey > p {
+         color: rgb(120,120,120) !important;
+         
+     }
+
+    .bg-black p, .bg-dark p {
+        color: #ccc;
     }
 
     .p-parent-white p{
@@ -147,7 +157,7 @@ html.lockScroll,html.lockScroll body {
     .clickable-underline::after {
         content: "";
         position: absolute;
-        bottom: 0rem;
+        bottom: -.3rem;
         left:0;
         border-bottom:2px solid transparent;
         width:0;
@@ -230,10 +240,24 @@ html.lockScroll,html.lockScroll body {
 
     .button-light:hover {
         color: #fff;
-        background-color: var(--dark);
-        border-color: white;
+        background-color: var(--black);
+        border-color: #fff;
     }
 
+
+    .button-dark-lines {
+        border-color:  var(--black);
+        color: var(--black);
+    }
+
+    .button-hover-dark-bg:hover {
+        background-color: var(--black);
+    }
+
+    .button-hover-white-lines:hover {
+        border-color:  var(--color-white);
+        color: var(--color-white);
+    }
 
 
     .vertical-text {
