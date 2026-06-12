@@ -6,7 +6,7 @@ title: Event Terms & Conditions
 
 Effective as of booking confirmation
 
-By confirming an event booking at Suluh Studio, you (the "Client") agree to be bound by the following Terms and Conditions. Please read them carefully before proceeding with your reservation.
+By confirming an event booking at Suluh Studio, you (the “Client”) agree to be bound by the following Terms and Conditions. Please read them carefully before proceeding with your reservation.
 
 ### 1\. Space Condition & Natural Variation
 
@@ -34,9 +34,9 @@ Suluh Studio reserves the right to refuse entry to guests or request that number
 
 The Client is responsible for identifying, obtaining, and bearing the cost of any permits, licences, or approvals required by Indonesian government authorities, local village councils (banjar), or other regulatory bodies in connection with their event — including but not limited to event permits, noise permits, and any applicable banjar fees.
 
-Where such obligations are explicitly listed as inclusions within the Client's quote or contract, they will be managed by Suluh Studio on the Client's behalf. In all other cases, this responsibility falls entirely with the Client.
+Where such obligations are explicitly listed as inclusions within the Client’s quote or contract, they will be managed by Suluh Studio on the Client’s behalf. In all other cases, this responsibility falls entirely with the Client.
 
-Suluh Studio accepts no liability for any disruption, cancellation, or penalty arising from the Client's failure to obtain required permits or make required payments.
+Suluh Studio accepts no liability for any disruption, cancellation, or penalty arising from the Client’s failure to obtain required permits or make required payments.
 
 ### 3\. Damage to the Space
 
@@ -50,7 +50,7 @@ Report any accidental damage to Suluh Studio immediately and prior to departing.
 
 Accept full financial liability for any damage caused to the space, fixtures, fittings, furniture, props, plants, or structural elements — including limewash walls, stone surfaces, and flooring — whether caused by the Client, their crew, guests, or contractors.
 
-Cover the cost of professional repair, restoration, or replacement at Suluh Studio's reasonable discretion.
+Cover the cost of professional repair, restoration, or replacement at Suluh Studio’s reasonable discretion.
 
 Where damage is identified after the booking, Suluh Studio reserves the right to invoice the Client for all associated costs. Any security deposit held may be retained in partial or full satisfaction of such costs.
 
@@ -68,7 +68,7 @@ Take all reasonable steps to prevent damage, disturbance, or unsafe behaviour.
 
 Comply with any reasonable requests made by Suluh Studio staff during the event.
 
-Suluh Studio reserves the right to ask any guest or attendee to leave the premises where their behaviour is deemed disruptive, unsafe, or damaging. Suluh Studio staff are not responsible for the security or supervision of the Client's event and guests unless a security arrangement has been explicitly agreed in writing.
+Suluh Studio reserves the right to ask any guest or attendee to leave the premises where their behaviour is deemed disruptive, unsafe, or damaging. Suluh Studio staff are not responsible for the security or supervision of the Client’s event and guests unless a security arrangement has been explicitly agreed in writing.
 
 ### 5\. Noise, Curfew & Neighbour Respect
 
@@ -98,19 +98,19 @@ Ensuring that alcohol is served responsibly and that intoxicated guests are mana
 
 Ensuring that alcohol is not served to minors.
 
-Suluh Studio accepts no liability for any injury, incident, regulatory penalty, or damage arising in connection with the service or consumption of alcohol at a Client's event. Any damage caused by intoxicated guests remains the Client's financial responsibility under clause 3.
+Suluh Studio accepts no liability for any injury, incident, regulatory penalty, or damage arising in connection with the service or consumption of alcohol at a Client’s event. Any damage caused by intoxicated guests remains the Client’s financial responsibility under clause 3.
 
 ### 7\. External Vendor Coordination
 
-Where the coordination of external vendors — such as furniture rental, floral arrangements, catering, audiovisual equipment, or similar services — is explicitly included within the Client's quote or contract, Suluh Studio will make every reasonable effort to ensure a smooth and well-coordinated experience.
+Where the coordination of external vendors — such as furniture rental, floral arrangements, catering, audiovisual equipment, or similar services — is explicitly included within the Client’s quote or contract, Suluh Studio will make every reasonable effort to ensure a smooth and well-coordinated experience.
 
 However, Suluh Studio acts as a coordinator only and has no direct contractual control over third-party vendors. Accordingly:
 
 Suluh Studio cannot be held financially liable for any disappointment, delay, damage, non-delivery, or failure on the part of any external vendor.
 
-Any dispute regarding the quality or delivery of external vendor services must be resolved directly between the Client and the vendor concerned.
+Any dispute regarding the quality or delivery of external vendor services must be resolved directly between the Client and the vendor concerned. So long as Suluh Studio has in good faith put in the time and effort to source the requested external vendors, no refund will be offered for that time even if the client decides not to move forward with any specific vendors or procurement.
 
-Where vendor coordination is not listed as an inclusion in the Client's quote, the Client is fully responsible for the arrangement, communication, and management of all external suppliers.
+Where vendor coordination is not listed as an inclusion in the Client’s quote, the Client is fully responsible for the arrangement, communication, and management of all external suppliers.
 
 Suluh Studio recommends that Clients confirm all vendor arrangements directly, regardless of coordination support provided.
 
@@ -128,21 +128,21 @@ Suluh Studio does not provide any form of event insurance, public liability insu
 
 The Client is strongly advised to obtain adequate insurance prior to their event, including:
 
-Public liability insurance covering the Client's legal responsibility for injury to guests or third parties.
+Public liability insurance covering the Client’s legal responsibility for injury to guests or third parties.
 
 Event cancellation or postponement insurance.
 
 Coverage for equipment, property, or personal items brought onto the premises.
 
-Suluh Studio accepts no responsibility for any loss, theft, injury, or damage to persons or property during the Client's booking. The Client agrees to indemnify Suluh Studio against any claim made by a guest or third party arising from the Client's event.
+Suluh Studio accepts no responsibility for any loss, theft, injury, or damage to persons or property during the Client’s booking. The Client agrees to indemnify Suluh Studio against any claim made by a guest or third party arising from the Client’s event.
 
 ### 10\. Access, Bump-In & Bump-Out
 
 Access to the space is only permitted from the confirmed start time of the booking. Early access is not guaranteed and must be requested and approved in advance, in writing.
 
-The Client's booking time includes all setup (bump-in) and pack-down (bump-out) time. All items, equipment, decorations, and personal property belonging to the Client or their vendors must be fully removed from the space by the confirmed end time of the booking.
+The Client’s booking time includes all setup (bump-in) and pack-down (bump-out) time. All items, equipment, decorations, and personal property belonging to the Client or their vendors must be fully removed from the space by the confirmed end time of the booking.
 
-Where the Client or their vendors require additional time beyond the confirmed booking window, this must be arranged and confirmed with Suluh Studio in advance where possible. Overtime will be assessed at Suluh Studio's discretion and may be invoiced after the event at the applicable rate.
+Where the Client or their vendors require additional time beyond the confirmed booking window, this must be arranged and confirmed with Suluh Studio in advance where possible. Overtime will be assessed at Suluh Studio’s discretion and may be invoiced after the event at the applicable rate.
 
 Suluh Studio accepts no responsibility for any items left on the premises after the booking period has concluded.
 
@@ -156,11 +156,11 @@ Volcanic activity, earthquakes, or other geological events.
 
 Government action, regulatory order, or public health directive.
 
-Power or utility failure beyond Suluh Studio's control.
+Power or utility failure beyond Suluh Studio’s control.
 
 Civil unrest or other unforeseen emergency circumstances.
 
-In the event of a force majeure circumstance, Suluh Studio will endeavour to provide the Client with as much notice as possible and will work in good faith to reschedule the booking where feasible. Where rescheduling is not possible, liability will be limited to any amounts paid by the Client for the affected booking, at Suluh Studio's reasonable discretion.
+In the event of a force majeure circumstance, Suluh Studio will endeavour to provide the Client with as much notice as possible and will work in good faith to reschedule the booking where feasible. Where rescheduling is not possible, liability will be limited to any amounts paid by the Client for the affected booking, at Suluh Studio’s reasonable discretion.
 
 ### 12\. Content Rights & Intellectual Property
 
@@ -172,7 +172,7 @@ As a condition of booking, the Client grants Suluh Studio a non-exclusive, royal
 
 **12\.2  Exclusivity Package**
 
-Clients who have purchased a confirmed Exclusivity Package will have their booking treated as private. Suluh Studio will not document the event for promotional use, and UGC will not be reshared without prior written consent. Exclusivity must be confirmed in writing on the Client's invoice — verbal agreements do not apply.
+Clients who have purchased a confirmed Exclusivity Package will have their booking treated as private. Suluh Studio will not document the event for promotional use, and UGC will not be reshared without prior written consent. Exclusivity must be confirmed in writing on the Client’s invoice — verbal agreements do not apply.
 
 ### **13\. Content Usage**
 
