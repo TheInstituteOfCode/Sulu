@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: markdown
 title: Event Terms & Conditions
 ---
 ## Terms & Conditions — Event Hire
