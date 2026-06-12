@@ -174,25 +174,53 @@ As a condition of booking, the Client grants Suluh Studio a non-exclusive, royal
 
 Clients who have purchased a confirmed Exclusivity Package will have their booking treated as private. Suluh Studio will not document the event for promotional use, and UGC will not be reshared without prior written consent. Exclusivity must be confirmed in writing on the Client’s invoice — verbal agreements do not apply.
 
-### **13\. Content Usage**
+### 13\. AI, Synthetic Media & Image Manipulation
+
+Suluh Studio's aesthetic, spatial design, and visual identity are proprietary assets of the business. The following restrictions apply to all content captured within or referencing the space, and form a condition of booking.
+
+13\.1  Prohibition on AI Training
+
+The Client must not use any content captured within Suluh Studio — including photos, videos, or any derivative works — to train, fine-tune, develop, or improve any artificial intelligence, machine learning, or generative model, whether for commercial, research, or personal purposes. This prohibition applies regardless of whether the content is used directly or as part of a larger dataset.
+
+13\.2  Prohibition on AI-Generated Representations of the Space
+
+The Client must not use artificial intelligence, generative tools, or any other synthetic media technology to create, produce, or publish imagery that depicts, replicates, or is substantially evocative of Suluh Studio's aesthetic, interiors, or visual identity — whether or not content shot at the space was used as a reference or input.
+
+13\.3  Prohibition on Material AI Alteration of Shoot Content
+
+Content captured at Suluh Studio may not be materially altered using AI or automated editing tools in ways that misrepresent the original shoot or commercially exploit the space beyond the scope of the booking. This includes, but is not limited to:
+
+Using AI tools to replace, swap, or generate models, talent, or people within images taken at the space.
+
+Using AI tools to replace or alter outfits, products, or props in a way that creates new commercial content beyond what was originally shot.
+
+Outpainting, extending, or otherwise generating new spatial elements that incorporate or are derived from the space's visual identity.
+
+Standard retouching, colour grading, and minor post-production editing are permitted. Where a Client is uncertain whether a planned use falls within these restrictions, they should seek written approval from Suluh Studio prior to publishing.
+
+Breach of any provision in this clause will be treated as a material breach of these Terms and Conditions, and Suluh Studio reserves all rights and remedies available, including immediate revocation of any content licence granted under clause 12.
+
+&nbsp;
+
+### **14\. Content Usage**
 
 If a Client — at any time, including after the completion of their booking — contests or disputes any payment, requests a refund contrary to the applicable policy, or publishes content or statements that are false, misleading, or materially damaging to the reputation of Suluh Studio, then any licence previously granted to use content produced within the space is immediately and automatically revoked.
 
 The Client must promptly remove all such content from public platforms. Suluh Studio reserves the right to pursue appropriate remedies where this clause is breached.
 
-### **14\. Cancellations & Refunds**
+### **15\. Cancellations & Refunds**
 
 All bookings at Suluh Studio are subject to the cancellation and refund terms set out below. By confirming a booking, the Client acknowledges and accepts these terms in full.
 
-**14\.1  No Change of Mind Refunds**
+**15\.1  No Change of Mind Refunds**
 
 Suluh Studio does not offer refunds on the basis of a change of mind. Once a booking is confirmed and payment or deposit is received, the Client has entered into a binding agreement and the terms below apply. No exceptions will be made for change of plans, reduced guest numbers, or personal circumstances unless otherwise stated in writing by Suluh Studio.
 
-**14\.2  Service Elements (Planning, Design & Coordination)**
+**15\.2  Service Elements (Planning, Design & Coordination)**
 
 All fees relating to event planning, set design, styling, and coordination services are strictly non-refundable, regardless of when a cancellation is made. These services involve time, resources, and creative work committed by Suluh Studio from the moment of booking confirmation, and cannot be recovered upon cancellation.
 
-**14\.3  Space Rental Fee**
+**15\.3  Space Rental Fee**
 
 The following refund schedule applies to the space rental component of the booking only:
 
@@ -202,7 +230,7 @@ Cancellation 90 days or fewer prior to the event date: no refund will be issued.
 
 For the avoidance of doubt, the booking deposit is non-refundable under all circumstances and is separate from the above refund schedule.
 
-**14\.4  Rescheduling**
+**15\.4  Rescheduling**
 
 Requests to reschedule a confirmed booking are considered on a case-by-case basis at the sole discretion of Suluh Studio. Rescheduling is not guaranteed and is subject to availability.
 
@@ -210,7 +238,7 @@ Where a reschedule is approved, an administration or rescheduling fee may apply.
 
 A reschedule request does not constitute a cancellation, and the original cancellation policy remains in effect with reference to the original booking date unless Suluh Studio expressly agrees otherwise in writing.
 
-### 15\. General
+### 16\. General
 
 These Terms and Conditions are governed by the laws of the Republic of Indonesia.
 
