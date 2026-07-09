@@ -1,17 +1,16 @@
 ---
 layout: default
 seo:
-    title: Photography Studio & Creative Agency Bali | Suluh Studio
+    title: Photography Portfolio Bali | Suluh Studio
     description: >-
-        Full-service photography studio in Cemagi, Bali. E-commerce, product,
-        lifestyle & ghost mannequin photography with over 1200m² of indoor and
-        outdoor spaces.
+        Explore Suluh Studio's portfolio of commercial photography, brand
+        campaigns, e-commerce, lifestyle, and creative productions captured in
+        Bali.
     image:
     favicon:
     index: true
 permalink:
 ---
-
 <section class="grid-cols-3 grid gap-2">
   <h2 class="h-block col-span-full text-xl mb-2">Our Portfolio.</h2>
   <p class="col-span-full mb-8">  A selection of our recent photography projects, get in touch to see a full portfolio of projects relevant to your niche or shoot style. </p>
@@ -19,7 +18,7 @@ permalink:
     
       {% for image in shoot.featured-images %}
       <div class="image-container">
-        <img src="{{ image.image }}" alt="{{ image.alt }}" class="w-full h-auto object-cover aspect-3/4"/>
+        <img src="{{ image.image }}" alt="{{ image.alt }}" class="w-full h-auto object-cover aspect-3/4" />
         </div>
       {% endfor %}
 
