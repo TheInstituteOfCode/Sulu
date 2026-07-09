@@ -1,8 +1,30 @@
 ---
 layout: default
+
+
+
 gallery:
     - 
-        image_path: /assets/images/outside.jpg
+        top-text: LOOKBOOK
+        sub-text: In-house production at Suluh Indoor Studio
+        image_path: /uploads/shot-at-suluh-featured-1.jpg
+        image-alt:
+    - 
+        top-text: Campaign
+        sub-text: Shot by Eyes of a Nomad in the Med Courtyard
+        image_path: /uploads/shot-at-suluh-featured-3.jpg
+        image-alt:
+    - 
+        top-text: Lifestyle
+        sub-text: Shot by Kelapa Creative in Suluh's Marble Garden
+        image_path:  /uploads/shot-at-suluh-featured-4.jpg
+        image-alt:
+    - 
+        top-text: Swim
+        sub-text: In-house production at Suluh
+        image_path:  /uploads/shot-at-suluh-featured-2.jpg
+        image-alt:
+
 
 vision-points:
     -
@@ -24,24 +46,6 @@ vision-points:
     -
         heading: Private spaces with on-demand support
         para: All our studios are completely private from the public and our team is on standby when you need them and out of your way when you don’t. 
-
-gallery:
-    - 
-        top-text: LOOKBOOK
-        sub-text: In-house production at Suluh Indoor Studio
-        image_path: /uploads/shot-at-suluh-featured-1.jpg
-    - 
-        top-text: Campaign
-        sub-text: Shot by Eyes of a Nomad in the Med Courtyard
-        image_path: /uploads/shot-at-suluh-featured-3.jpg
-    - 
-        top-text: Lifestyle
-        sub-text: Shot by Kelapa Creative in Suluh's Marble Garden
-        image_path:  /uploads/shot-at-suluh-featured-4.jpg
-    - 
-        top-text: Swim
-        sub-text: In-house production at Suluh
-        image_path:  /uploads/shot-at-suluh-featured-2.jpg
 
 seo:
     title: Photography Studio & Creative Agency Bali | Suluh Studio
@@ -69,10 +73,10 @@ permalink:
             
         </div>
         <div class="absolute h-[calc(50%-.5rem)] w-full lg:h-full lg:w-[calc(50%-.5rem)] top-0 left-0">
-            <img class="absolute rounded-4xl inset-0 h-full w-full object-center object-cover" src="/uploads/hero-banner-studio-outdoor.jpg" alt="" />
+            <img class="absolute rounded-4xl inset-0 h-full w-full object-center object-cover editable" src="/uploads/hero-banner-studio-outdoor.jpg" alt="" />
         </div>
         <div class="absolute h-[calc(50%-.5rem)] w-full lg:h-full lg:w-[calc(50%-.5rem)] bottom-0 right-0">
-            <img class="absolute rounded-4xl inset-0 h-full w-full object-center object-cover" src="/uploads/hero-banner-studio-indoor.jpg" alt="" />
+            <img class="absolute rounded-4xl inset-0 h-full w-full object-center object-cover editable" src="/uploads/hero-banner-studio-indoor.jpg" alt="" />
         </div>
     </div>
     <div class="flex justify-between">
@@ -112,7 +116,7 @@ permalink:
         <div class="lg:col-span-10">
             <div class="h-[50vh] lg:h-[85vh] relative overflow-hidden rounded-l-4xl">
                 {% for pic in page.gallery %}
-                <img class="absolute inset-0 h-full w-full object-center object-cover {% if forloop.index == 1 %} active {% endif %}" src="{{pic.image_path}}" alt="{{pic.top-text}}" data-top-text="{{pic.top-text}}"data-sub-text="{{pic.sub-text}}">
+                <img class="absolute inset-0 h-full w-full object-center object-cover {% if forloop.index == 1 %} active {% endif %}" src="{{pic.image_path}}" alt="{{pic.image-alt}}" data-top-text="{{pic.top-text}}"data-sub-text="{{pic.sub-text}}">
                 {% endfor %}
             </div>
         </div>
