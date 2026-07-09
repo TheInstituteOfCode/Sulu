@@ -8,7 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{page.title}}</title>
+
+    <link rel="icon" type="image/x-icon" href="{{page.seo.favicon | default: site.data.seo.favicon_image}}">
+    
+    
+    
+    <link rel="stylesheet" href="/editor.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- meta-fields -->
+    <title>{{page.seo.title | default: site.data.seo.title }}</title>
+    <meta name="description" content="{{page.seo.description | default: site.data.seo.description}}">
+    <meta property="og:image" content="{{page.data.seo.image | default: site.data.seo.image}}"/>
+    
+    <meta name="google" content="nositelinkssearchbox">
+    {% if site.data.seo.google-site-verification %}
+      {{site.data.seo.google-site-verification}}
+    {% endif %}
 
     <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
