@@ -19,7 +19,9 @@ short-pricing: Opening April 3rd
 featured-images:
     -
         image: /uploads/pool-1.jpg
-        alt: A
+        alt: >-
+            Outdoor photoshoot studio with pool and tropical garden backdrop,
+            Suluh Studio Bali
 faq:
     -
         q: What we do
