@@ -83,9 +83,9 @@ html.lockScroll,html.lockScroll body {
         color: rgb(120,120,120);
     }
 
-     .p-back-to-grey > p {
-         color: rgb(120,120,120) !important;
-         
+     .p-back-to-grey > p, 
+     .bg-dark .bg-white p {
+         color: rgb(120,120,120);
      }
 
     .bg-black p, .bg-dark p {
@@ -129,6 +129,11 @@ html.lockScroll,html.lockScroll body {
         font-weight: 600;
         text-transform: uppercase;
     }
+
+    .heading-lg {
+        @apply text-lg sm:text-xl md:text-2xl mb-1 text-white leading-none mb-4
+    }
+
 
     .last-child-remove-margin > :last-child{
         margin-bottom: 0;

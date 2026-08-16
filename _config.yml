@@ -10,6 +10,8 @@ collections:
   galleryCards: 
     output: false
     sort_by: order
+  services: 
+    output: true
 
 plugins:
   - jekyll-sitemap

@@ -1,0 +1,55 @@
+<section class="{{block.background-class}} p-0">
+    <div class="grid md:grid-cols-2">
+
+        <div class="md:sticky top-0 md:h-screen flex flex-col justify-end px-8 py-8
+            {% if block.gallery-position == 'left' %}
+                order-2
+            {% else %}
+                order-1
+            {% endif %}
+        ">
+
+            {% if block.heading %}
+                <h2 class="{{block.heading-style}}">
+                    {{block.heading}}
+                </h2>
+            {% endif %}
+
+            {% if block.content %}
+                <div class="editable">
+                    {{block.content}}
+                </div>
+            {% endif %}
+
+            {% if block.button-text %}
+                <p>
+                    <a
+                        href="{{block.button-link}}"
+                        class="{{block.button-style}} editable mt-6"
+                    >
+                        {{block.button-text}}
+                    </a>
+                </p>
+            {% endif %}
+
+        </div>
+
+        <div class="
+            {% if block.gallery-position == 'left' %}
+                order-1
+            {% else %}
+                order-2
+            {% endif %}
+            flex md:block gap-2 max-w-full h-[50vh] md:h-fit overflow-x-scroll
+        ">
+            {% for image in block.images %}
+                <img
+                    src="{{image.image_path}}"
+                    alt="{{image.alt}}"
+                    class="md:w-full h-full md:h-[initial] md:mb-1"
+                />
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

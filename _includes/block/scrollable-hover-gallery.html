@@ -1,0 +1,79 @@
+<section class="p-0 {{block.background-class}} text-white">
+
+    <div class="px-[var(--side-gap)] pt-[var(--side-gap)] max-w-screen-lg">
+
+        {% if block.heading %}
+            <h3 class="{{block.heading-style}}">
+                {{block.heading}}
+            </h3>
+        {% endif %}
+
+        {% if block.description %}
+            <p class="text-balance">
+                {{block.description}}
+            </p>
+        {% endif %}
+
+    </div>
+
+    <div class="flex flex-nowrap overflow-x-scroll gap-6 pt-3 pb-[var(--side-gap)] px-[var(--side-gap)]">
+
+        {% for item in block.items %}
+
+            <div class="{% if item.hover-images.size >= 1 %}hover-slideshow-container{% endif %} shrink-0 w-5/6 md:w-2/7">
+
+                <div
+                    class="relative rounded mb-4 {{item.aspect-ratio}}"
+                    data-current-slide="0"
+                    data-total-slides="{{item.hover-images | size}}"
+                >
+
+                    <img
+                        class="{{item.aspect-ratio}} w-full object-cover relative z-10 hover-slideshow-image-initial"
+                        src="{{item.image_path}}"
+                        alt="{{item.alt}}"
+                    />
+
+                    {% if item.hover-images.size >= 1 %}
+                        <img
+                            class="hover-slideshow-image-secondary {{item.aspect-ratio}} w-full object-cover absolute top-0 left-0"
+                            src="{{item.hover-images.first.image_path}}"
+                            alt="{{item.hover-images.first.alt}}"
+                        />
+                    {% endif %}
+
+                </div>
+
+                {% if item.heading %}
+                    <h2 class="text-[1.2rem]">
+                        {{item.heading}}
+                    </h2>
+                {% endif %}
+
+                {% if item.credit %}
+                    <p class="text-xs italic">
+                        {{item.credit}}
+                    </p>
+                {% endif %}
+
+                {% if item.hover-images.size >= 1 %}
+                    <div class="hidden data-div">
+
+                        {% for image in item.hover-images %}
+                            <img
+                                class="hidden"
+                                src="{{image.image_path}}"
+                                alt="{{image.alt}}"
+                            />
+                        {% endfor %}
+
+                    </div>
+                {% endif %}
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>

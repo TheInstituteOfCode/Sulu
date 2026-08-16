@@ -1,0 +1,103 @@
+{% if block.tab-content == 'custom' %}
+    {% assign visual-tabs-items = block.custom-tabs %}
+{% else %}
+    {% assign visual-tabs-items = site.data.tabs %}
+{% endif %}
+
+<section class="px-0 {{block.background-class}}">
+
+    <div class="px-[var(--side-gap)]">
+        <h2 class="{{block.heading-style}} mx-0 text-white">
+            {{block.heading}}
+        </h2>
+    </div>
+
+    <div class="flex gap-4 flex-nowrap overflow-x-scroll [var(--side-gap)] mb-8 px-[var(--side-gap)] py-8">
+
+        {% for tab in visual-tabs-items %}
+
+            <div
+                class="basis-2/5 md:basis-1/5 md:shrink shrink-0 p-4 bg-white rounded-3xl cursor-pointer reasonButtons clickable {% if forloop.first %}active{% endif %}"
+                data-scroll-number="{{forloop.index0}}"
+            >
+
+                <h4 class="h-mono opacity-60 text-[1.1rem] mb-8">
+                    0{{forloop.index}}
+                </h4>
+
+                <h3 class="text-[1.1rem] max-w-[8rem] h-mono uppercase">
+                    {{tab.title}}
+                </h3>
+
+                {% if tab.short-description %}
+                    <p class="text-xs">
+                        {{tab.short-description}}
+                    </p>
+                {% endif %}
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+    <div class="flex flex-nowrap overflow-scroll reasonGrid snap-x snap-mandatory pb-4">
+
+        {% for tab in visual-tabs-items %}
+
+            <div class="px-[var(--side-gap)] w-screen shrink-0 snap-center">
+
+                <div class="bg-white rounded-3xl flex flex-col md:flex-row overflow-hidden">
+
+                    <div
+                        class="relative gallery-image-holder min-h-30vh max-h-full flex-1 basis-full md:basis-[40%] md:order-1 order-2"
+                        style="aspect-ratio: 44/54;"
+                    >
+
+                        {% for image in tab.images %}
+
+                            <img
+                                class="absolute w-full h-full object-cover {% if forloop.first %}active{% endif %}"
+                                src="{{image.image}}"
+                                alt="{{image.alt}}"
+                            />
+
+                        {% endfor %}
+
+                    </div>
+
+                    <div class="p-8 md:basis-[60%] flex-shrink-0 basis-full">
+
+                        <div class="flex flex-col justify-between h-full">
+
+                            <p class="hidden md:block text-right h-mono">
+                                0{{forloop.index}}
+                            </p>
+
+                            <div>
+
+                                <h3 class="text-md md:text-lg uppercase">
+                                    {{tab.title}}
+                                </h3>
+
+                                {% if tab.long-description %}
+                                    <div>
+                                        {{tab.long-description}}
+                                    </div>
+                                {% endif %}
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>

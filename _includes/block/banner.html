@@ -1,0 +1,32 @@
+<section class="{{block.background-class}}">
+    <div class="flex justify-center items-center relative min-h-[80vh]">
+        <img
+            src="{{block.background-image}}"
+            alt="{{block.background-alt}}"
+            class="w-full h-full object-cover inset-0 absolute rounded-4xl"
+        />
+
+        <div class="max-w-3xl z-10 relative p-12">
+            {% if block.heading %}
+                <h1 class="{{block.heading-style}}">
+                    {{block.heading}}
+                </h1>
+            {% endif %}
+
+            {% if block.content %}
+                <div class="text-balance mb-6">
+                    {{block.content}}
+                </div>
+            {% endif %}
+
+            {% if block.button-text %}
+                <a
+                    href="{{block.button-link}}"
+                    class="{{block.button-style}}"
+                >
+                    {{block.button-text}}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</section>
