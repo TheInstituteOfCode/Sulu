@@ -1,5 +1,81 @@
 ---
 layout: default
+blocks:
+    -
+        _id: popup-cards-simple
+        show: true
+        background-class: bg-cream
+        heading: Tables, Chairs, and other Furniture
+        description: >-
+            <p>Furniture available to rent for your photoshoot. </p>
+
+        items:
+            -
+                name: Pool Lounges & Umbrellas
+                short-pricing:
+                short-description: Our custom made pool setting, with sun beds, umbrellas and side tables.
+                description: >-
+                    <p>2x Black metal sun lounge chairs, and up to 3 mediteranean style umbrellas that can be installed striaght into the pool studio floor (without a base) or anywhere else in the studio with a concrete base. </p>
+                    <p>Complimentary when you book the Pool Studio, and available as an add-on to any other space for 500k. Branded cushions, towels, and custom colored day-bed covers available on request for an additional cost. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-1.jpg
+                        alt: Black Metal Lounge at the Pool Studio
+                        text-color-light: false
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Beautiful mediteranean umbrellas for rent at the Pool Studio.
+                        text-color-light: false
+
+            -
+                name: Minimalist Wire Day Beds
+                short-pricing: From $45 per image
+                short-description: Beautifully styled flat lay photography for your collection.
+                description: >-
+                    <p>Creamy pastel yellow sun lounges, recommended for use with a white or yellow & white stripe pool towel. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+
+    -
+        _id: popup-cards-simple
+        show: true
+        background-class: bg-cream
+        heading: Tables, Chairs, and other Furniture
+        description: >-
+            <p>Furniture available to rent for your photoshoot. </p>
+        items:
+            -
+                name: Pool Lounges & Umbrellas
+                short-pricing:
+                short-description: Our custom made pool setting, with sun beds, umbrellas and side tables.
+                description: >-
+                    <p>2x Black metal sun lounge chairs, and up to 3 mediteranean style umbrellas that can be installed striaght into the pool studio floor (without a base) or anywhere else in the studio with a concrete base. </p>
+                    <p>Complimentary when you book the Pool Studio, and available as an add-on to any other space for 500k. Branded cushions, towels, and custom colored day-bed covers available on request for an additional cost. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-1.jpg
+                        alt: Black Metal Lounge at the Pool Studio
+                        text-color-light: false
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Beautiful mediteranean umbrellas for rent at the Pool Studio.
+                        text-color-light: false
+
+            -
+                name: Minimalist Wire Day Beds
+                short-pricing: From $45 per image
+                short-description: Beautifully styled flat lay photography for your collection.
+                description: >-
+                    <p>Creamy pastel yellow sun lounges, recommended for use with a white or yellow & white stripe pool towel. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+
 seo:
     title: Photography Studio & Creative Agency Bali | Suluh Studio
     description: >-
@@ -13,8 +89,23 @@ permalink:
 ---
 
 <section class="bg-dark py-16 text-white">
-    <div class="py-12">
+    <div class="py-12 max-w-4xl">
     <h1 class="h-block text-xl"> Prop Library </h1>
-    <p> Full catalog is coming soon, reach out to our team on whatsapp or email and we'll send you a catalog. </p>
+    <p>Explore the Suluh Studio Prop libarry below. Some of the props are complimentary when you book a studio rental and others are available as an add-on. As some props are stored on-site and others at an off-site location or through one of our rental partners, we recommend requesting props in advance to confirm availability. Unless otherwise noted, all props are exclusively available at Suluh Studio. </p>
     </div>
 </section>
+
+{% if page.blocks %}
+  {% for block in page.blocks %}
+
+   {% if block.show != false %}
+
+    <div class="relative" id="section-{{forloop.index}}">
+      <!--{{block._id}} -->
+      {% include /block/{{block._id}}.html %}
+    </div>
+
+    {% endif %}
+  {% endfor %}
+{% endif %}
+

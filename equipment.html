@@ -1,0 +1,152 @@
+---
+layout: default
+blocks:
+    -
+        _id: popup-cards-simple
+        show: true
+        layout: wrap
+        background-class: bg-cream
+        heading: Photography, Videography, Studio Lighting & Grip
+        description: >-
+            <p>A range of professional lighting and photography equipment available to rent at our Bali photography studio. </p>
+
+        items:
+            -
+                name: Strobe Lighting Kit
+                short-pricing:
+                short-description: One of the lighting kit's that's available complimentary with your studio booking. 
+                description: >-
+                    <p>2x Black metal sun lounge chairs, and up to 3 mediteranean style umbrellas that can be installed striaght into the pool studio floor (without a base) or anywhere else in the studio with a concrete base. </p>
+                    <p>Complimentary when you book the Pool Studio, and available as an add-on to any other space for 500k. Branded cushions, towels, and custom colored day-bed covers available on request for an additional cost. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-1.jpg
+                        alt: Black Metal Lounge at the Pool Studio
+                        text-color-light: false
+
+            -
+                name: Continuous Lighting Kit
+                short-pricing:
+                short-description: Perfect for video shoots, or photographers who don't have experience with studio lighting. 
+                description: >-
+                    <p>Creamy pastel yellow sun lounges, recommended for use with a white or yellow & white stripe pool towel. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+            -
+                name: Light Modifiers, Umbrellas & Diffusers
+                short-pricing:
+                short-description: We have a range of light modifiers available to manipulate light. 
+                description: >-
+                    <p>Creamy pastel yellow sun lounges, recommended for use with a white or yellow & white stripe pool towel. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+            -
+                name: Tripod & Tripod Mount
+                short-pricing:
+                short-description: One of the lighting kit's that's available complimentary with your studio booking. 
+                description: >-
+                    <p>2x Black metal sun lounge chairs, and up to 3 mediteranean style umbrellas that can be installed striaght into the pool studio floor (without a base) or anywhere else in the studio with a concrete base. </p>
+                    <p>Complimentary when you book the Pool Studio, and available as an add-on to any other space for 500k. Branded cushions, towels, and custom colored day-bed covers available on request for an additional cost. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-1.jpg
+                        alt: Black Metal Lounge at the Pool Studio
+                        text-color-light: false
+
+            -
+                name: Tethering Kit
+                short-pricing: 500k
+                short-description: Perfect for video shoots, or photographers who don't have experience with studio lighting. 
+                description: >-
+                    <p>A custom tethering kit, exclusively available for bookings in the indoor studio. Includes a tetherpro USB-C to USB-C tethering cable, a 4K studio monitor that can be configured in vertical or horizontal mode on a flexible arm that makes it easy to position towards the model or the client and a rolling work station with integrated power. </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+            -
+                name: Mac Mini & Capture One
+                short-pricing: 500k
+                short-description: A fast apple computer with the studio version of Capture One already set up.
+                description: >-
+                    <p>For optional use with the tethering kit, a fast mac-mini with the studio version of Capture One already set up, just plug-and-play for tethered shooting.  </p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+            -
+                name: Sony FX3 & 50mm F1.8 Lens
+                short-pricing: 1 mill
+                short-description: One of the lighting kit's that's available complimentary with your studio booking. 
+                description: >-
+                    <p> Camera rental can be added onto any booking with a studio assistant.</p>
+
+                featured-images:
+                    -
+                        image: /uploads/pool-1.jpg
+                        alt: Black Metal Lounge at the Pool Studio
+                        text-color-light: false
+
+            -
+                name: Canon R5 & 50mm Lens
+                short-pricing: 1 mill
+                short-description: Perfect for video shoots, or photographers who don't have experience with studio lighting. 
+                description: >-
+                    <p>A custom tethering kit, exclusively available for bookings in the indoor studio. Includes a tetherpro USB-C to USB-C tethering cable, a 4K studio monitor that can be configured in vertical or horizontal mode on a flexible arm that makes it easy to position towards the model or the client and a rolling work station with integrated power. Camera rental can be added onto any booking with a studio assistant.</p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+            -
+                name: Fujifilm GFX 
+                short-pricing: 2 mill
+                short-description: The only place in Bali to rent a Fujifilm GFX Medium Format Camera
+                description: >-
+                    <p>The only place in Bali to rent a Fujifilm GFX 100 II camera, the industry standard medium format camera for high-resultion campaigns is at Suluh Studio. Camera rental can be added onto any booking with a studio assistant.</p>
+                featured-images:
+                    -
+                        image: /uploads/pool-2.jpg
+                        alt: Flat lay product photography
+                        text-color-light: false
+
+seo:
+    title: Photography Studio & Creative Agency Bali | Suluh Studio
+    description: >-
+        Full-service photography studio in Cemagi, Bali. E-commerce, product,
+        lifestyle & ghost mannequin photography with over 1200m² of indoor and
+        outdoor spaces.
+    image:
+    favicon:
+    index: true
+permalink:
+---
+
+<section class="bg-dark py-16 text-white">
+    <div class="py-12 max-w-4xl">
+    <h1 class="h-block text-xl"> Photography Equipment </h1>
+    <p>Explore all the photography, lighting, and grip equipment available at the Suluh Studio. Some of the equipment is included complimentary when you book a studio rental and others are available as an add-on. As some equipment is stored on-site and others at an off-site location or through one of our rental partners, we recommend requesting any specific equipment you need in advance to confirm availability. Unless otherwise noted, all equipment is exclusively available for use at Suluh Studio, and can't be taken off-site. </p>
+    </div>
+</section>
+
+{% if page.blocks %}
+  {% for block in page.blocks %}
+
+   {% if block.show != false %}
+
+    <div class="relative" id="section-{{forloop.index}}">
+      <!--{{block._id}} -->
+      {% include /block/{{block._id}}.html %}
+    </div>
+
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
