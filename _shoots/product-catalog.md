@@ -145,4 +145,14 @@ faq:
             <p>With over a decade of experience across photography, marketing, and web development, we’ll guide you through everything — from choosing the right number of images to planning styling, lighting, and delivery timelines.</p>
             <p><strong><a href="https://calendly.com/hello-gv4/intro-call">Book a complimentary call</a></strong> and let’s bring your vision to life.</p>
 hide-nav-border-bottom: true
+seo:
+    title: Photography Studio & Creative Agency Bali | Suluh Studio
+    description: >-
+        Full-service photography studio in Cemagi, Bali. E-commerce, product,
+        lifestyle & ghost mannequin photography with over 1200m² of indoor and
+        outdoor spaces.
+    image:
+    favicon:
+    index: true
+permalink:
 ---
