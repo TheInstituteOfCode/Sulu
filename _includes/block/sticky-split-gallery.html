@@ -16,7 +16,7 @@
             {% endif %}
 
             {% if block.content %}
-                <div class="editable">
+                <div>
                     {{block.content}}
                 </div>
             {% endif %}
@@ -25,7 +25,7 @@
                 <p>
                     <a
                         href="{{block.button-link}}"
-                        class="{{block.button-style}} editable mt-6"
+                        class="{{block.button-style}} mt-6"
                     >
                         {{block.button-text}}
                     </a>
